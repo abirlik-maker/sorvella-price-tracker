@@ -1,0 +1,153 @@
+{
+ "generated_at": "2026-11-09T06:00:00+00:00",
+ "demo": true,
+ "channels": [
+  {
+   "id": "allegro",
+   "name": "Allegro",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "id": "ceneo",
+   "name": "Ceneo",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "id": "notino",
+   "name": "Notino",
+   "status": "blocked",
+   "note": "HTTP 403"
+  },
+  {
+   "id": "douglas",
+   "name": "Douglas",
+   "status": "unreadable",
+   "note": "results page unreadable (probably rendered with JavaScript)"
+  },
+  {
+   "id": "sephora",
+   "name": "Sephora",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "id": "rossmann",
+   "name": "Rossmann",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "id": "hebe",
+   "name": "Hebe",
+   "status": "ok",
+   "note": ""
+  },
+  {
+   "id": "superpharm",
+   "name": "Super-Pharm",
+   "status": "ok",
+   "note": ""
+  }
+ ],
+ "products": [
+  {
+   "id": "amber-saffron",
+   "title": "Amber & Saffron - Perfumy Unisex Sorvella Signature 30ml",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/amber-saffron",
+   "image": "https://sorvellaperfume.pl/cdn/shop/files/13_3f8fe228-0085-4f88-ab3e-34c61061adf9.png?v=1793949773&width=200",
+   "offers": [
+    {
+     "channel": "allegro",
+     "title": "Amber & Saffron - Sorvella Signature 30ml",
+     "price": 109.0,
+     "url": "https://example.com/allegro/amber-saffron",
+     "match": 100,
+     "flag": false
+    },
+    {
+     "channel": "ceneo",
+     "title": "Amber & Saffron - Sorvella Signature 30ml",
+     "price": 114.99,
+     "url": "https://example.com/ceneo/amber-saffron",
+     "match": 96,
+     "flag": false
+    }
+   ]
+  },
+  {
+   "id": "tobacco-honey-perfumy-unisex-sorvella",
+   "title": "Tobacco & Honey- Perfumy Unisex Sorvella Signature 30ml",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/tobacco-honey-perfumy-unisex-sorvella",
+   "image": "https://sorvellaperfume.pl/cdn/shop/files/17_8b572a9c-7a96-40b6-b8f8-6acce6e542fb.png?v=1793950724&width=200",
+   "offers": [
+    {
+     "channel": "allegro",
+     "title": "Tobacco & Honey- Sorvella Signature 30ml",
+     "price": 119.9,
+     "url": "https://example.com/allegro/tobacco-honey-perfumy-unisex-sorvella",
+     "match": 100,
+     "flag": false
+    },
+    {
+     "channel": "ceneo",
+     "title": "Tobacco & Honey- Sorvella Signature 30ml",
+     "price": 127.0,
+     "url": "https://example.com/ceneo/tobacco-honey-perfumy-unisex-sorvella",
+     "match": 88,
+     "flag": true
+    }
+   ]
+  },
+  {
+   "id": "pear-musk-perfumy-unisex-sorvella-copy",
+   "title": "Pear & Musk- Perfumy Unisex Sorvella Signature 30ml",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/pear-musk-perfumy-unisex-sorvella-copy",
+   "image": "https://sorvellaperfume.pl/cdn/shop/files/18_e322487f-7ef3-4a60-8a93-bbfe8a4b42d6.png?v=1793950766&width=200",
+   "offers": []
+  },
+  {
+   "id": "sandalwood-zapach-domowy-premium-120ml",
+   "title": "Sandalwood - Zapach Domowy Sorvella 120ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/sandalwood-zapach-domowy-premium-120ml",
+   "image": "https://sorvellaperfume.pl/cdn/shop/files/Strona_Packshoty_709_6.png?v=1789649822&width=200",
+   "offers": [
+    {
+     "channel": "allegro",
+     "title": "Sandalwood - Zapach Domowy Sorvella 120ml",
+     "price": 44.9,
+     "url": "https://example.com/allegro/sandalwood-zapach-domowy-premium-120ml",
+     "match": 97,
+     "flag": false
+    }
+   ]
+  },
+  {
+   "id": "zapach-domowy-sorvella-istanbul-120-ml",
+   "title": "Istanbul - Zapach Domowy Sorvella - 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-istanbul-120-ml",
+   "image": "https://sorvellaperfume.pl/cdn/shop/files/61.png?v=1789649069&width=200",
+   "offers": [
+    {
+     "channel": "allegro",
+     "title": "Istanbul - Zapach Domowy Sorvella - 120 Ml",
+     "price": 52.0,
+     "url": "https://example.com/allegro/zapach-domowy-sorvella-istanbul-120-ml",
+     "match": 100,
+     "flag": false
+    }
+   ]
+  }
+ ]
+}

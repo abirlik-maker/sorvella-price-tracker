@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sorvella price comparison</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F1F2F7; --surface:#FFFFFF; --ink:#1B2238; --muted:#5B637A; --line:#DCDFEA;
+  --ours:#3A3AD1; --cheaper:#B8174F; --pricier:#0B7A64; --wash:#E7E9F6;
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042;
+    --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --wash:#222842; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042;
+  --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --wash:#222842; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--font);
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);
+  font-variant-numeric:tabular-nums}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 20px 64px}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+.top strong{color:var(--ink);font-weight:600}
+.demo{margin:16px 0 0;padding:10px 14px;border:1px dashed var(--cheaper);border-radius:8px;color:var(--ink);font-size:14px;background:var(--surface)}
+h1{font:800 clamp(28px,5.2vw,52px)/1.08 var(--font);letter-spacing:-.02em;margin:26px 0 8px;max-width:20ch}
+.lead{margin:0 0 22px;color:var(--muted);max-width:62ch}
+.sources{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+.src{display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:13px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--pricier)}
+.src[data-s=blocked] .dot,.src[data-s=error] .dot{background:var(--cheaper)}
+.src[data-s=unreadable] .dot,.src[data-s=partial] .dot,.src[data-s=disabled] .dot{background:transparent;border:2px solid var(--muted)}
+.src small{color:var(--muted)}
+.bar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.seg{display:flex;gap:4px;flex-wrap:wrap}
+.seg button,.btn{font:600 14px var(--font);padding:7px 13px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.seg button span{color:inherit;opacity:.65;font-weight:400;margin-left:4px}
+button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--ours);outline-offset:2px}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+details{border-top:1px solid var(--line)}
+details:first-child{border-top:0}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(260px,1.5fr) minmax(190px,1.5fr) minmax(130px,.8fr);gap:18px;align-items:center;padding:16px 18px}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:var(--wash)}
+.prod{display:flex;gap:14px;align-items:center;min-width:0}
+.thumb{width:64px;height:64px;flex:none;object-fit:contain;border-radius:10px;background:var(--wash)}
+.name{font-weight:600;line-height:1.25}
+.name small{display:block;color:var(--muted);font-weight:400;font-size:13px;margin-top:2px}
+.ladder{position:relative;height:34px}
+.ladder .rail{position:absolute;left:0;right:0;top:16px;height:2px;background:var(--line)}
+.ladder .us{position:absolute;top:3px;bottom:3px;width:3px;margin-left:-1.5px;background:var(--ours);border-radius:2px}
+.ladder .us i{position:absolute;top:-1px;left:7px;font:600 12px/1 var(--font);font-style:normal;color:var(--ours);white-space:nowrap}
+.ladder .c{position:absolute;top:10px;width:13px;height:13px;margin-left:-6.5px;border-radius:50%;box-sizing:border-box}
+.c.cheaper{background:var(--cheaper)}
+.c.pricier{border:2.5px solid var(--pricier);background:var(--surface)}
+.none{color:var(--muted);font-size:14px}
+.verdict{text-align:right;font-weight:600}
+.verdict small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+.verdict.cheaper{color:var(--cheaper)} .verdict.ours{color:var(--pricier)}
+.flag{display:inline-block;margin-left:6px;padding:1px 7px;border:1px solid var(--muted);border-radius:99px;font-size:12px;font-weight:400;color:var(--muted)}
+.panel{padding:4px 18px 22px;display:grid;grid-template-columns:1.2fr 1fr;gap:26px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-weight:600;text-align:left;color:var(--muted);font-size:13px;padding:6px 8px 6px 0;border-bottom:1px solid var(--line)}
+td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line)}
+td.n,th.n{text-align:right}
+a{color:var(--ours)}
+.chart text{fill:var(--muted);font:12px var(--font)}
+.empty{padding:34px 18px;text-align:center;color:var(--muted)}
+.foot{margin-top:22px;color:var(--muted);font-size:13px;max-width:70ch}
+@media (max-width:760px){
+  summary{grid-template-columns:1fr;gap:10px}
+  .verdict{text-align:left}
+  .panel{grid-template-columns:1fr}
+  .tw{overflow-x:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script id="inline-data" type="application/json">{"latest": {"generated_at": "2026-11-09T06:00:00+00:00", "demo": true, "channels": [{"id": "allegro", "name": "Allegro", "status": "ok", "note": ""}, {"id": "ceneo", "name": "Ceneo", "status": "ok", "note": ""}, {"id": "notino", "name": "Notino", "status": "blocked", "note": "HTTP 403"}, {"id": "douglas", "name": "Douglas", "status": "unreadable", "note": "results page unreadable (probably rendered with JavaScript)"}, {"id": "sephora", "name": "Sephora", "status": "ok", "note": ""}, {"id": "rossmann", "name": "Rossmann", "status": "ok", "note": ""}, {"id": "hebe", "name": "Hebe", "status": "ok", "note": ""}, {"id": "superpharm", "name": "Super-Pharm", "status": "ok", "note": ""}], "products": [{"id": "amber-saffron", "title": "Amber & Saffron - Perfumy Unisex Sorvella Signature 30ml", "size_ml": 30, "our_price": 119.9, "url": "https://sorvellaperfume.pl/products/amber-saffron", "image": "https://sorvellaperfume.pl/cdn/shop/files/13_3f8fe228-0085-4f88-ab3e-34c61061adf9.png?v=1793949773&width=200", "offers": [{"channel": "allegro", "title": "Amber & Saffron - Sorvella Signature 30ml", "price": 109.0, "url": "https://example.com/allegro/amber-saffron", "match": 100, "flag": false}, {"channel": "ceneo", "title": "Amber & Saffron - Sorvella Signature 30ml", "price": 114.99, "url": "https://example.com/ceneo/amber-saffron", "match": 96, "flag": false}]}, {"id": "tobacco-honey-perfumy-unisex-sorvella", "title": "Tobacco & Honey- Perfumy Unisex Sorvella Signature 30ml", "size_ml": 30, "our_price": 119.9, "url": "https://sorvellaperfume.pl/products/tobacco-honey-perfumy-unisex-sorvella", "image": "https://sorvellaperfume.pl/cdn/shop/files/17_8b572a9c-7a96-40b6-b8f8-6acce6e542fb.png?v=1793950724&width=200", "offers": [{"channel": "allegro", "title": "Tobacco & Honey- Sorvella Signature 30ml", "price": 119.9, "url": "https://example.com/allegro/tobacco-honey-perfumy-unisex-sorvella", "match": 100, "flag": false}, {"channel": "ceneo", "title": "Tobacco & Honey- Sorvella Signature 30ml", "price": 127.0, "url": "https://example.com/ceneo/tobacco-honey-perfumy-unisex-sorvella", "match": 88, "flag": true}]}, {"id": "pear-musk-perfumy-unisex-sorvella-copy", "title": "Pear & Musk- Perfumy Unisex Sorvella Signature 30ml", "size_ml": 30, "our_price": 119.9, "url": "https://sorvellaperfume.pl/products/pear-musk-perfumy-unisex-sorvella-copy", "image": "https://sorvellaperfume.pl/cdn/shop/files/18_e322487f-7ef3-4a60-8a93-bbfe8a4b42d6.png?v=1793950766&width=200", "offers": []}, {"id": "sandalwood-zapach-domowy-premium-120ml", "title": "Sandalwood - Zapach Domowy Sorvella 120ml", "size_ml": 120, "our_price": 49.9, "url": "https://sorvellaperfume.pl/products/sandalwood-zapach-domowy-premium-120ml", "image": "https://sorvellaperfume.pl/cdn/shop/files/Strona_Packshoty_709_6.png?v=1789649822&width=200", "offers": [{"channel": "allegro", "title": "Sandalwood - Zapach Domowy Sorvella 120ml", "price": 44.9, "url": "https://example.com/allegro/sandalwood-zapach-domowy-premium-120ml", "match": 97, "flag": false}]}, {"id": "zapach-domowy-sorvella-istanbul-120-ml", "title": "Istanbul - Zapach Domowy Sorvella - 120 Ml", "size_ml": 120, "our_price": 49.9, "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-istanbul-120-ml", "image": "https://sorvellaperfume.pl/cdn/shop/files/61.png?v=1789649069&width=200", "offers": [{"channel": "allegro", "title": "Istanbul - Zapach Domowy Sorvella - 120 Ml", "price": 52.0, "url": "https://example.com/allegro/zapach-domowy-sorvella-istanbul-120-ml", "match": 100, "flag": false}]}]}, "history": {"2026-10-11": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 49.0}}, "2026-10-12": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 126.03}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 42.0}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 51.03}}, "2026-10-13": {"amber-saffron": {"own": 119.9, "allegro": 108.07, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 43.97}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-14": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 121.69, "ceneo": 129.69}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-15": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 42.31}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-16": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 118.24, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 47.38}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-17": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 53.59}}, "2026-10-18": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 47.18}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-19": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 116.44}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-20": {"amber-saffron": {"own": 119.9, "allegro": 108.31, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.69}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 51.31}}, "2026-10-21": {"amber-saffron": {"own": 119.9, "allegro": 110.31, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 117.93, "ceneo": 128.97}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 46.87}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 50.03}}, "2026-10-22": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-23": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.31, "ceneo": 127.59}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-24": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 116.65}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 121.56, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-25": {"amber-saffron": {"own": 119.9, "allegro": 109.52, "ceneo": 114.47}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 125.97}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 43.87}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-26": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.48}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-27": {"amber-saffron": {"own": 119.9, "allegro": 108.1, "ceneo": 115.89}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.9}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-28": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 125.76}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 50.76}}, "2026-10-29": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 128.14}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-30": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-10-31": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.28, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-01": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 120.18, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 45.18}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 51.72}}, "2026-11-02": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.42, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.66}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-03": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.28, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.21}}, "2026-11-04": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 115.16}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.52}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-05": {"amber-saffron": {"own": 119.9, "allegro": 108.86, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-06": {"amber-saffron": {"own": 119.9, "allegro": 109.31, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.21}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 45.0}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-07": {"amber-saffron": {"own": 119.9, "allegro": 108.86, "ceneo": 114.85}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 120.11, "ceneo": 126.79}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-08": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.92}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}, "2026-11-09": {"amber-saffron": {"own": 119.9, "allegro": 109.0, "ceneo": 114.99}, "tobacco-honey-perfumy-unisex-sorvella": {"own": 119.9, "allegro": 119.9, "ceneo": 127.0}, "pear-musk-perfumy-unisex-sorvella-copy": {"own": 119.9}, "sandalwood-zapach-domowy-premium-120ml": {"own": 49.9, "allegro": 44.9}, "zapach-domowy-sorvella-istanbul-120-ml": {"own": 49.9, "allegro": 52.0}}}}</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span><strong>sorvellaperfume.pl</strong> price comparison</span><span id="stamp"></span></div>
+  <div id="demo" class="demo" hidden>This page is running on sample data. Competitor prices are not real; they are replaced once the daily script has run.</div>
+  <h1 id="headline">Loading…</h1>
+  <p class="lead" id="lead"></p>
+  <ul class="sources" id="sources" aria-label="Source status"></ul>
+  <div class="bar">
+    <div class="seg" id="filters" role="group" aria-label="Filter"></div>
+    <button class="btn" id="csv" type="button">Download CSV</button>
+  </div>
+  <div class="list" id="list"></div>
+  <p class="foot">The vertical line is our price. A filled dot is a competitor listing cheaper than us; a hollow dot is more expensive. Listings are matched by product name and size (ml). Matches tagged “Check” have low confidence and should be verified by hand.</p>
+</div>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const money = n => (n < 0 ? '-' : '') + new Intl.NumberFormat('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}).format(Math.abs(n)) + ' zł';
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const STATUS = {ok:'Working', partial:'Partly working', blocked:'Blocked', unreadable:'Unreadable', error:'Error', disabled:'Off'};
+  let D, H, filter = 'all', chName = {};
+
+  async function load() {
+    const inline = document.getElementById('inline-data');
+    if (inline) { const j = JSON.parse(inline.textContent); return [j.latest, j.history]; }
+    const [a, b] = await Promise.all([fetch('data/latest.json'), fetch('data/history.json')]);
+    if (!a.ok) throw new Error('data/latest.json not found');
+    return [await a.json(), b.ok ? await b.json() : {}];
+  }
+
+  function analyse(p) {
+    const offers = [...p.offers].sort((x, y) => x.price - y.price);
+    const best = offers[0];
+    let state = 'none';
+    if (best) state = best.price < p.our_price - 0.005 ? 'cheaper' : 'ours';
+    return {...p, offers, best, state, flagged: offers.some(o => o.flag),
+            gap: best ? best.price - p.our_price : 0, gapPct: best ? (best.price / p.our_price - 1) * 100 : 0};
+  }
+
+  function render() {
+    const items = D.products.map(analyse);
+    const count = {all: items.length, cheaper: 0, ours: 0, none: 0, flag: 0};
+    items.forEach(i => { count[i.state]++; if (i.flagged) count.flag++; });
+
+    $('#stamp').textContent = 'Last updated: ' + new Date(D.generated_at).toLocaleString('en-GB', {dateStyle:'long', timeStyle:'short'});
+    $('#demo').hidden = !D.demo;
+    $('#headline').textContent = count.cheaper
+      ? `${count.cheaper} of ${count.all} products ${count.cheaper === 1 ? 'is' : 'are'} cheaper at a competitor.`
+      : `No competitor is cheaper than us on any product.`;
+    const bits = [];
+    if (count.ours) bits.push(`We’re cheapest on ${count.ours}`);
+    if (count.none) bits.push(`${count.none} not found at competitors`);
+    if (count.flag) bits.push(`${count.flag} ${count.flag === 1 ? 'match needs' : 'matches need'} a manual check`);
+    $('#lead').textContent = bits.join(' · ') + (bits.length ? '.' : '');
+
+    $('#sources').innerHTML = D.channels.map(c =>
+      `<li class="src" data-s="${esc(c.status)}" title="${esc(c.note || '')}"><span class="dot"></span>${esc(c.name)} <small>${STATUS[c.status] || esc(c.status)}</small></li>`).join('');
+
+    const F = [['all','All'],['cheaper','Competitor cheaper'],['ours','We’re cheapest'],['none','No match'],['flag','Check']];
+    $('#filters').innerHTML = F.map(([k, t]) => `<button type="button" data-f="${k}" aria-pressed="${filter===k}">${t}<span>${count[k]}</span></button>`).join('');
+
+    let shown = items.filter(i => filter === 'all' || (filter === 'flag' ? i.flagged : i.state === filter));
+    const order = {cheaper:0, ours:1, none:2};
+    shown.sort((a, b) => order[a.state] - order[b.state] || a.gapPct - b.gapPct);
+    $('#list').innerHTML = shown.length ? shown.map(row).join('') : '<div class="empty">No products match this filter.</div>';
+  }
+
+  function ladder(p) {
+    if (!p.offers.length) return '<span class="none">Not found at competitors</span>';
+    const all = [p.our_price, ...p.offers.map(o => o.price)];
+    let lo = Math.min(...all), hi = Math.max(...all);
+    const pad = Math.max((hi - lo) * .12, p.our_price * .03);
+    lo -= pad; hi += pad;
+    const pos = v => ((v - lo) / (hi - lo) * 100).toFixed(2);
+    const dots = p.offers.map(o => {
+      const cls = o.price < p.our_price - 0.005 ? 'cheaper' : 'pricier';
+      return `<span class="c ${cls}" style="left:${pos(o.price)}%" title="${esc(chName[o.channel] || o.channel)}: ${money(o.price)}"></span>`;
+    }).join('');
+    return `<div class="ladder" role="img" aria-label="Price spread"><span class="rail"></span>${dots}<span class="us" style="left:${pos(p.our_price)}%"><i>${money(p.our_price)}</i></span></div>`;
+  }
+
+  function verdict(p) {
+    if (p.state === 'none') return `<div class="verdict">${money(p.our_price)}<small>our price</small></div>`;
+    const ch = esc(chName[p.best.channel] || p.best.channel);
+    if (p.state === 'cheaper')
+      return `<div class="verdict cheaper">${money(p.gap)}<small>${ch} · ${Math.abs(p.gapPct).toFixed(1)}% cheaper</small></div>`;
+    return `<div class="verdict ours">We’re cheapest<small>closest: ${ch} ${money(p.best.price)}</small></div>`;
+  }
+
+  function row(p) {
+    const tr = p.offers.map(o => {
+      const d = o.price - p.our_price;
+      return `<tr><td>${esc(chName[o.channel] || o.channel)}${o.flag ? '<span class="flag">Check</span>' : ''}</td>
+        <td class="n">${money(o.price)}</td><td class="n">${(d > 0 ? '+' : '') + money(d)}</td>
+        <td class="n">${o.match}%</td><td><a href="${esc(o.url)}" target="_blank" rel="noopener">listing</a></td></tr>`;
+    }).join('');
+    const table = p.offers.length
+      ? `<div class="tw"><table><thead><tr><th>Channel</th><th class="n">Price</th><th class="n">Diff</th><th class="n">Match</th><th></th></tr></thead><tbody>${tr}</tbody></table></div>`
+      : '<p class="none">No matching listing found on any channel.</p>';
+    const img = p.image ? `<img class="thumb" src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.visibility='hidden'">` : '<span class="thumb"></span>';
+    return `<details><summary>
+      <div class="prod">${img}<div class="name">${esc(p.title)}${p.flagged ? '<span class="flag">Check</span>' : ''}<small>${p.size_ml ? p.size_ml + ' ml' : ''}${p.size_ml ? ' · ' + money(p.our_price / p.size_ml * 10) + ' / 10 ml' : ''}</small></div></div>
+      ${ladder(p)}${verdict(p)}</summary>
+      <div class="panel"><div>${table}<p><a href="${esc(p.url)}" target="_blank" rel="noopener">Our product page</a></p></div>${chart(p)}</div></details>`;
+  }
+
+  function chart(p) {
+    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort();
+    const pts = days.map(d => {
+      const e = H[d][p.id]; if (!e) return null;
+      const rv = Object.entries(e).filter(([k]) => k !== 'own').map(([, v]) => v);
+      return {d, own: e.own, min: rv.length ? Math.min(...rv) : null};
+    }).filter(Boolean);
+    if (pts.length < 2) return '<div class="none">Price history will appear here after a few days.</div>';
+    const W = 440, Hh = 190, L = 40, R = 100, T = 14, B = 26;
+    const vals = pts.flatMap(x => [x.own, x.min]).filter(v => v != null);
+    let lo = Math.min(...vals), hi = Math.max(...vals);
+    const pad = Math.max((hi - lo) * .15, 1); lo -= pad; hi += pad;
+    const X = i => L + i / (pts.length - 1) * (W - L - R);
+    const Y = v => T + (1 - (v - lo) / (hi - lo)) * (Hh - T - B);
+    const path = k => { let s = '', pen = false;
+      pts.forEach((x, i) => { if (x[k] == null) { pen = false; return; } s += (pen ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(x[k]).toFixed(1); pen = true; }); return s; };
+    const last = pts[pts.length - 1];
+    const fd = d => new Date(d).toLocaleDateString('en-GB', {day:'numeric', month:'short'});
+    return `<svg class="chart" viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Price history: our price and the cheapest competitor">
+      <line x1="${L}" x2="${W-R}" y1="${Y(hi-pad)}" y2="${Y(hi-pad)}" stroke="var(--line)"/>
+      <line x1="${L}" x2="${W-R}" y1="${Y(lo+pad)}" y2="${Y(lo+pad)}" stroke="var(--line)"/>
+      <text x="${L-6}" y="${Y(hi-pad)+4}" text-anchor="end">${(hi-pad).toFixed(0)}</text>
+      <text x="${L-6}" y="${Y(lo+pad)+4}" text-anchor="end">${(lo+pad).toFixed(0)}</text>
+      <path d="${path('min')}" fill="none" stroke="var(--cheaper)" stroke-width="2" stroke-dasharray="5 4"/>
+      <path d="${path('own')}" fill="none" stroke="var(--ours)" stroke-width="2.5"/>
+      <text x="${W-R+6}" y="${Y(last.own)+4}" style="fill:var(--ours);font-weight:600">Us</text>
+      ${last.min != null ? `<text x="${W-R+6}" y="${Y(last.min)+(Math.abs(Y(last.min)-Y(last.own))<14?16:4)}" style="fill:var(--cheaper);font-weight:600">Cheapest rival</text>` : ''}
+      <text x="${L}" y="${Hh-6}">${fd(pts[0].d)}</text><text x="${W-R}" y="${Hh-6}" text-anchor="end">${fd(last.d)}</text></svg>`;
+  }
+
+  function csv() {
+    const rows = [['product','size_ml','our_price','channel','competitor_price','diff','match','check','url']];
+    D.products.forEach(p => {
+      if (!p.offers.length) rows.push([p.title, p.size_ml || '', p.our_price, '', '', '', '', '', '']);
+      p.offers.forEach(o => rows.push([p.title, p.size_ml || '', p.our_price, chName[o.channel] || o.channel, o.price,
+        (o.price - p.our_price).toFixed(2), o.match, o.flag ? 'yes' : '', o.url]));
+    });
+    const body = rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['\ufeff' + body], {type: 'text/csv;charset=utf-8'}));
+    a.download = 'sorvella-price-comparison.csv';
+    a.click();
+  }
+
+  document.addEventListener('click', e => {
+    const f = e.target.closest('[data-f]');
+    if (f) { filter = f.dataset.f; render(); }
+  });
+  $('#csv').addEventListener('click', csv);
+
+  load().then(([d, h]) => { D = d; H = h; D.channels.forEach(c => chName[c.id] = c.name); render(); })
+    .catch(err => { $('#headline').textContent = 'Could not load data.';
+      $('#lead').textContent = err.message + '. Open the page through a web server (GitHub Pages or python -m http.server) and make sure data/latest.json exists.'; });
+})();
+</script>
+</body>
+</html>
