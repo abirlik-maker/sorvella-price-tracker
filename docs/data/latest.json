@@ -1,18 +1,18 @@
 {
- "generated_at": "2026-11-09T06:00:00+00:00",
- "demo": true,
+ "generated_at": "2026-11-09T14:54:46+00:00",
+ "demo": false,
  "channels": [
   {
    "id": "allegro",
    "name": "Allegro",
-   "status": "ok",
-   "note": ""
+   "status": "disabled",
+   "note": "ALLEGRO_CLIENT_ID / ALLEGRO_CLIENT_SECRET not set"
   },
   {
    "id": "ceneo",
    "name": "Ceneo",
-   "status": "ok",
-   "note": ""
+   "status": "unreadable",
+   "note": "results page unreadable (probably rendered with JavaScript)"
   },
   {
    "id": "notino",
@@ -23,86 +23,124 @@
   {
    "id": "douglas",
    "name": "Douglas",
-   "status": "unreadable",
-   "note": "results page unreadable (probably rendered with JavaScript)"
+   "status": "error",
+   "note": "HTTPError: 400 Client Error: Bad Request for url: https://www.douglas.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
   },
   {
    "id": "sephora",
    "name": "Sephora",
-   "status": "ok",
-   "note": ""
+   "status": "error",
+   "note": "HTTPError: 404 Client Error: Not Found for url: https://www.sephora.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
   },
   {
    "id": "rossmann",
    "name": "Rossmann",
-   "status": "ok",
-   "note": ""
+   "status": "partial",
+   "note": "time budget reached after 19/142 products"
   },
   {
    "id": "hebe",
    "name": "Hebe",
-   "status": "ok",
-   "note": ""
+   "status": "unreadable",
+   "note": "results page unreadable (probably rendered with JavaScript)"
   },
   {
    "id": "superpharm",
    "name": "Super-Pharm",
-   "status": "ok",
-   "note": ""
+   "status": "error",
+   "note": "HTTPError: 404 Client Error: Not Found for url: https://www.superpharm.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
   }
  ],
  "products": [
   {
-   "id": "amber-saffron",
-   "title": "Amber & Saffron - Perfumy Unisex Sorvella Signature 30ml",
-   "size_ml": 30,
-   "our_price": 119.9,
-   "url": "https://sorvellaperfume.pl/products/amber-saffron",
-   "image": "https://sorvellaperfume.pl/cdn/shop/files/13_3f8fe228-0085-4f88-ab3e-34c61061adf9.png?v=1793949773&width=200",
-   "offers": [
-    {
-     "channel": "allegro",
-     "title": "Amber & Saffron - Sorvella Signature 30ml",
-     "price": 109.0,
-     "url": "https://example.com/allegro/amber-saffron",
-     "match": 100,
-     "flag": false
-    },
-    {
-     "channel": "ceneo",
-     "title": "Amber & Saffron - Sorvella Signature 30ml",
-     "price": 114.99,
-     "url": "https://example.com/ceneo/amber-saffron",
-     "match": 96,
-     "flag": false
-    }
-   ]
+   "id": "signature-discovery-set-7szt",
+   "title": "Signature Discovery Set (7szt. x 2 ml)",
+   "size_ml": 2,
+   "our_price": 44.9,
+   "url": "https://sorvellaperfume.pl/products/signature-discovery-set-7szt",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12001200_mountain_12.png?v=1752572127&width=200",
+   "offers": []
   },
   {
-   "id": "tobacco-honey-perfumy-unisex-sorvella",
-   "title": "Tobacco & Honey- Perfumy Unisex Sorvella Signature 30ml",
-   "size_ml": 30,
+   "id": "biale-pizmo-bawelna-zapach-domowy-w-sprayu-250ml-copy",
+   "title": "Białe piżmo & Bawełna Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/biale-pizmo-bawelna-zapach-domowy-w-sprayu-250ml-copy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/75.png?v=1792141789&width=200",
+   "offers": []
+  },
+  {
+   "id": "pistacja-biala-herbata-zapach-domowy-w-sprayu-250ml-copy-copy",
+   "title": "Pistacja & Biała herbata- Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/pistacja-biala-herbata-zapach-domowy-w-sprayu-250ml-copy-copy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/74.png?v=1792140116&width=200",
+   "offers": []
+  },
+  {
+   "id": "cynamon-drzewo-sandalowe-zapach-domowy-w-sprayu-250ml-copy",
+   "title": "Cynamon & Drzewo sandałowe- Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/cynamon-drzewo-sandalowe-zapach-domowy-w-sprayu-250ml-copy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/76.png?v=1792139915&width=200",
+   "offers": []
+  },
+  {
+   "id": "roza-oud-zapach-domowy-w-sprayu-250ml",
+   "title": "Róża & Oud- Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/roza-oud-zapach-domowy-w-sprayu-250ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/77.png?v=1792582288&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-moments-x-justyna-steczkowska-zapach-domowy-w-sprayu-250ml",
+   "title": "Ciemny miód & Bursztyn- Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-moments-x-justyna-steczkowska-zapach-domowy-w-sprayu-250ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/73.png?v=1789675471&width=200",
+   "offers": []
+  },
+  {
+   "id": "alt-perfumy-meskie-premium-50-ml",
+   "title": "ALT- Perfumy Męskie Premium 50 ml",
+   "size_ml": 50,
    "our_price": 119.9,
-   "url": "https://sorvellaperfume.pl/products/tobacco-honey-perfumy-unisex-sorvella",
-   "image": "https://sorvellaperfume.pl/cdn/shop/files/17_8b572a9c-7a96-40b6-b8f8-6acce6e542fb.png?v=1793950724&width=200",
-   "offers": [
-    {
-     "channel": "allegro",
-     "title": "Tobacco & Honey- Sorvella Signature 30ml",
-     "price": 119.9,
-     "url": "https://example.com/allegro/tobacco-honey-perfumy-unisex-sorvella",
-     "match": 100,
-     "flag": false
-    },
-    {
-     "channel": "ceneo",
-     "title": "Tobacco & Honey- Sorvella Signature 30ml",
-     "price": 127.0,
-     "url": "https://example.com/ceneo/tobacco-honey-perfumy-unisex-sorvella",
-     "match": 88,
-     "flag": true
-    }
-   ]
+   "url": "https://sorvellaperfume.pl/products/alt-perfumy-meskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/44.png?v=1793952508&width=200",
+   "offers": []
+  },
+  {
+   "id": "lat-perfumy-unisex-premium-50-ml",
+   "title": "LAT - Perfumy Unisex  Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/lat-perfumy-unisex-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "angl-perfumy-damskie-premium-50-ml",
+   "title": "ANGL - Perfumy Unisex Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/angl-perfumy-damskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "crush-perfumy-unisex-premium-50-ml-copy",
+   "title": "CRUSH- Perfumy Unisex Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/crush-perfumy-unisex-premium-50-ml-copy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
   },
   {
    "id": "pear-musk-perfumy-unisex-sorvella-copy",
@@ -110,7 +148,853 @@
    "size_ml": 30,
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/pear-musk-perfumy-unisex-sorvella-copy",
-   "image": "https://sorvellaperfume.pl/cdn/shop/files/18_e322487f-7ef3-4a60-8a93-bbfe8a4b42d6.png?v=1793950766&width=200",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/18_e322487f-7ef3-4a60-8a93-bbfe8a4b42d6.png?v=1793950766&width=200",
+   "offers": []
+  },
+  {
+   "id": "tobacco-honey-perfumy-unisex-sorvella",
+   "title": "Tobacco & Honey- Perfumy Unisex Sorvella Signature 30ml",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/tobacco-honey-perfumy-unisex-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/17_8b572a9c-7a96-40b6-b8f8-6acce6e542fb.png?v=1793950724&width=200",
+   "offers": []
+  },
+  {
+   "id": "crd-perfumy-unisex-premium-50-ml",
+   "title": "CRD- Perfumy unisex premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/crd-perfumy-unisex-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "solar-flare-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml-copy",
+   "title": "Solar Flare - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml (Copy)",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/solar-flare-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml-copy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/3_a024bcb0-ba06-4505-bc31-17e2cc2dca69.png?v=1789042816&width=200",
+   "offers": []
+  },
+  {
+   "id": "s901-gentleman-50ml-cieple-perfumy-meskie-sorvella",
+   "title": "S901 Gentleman 50ml- Ciepłe Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s901-gentleman-50ml-cieple-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "v802-energiczne-perfumy-damskie-sorvella-50-ml",
+   "title": "V802-  Energiczne Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v802-energiczne-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v801-zmyslowe-perfumy-damskie-sorvella-50-ml",
+   "title": "V801-  Zmysłowe Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v801-zmyslowe-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v628-pudrowe-perfumy-damskie-sorvella-50-ml",
+   "title": "V628-  Pudrowe Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v628-pudrowe-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "crd-perfumy-meskie-premium-50-ml",
+   "title": "S902- Perfumy Męskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/crd-perfumy-meskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "leonis-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Leonis - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/leonis-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/8_b27883ef-530d-46af-a013-398710f7ae7f.png?v=1770038985&width=200",
+   "offers": []
+  },
+  {
+   "id": "leonis-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Leonis - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/leonis-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/23_cc01f2c7-30f7-4f9c-9c85-c0a11a02db35.png?v=1788944568&width=200",
+   "offers": []
+  },
+  {
+   "id": "sun-kisses-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "title": "Sun Kisses - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/sun-kisses-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/2_b450c8c5-b43e-4aea-88a1-1510bc663a72.png?v=1789042774&width=200",
+   "offers": []
+  },
+  {
+   "id": "coco-bliss-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "title": "Coco Bliss- Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/coco-bliss-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/1_7366b555-06de-4b5f-bde5-7aa28fa97116.png?v=1788944570&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-v244-50ml",
+   "title": "V244 - Bombshell 50 ml Kwiatowe Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-v244-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_2998f3c3-5737-4f4c-868c-cd3088012a78.png?v=1793952721&width=200",
+   "offers": []
+  },
+  {
+   "id": "orcd-tom-ford-black-orchid-sorvella",
+   "title": "ORCD - Perfumy damskie premium 50ml",
+   "size_ml": 50,
+   "our_price": 169.9,
+   "url": "https://sorvellaperfume.pl/products/orcd-tom-ford-black-orchid-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s18-50ml",
+   "title": "S18 - Fahrenheit 50 ml  Drzewne Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s18-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_9b5f2f77-22d8-46fe-9535-c5ebe570aece.png?v=1793952817&width=200",
+   "offers": []
+  },
+  {
+   "id": "cytrus-rozmaryna-zapach-do-samochodu",
+   "title": "Cytrus & Rozmaryn SAMOCHODOWY ODŚWIEŻACZ POWIETRZA",
+   "size_ml": null,
+   "our_price": 24.99,
+   "url": "https://sorvellaperfume.pl/products/cytrus-rozmaryna-zapach-do-samochodu",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6d389b17-1057-414c-9775-1ac88528d9da.png?v=1785403773&width=200",
+   "offers": []
+  },
+  {
+   "id": "jazz-perfumy-meskie-premium-50-ml",
+   "title": "JAZZ - Perfumy Męskie premium  50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/jazz-perfumy-meskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "mine-perfumy-meskie-premium-50-ml",
+   "title": "MINE - Perfumy Męskie premium  50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/mine-perfumy-meskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "milky-way-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Milky Way - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/milky-way-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/10_73901c82-2f94-4e33-af8e-16aa71f193a6.png?v=1770038985&width=200",
+   "offers": []
+  },
+  {
+   "id": "merger-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Merger - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/merger-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/9_0b244fb5-fafb-4a9e-9b91-75634a0aafd8.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "andromeda-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Andromeda - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/andromeda-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/4_9857aafe-4f5a-436d-803a-deb28c97170d.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "tucana-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Tucana - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/tucana-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_e690ac27-f396-4de3-ab27-466176347c54.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "abell-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "title": "Abell - Perfumy Damskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/abell-perfumy-damskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/3_8347c509-593c-4971-ac4b-4df765250f0c.png?v=1770038985&width=200",
+   "offers": []
+  },
+  {
+   "id": "black-eye-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "title": "Black Eye - Perfumy Męskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/black-eye-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_3700862d-d76c-4619-aebb-2a9ba768c729.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "title": "Eye of God - Perfumy Męskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/eye-of-god-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/7_45c80ad7-04d4-425c-a45b-ca658aa79224.png?v=1770038985&width=200",
+   "offers": []
+  },
+  {
+   "id": "perseus-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "title": "Perseus - Perfumy Męskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/perseus-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_78ccea8c-ff24-47d4-9a5e-6b920838f7a8.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "cocoon-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "title": "Cocoon - Perfumy Męskie Sorvella Galaxy EDP, 10 ML",
+   "size_ml": 10,
+   "our_price": 29.9,
+   "url": "https://sorvellaperfume.pl/products/cocoon-perfumy-meskie-sorvella-galaxy-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_ace559ae-c065-4515-94a4-651ff2b2e8c2.png?v=1770038984&width=200",
+   "offers": []
+  },
+  {
+   "id": "cocoon-perfumy-meskie-sorvella-galaxy-50-ml",
+   "title": "Cocoon - Perfumy Męskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/cocoon-perfumy-meskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/29_99d910c1-7f9e-4de4-b845-879ce84f8d5f.png?v=1788944569&width=200",
+   "offers": []
+  },
+  {
+   "id": "perseus-perfumy-meskie-sorvella-galaxy-50-ml",
+   "title": "Perseus - Perfumy Męskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/perseus-perfumy-meskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/27_968b45ba-58b4-4fbd-82ea-2c2335199258.png?v=1788944569&width=200",
+   "offers": []
+  },
+  {
+   "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-50-ml",
+   "title": "Eye of God - Perfumy Męskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/eye-of-god-perfumy-meskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/30_2a8aecb8-661c-4e6c-8825-4e2d0ce58956.png?v=1788944570&width=200",
+   "offers": []
+  },
+  {
+   "id": "black-eye-perfumy-meskie-sorvella-galaxy-50-ml",
+   "title": "Black Eye - Perfumy Męskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/black-eye-perfumy-meskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/28_5be5d144-9213-4c7c-81cf-4595af5f1966.png?v=1788944569&width=200",
+   "offers": []
+  },
+  {
+   "id": "abell-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Abell - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/abell-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/25_e571672b-acdb-41b5-b57c-f56343325a55.png?v=1788944569&width=200",
+   "offers": []
+  },
+  {
+   "id": "tucana-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Tucana - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/tucana-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/24_e8351e30-5a7f-48aa-a28c-096d9da208c8.png?v=1788944570&width=200",
+   "offers": []
+  },
+  {
+   "id": "andromeda-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Andromeda - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/andromeda-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/21_0c9aa8f8-9c69-4904-bffe-6df4689298f3.png?v=1788944570&width=200",
+   "offers": []
+  },
+  {
+   "id": "merger-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Merger - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/merger-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/26.png?v=1788944570&width=200",
+   "offers": []
+  },
+  {
+   "id": "milky-way-perfumy-damskie-sorvella-galaxy-50-ml",
+   "title": "Milky Way - Perfumy Damskie Sorvella Galaxy, 50 ML",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/milky-way-perfumy-damskie-sorvella-galaxy-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/22_0dba3978-7eb5-49d0-91b1-225f7cd73443.png?v=1788944569&width=200",
+   "offers": []
+  },
+  {
+   "id": "s500-van-milion-50-ml-perfumy-meskie-sorvella",
+   "title": "S500 - Van Milion 50 ml Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s500-van-milion-50-ml-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "v237-kwiatowe-perfumy-damskie-sorvella",
+   "title": "V237 - Kwiatowe Perfumy Damskie Sorvella",
+   "size_ml": null,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v237-kwiatowe-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "sun-perfumy-unisex-premium-50-ml",
+   "title": "SUN - Perfumy Unisex Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/sun-perfumy-unisex-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "woodall-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Woodall - Perfumy Unisex Sorvella Mountain EDP, 10 ml",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/woodall-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/40.webp?v=1763717831&width=200",
+   "offers": []
+  },
+  {
+   "id": "granite-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Granite - Perfumy Unisex Sorvella Mountain EDP, 10 ml",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/granite-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/39.webp?v=1763717831&width=200",
+   "offers": []
+  },
+  {
+   "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Sugarloaf - Perfumy Unisex Sorvella Mountain EDP, 10 ml",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/sugarloaf-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/38.webp?v=1763717831&width=200",
+   "offers": []
+  },
+  {
+   "id": "s722-la-nuit-de-l-homme-50-ml-zmyslowe-perfumy-meskie-sorvella",
+   "title": "S722 – La Nuit De L’Homme 50 ml Zmysłowe Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s722-la-nuit-de-l-homme-50-ml-zmyslowe-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "s727-y-for-men-50-ml-swieze-perfumy-meskie-sorvella",
+   "title": "S727 – Y For Men 50 ml Świeże Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s727-y-for-men-50-ml-swieze-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s656-50ml",
+   "title": "S656 - Invictus 50 ml Świeże Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s656-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_b86e5609-b878-407a-9ddc-5723f93e078a.png?v=1793952634&width=200",
+   "offers": []
+  },
+  {
+   "id": "jo-lo-perfumy-damskie-premium-50-ml",
+   "title": "JO LO - Perfumy Damskie Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/jo-lo-perfumy-damskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "shy-perfumy-damskie-premium-50-ml",
+   "title": "SHY - Perfumy Damskie Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/shy-perfumy-damskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "s717-scandal-50-ml-orientalne-perfumy-meskie-sorvella",
+   "title": "S717 - Scandal 50 ml Orientalne Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s717-scandal-50-ml-orientalne-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "peach-perfumy-damskie-premium-50-ml",
+   "title": "PEACH - Perfumy Damskie Premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/peach-perfumy-damskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "mont-verde-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "title": "Mont Verde - Perfumy Unisex Sorvella Mountain EDP, 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/mont-verde-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/41_950d6d7e-0b45-4a0c-a79b-17da62b5c7bf.png?v=1793952433&width=200",
+   "offers": []
+  },
+  {
+   "id": "v622-perfect-elixir-slodkie-perfumy-damskie-sorvella",
+   "title": "V622 - Perfect Elixir Owocowe Perfumy Damskie Sorvella, 50 ML",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v622-perfect-elixir-slodkie-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v618-million-gold-for-her-slodkie-perfumy-damskie-sorvella",
+   "title": "V618 - Million Gold For Her Słodkie Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v618-million-gold-for-her-slodkie-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v225-owocowe-perfumy-damskie-sorvella-50-ml",
+   "title": "V225 - Owocowe Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v225-owocowe-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v22-owocowe-perfumy-damskie-sorvella-50-ml",
+   "title": "V22 - Owocowe Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v22-owocowe-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "s70-drzewne-perfumy-meskie-sorvella-50-ml",
+   "title": "S70 - Drzewne Perfumy Męskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s70-drzewne-perfumy-meskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "s526-korzenne-perfumy-meskie-sorvella-50-ml",
+   "title": "S526 - Korzenne Perfumy Męskie Sorvella, 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s526-korzenne-perfumy-meskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "s612-perfumy-meskie-sorvella-50-ml",
+   "title": "S612 - Perfumy Męskie Sorvella, 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s612-perfumy-meskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "v238-orientalne-perfumy-damskie-sorvella-50-ml",
+   "title": "V238 - Orientalne Perfumy Damskie Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v238-orientalne-perfumy-damskie-sorvella-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "woodall-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "title": "Woodall - Perfumy Unisex Sorvella Mountain EDP, 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/woodall-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/37_038f9000-1ee6-4f15-8b1f-7a059a1517c4.png?v=1793951742&width=200",
+   "offers": []
+  },
+  {
+   "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "title": "Sugarloaf - Perfumy Unisex Sorvella Mountain EDP, 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/sugarloaf-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/36_69ef140f-7b56-4352-ba51-44194a02b5a6.png?v=1793951680&width=200",
+   "offers": []
+  },
+  {
+   "id": "granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "title": "Granite - Perfumy Unisex Sorvella Mountain EDP, 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/35_4ba26dfa-7cd0-4549-828b-55c7063bc97d.png?v=1793951615&width=200",
+   "offers": []
+  },
+  {
+   "id": "blanca-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "title": "Blanca - Perfumy Unisex Sorvella Mountain EDP, 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/blanca-perfumy-unisex-sorvella-mountain-edp-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/40_663f9217-1974-465b-96cd-5426c9bef465.png?v=1793952394&width=200",
+   "offers": []
+  },
+  {
+   "id": "vermont-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Vermont - Perfumy Unisex Sorvella Mountain EDP 10 ML",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/vermont-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094052.584.png?v=1747040575&width=200",
+   "offers": []
+  },
+  {
+   "id": "charles-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Charles - Perfumy Unisex Sorvella Mountain EDP 10 ML",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094045.512.png?v=1747040575&width=200",
+   "offers": []
+  },
+  {
+   "id": "saint-elias-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Saint Elias - Perfumy Unisex Sorvella Mountain EDP 10 ML",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094038.332.png?v=1747040574&width=200",
+   "offers": []
+  },
+  {
+   "id": "marcy-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Marcy - Perfumy Unisex Sorvella Mountain EDP 10 ML",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/marcy-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T093808.417.png?v=1747040574&width=200",
+   "offers": []
+  },
+  {
+   "id": "whitney-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "title": "Whitney - Perfumy Unisex Sorvella Mountain EDP 10 ML",
+   "size_ml": 10,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountain-edp-10-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094059.074.png?v=1747040574&width=200",
+   "offers": []
+  },
+  {
+   "id": "signature-home-gift-set-bergamot-musk",
+   "title": "Signature Home Gift Set Bergamot & Musk",
+   "size_ml": null,
+   "our_price": 149.9,
+   "url": "https://sorvellaperfume.pl/products/signature-home-gift-set-bergamot-musk",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_388bd772-8506-435a-a003-93747bf2a1e3.png?v=1733746908&width=200",
+   "offers": []
+  },
+  {
+   "id": "miss-baccarat-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "title": "Miss Baccarat - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/miss-baccarat-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/8_52b866ca-89a9-4d51-b1fa-05653bee81a5.png?v=1789045601&width=200",
+   "offers": []
+  },
+  {
+   "id": "mountain-discovery-set-5szt-57911711564121",
+   "title": "Mountain Discovery Set (5szt.) Mountain Discovery Set I (5szt.)",
+   "size_ml": null,
+   "our_price": 34.9,
+   "url": "https://sorvellaperfume.pl/products/mountain-discovery-set-5szt",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/sorvella-mountain-collection-discovery-set-packshot-2000x2000.png?v=1788697587&width=200",
+   "offers": []
+  },
+  {
+   "id": "mountain-discovery-set-5szt-57911711596889",
+   "title": "Mountain Discovery Set (5szt.) Mountain Discovery Set II (5szt.)",
+   "size_ml": null,
+   "our_price": 34.9,
+   "url": "https://sorvellaperfume.pl/products/mountain-discovery-set-5szt",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/sorvella-mountain-collection-discovery-set-packshot-2000x2000.png?v=1788697587&width=200",
+   "offers": []
+  },
+  {
+   "id": "tom-perfumy-unisex-premium-50-ml",
+   "title": "TOM - Perfumy Unisex Premium 50 Ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/tom-perfumy-unisex-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "spring-night-premium-zapach-domowy-w-sprayu-200ml",
+   "title": "Spring Night - Zapach Domowy W Sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/spring-night-premium-zapach-domowy-w-sprayu-200ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/67_52b9792c-b6cd-40c3-bbca-10710fd07baf.png?v=1789674283&width=200",
+   "offers": []
+  },
+  {
+   "id": "whitney-perfumy-unisex-sorvella-mountains-edp-100-ml-54121813377369",
+   "title": "Whitney - Perfumy Unisex Sorvella Mountain EDP 100 ML",
+   "size_ml": 100,
+   "our_price": 199.9,
+   "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/29_0f9bd37f-b229-46d9-8cdb-b06900cf9909.png?v=1793951136&width=200",
+   "offers": []
+  },
+  {
+   "id": "whitney-perfumy-unisex-sorvella-mountains-edp-100-ml-54121813410137",
+   "title": "Whitney - Perfumy Unisex Sorvella Mountain EDP 50 ML",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/30_5a1396fa-88b2-4b44-b443-e2bcc60f007b.png?v=1793951149&width=200",
+   "offers": []
+  },
+  {
+   "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810526553",
+   "title": "Saint Elias - Perfumy Unisex Sorvella Mountain EDP 100 ML",
+   "size_ml": 100,
+   "our_price": 199.9,
+   "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/34_1c45a515-8baf-49d6-ba44-5079b1be4633.png?v=1793951386&width=200",
+   "offers": []
+  },
+  {
+   "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810559321",
+   "title": "Saint Elias - Perfumy Unisex Sorvella Mountain EDP 50 ML",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/33_5470817e-34d6-432e-98f5-d1feeebdafcd.png?v=1793951464&width=200",
+   "offers": []
+  },
+  {
+   "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741484377",
+   "title": "Charles - Perfumy Unisex Sorvella Mountain EDP 100 ml",
+   "size_ml": 100,
+   "our_price": 199.9,
+   "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/38_43d7c29c-27bb-4d0a-81e5-afdad9685bcf.png?v=1793951845&width=200",
+   "offers": []
+  },
+  {
+   "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741517145",
+   "title": "Charles - Perfumy Unisex Sorvella Mountain EDP 50 ml",
+   "size_ml": 50,
+   "our_price": 139.9,
+   "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountains-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/39_93475613-8fe5-430a-b6ec-23ea8fe4a572.png?v=1793951818&width=200",
+   "offers": []
+  },
+  {
+   "id": "bonita-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "title": "Bonita - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/bonita-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_189c9af6-01ee-4a67-87bd-f61bd0fcf336.png?v=1789047246&width=200",
+   "offers": []
+  },
+  {
+   "id": "cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "title": "Cosme - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/4_ef82db47-44f4-4c6b-b9f9-901ad6dc9d57.png?v=1789047280&width=200",
+   "offers": []
+  },
+  {
+   "id": "bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "title": "Bella Vista - Mgiełka do ciała i włosów Sorvella Perfume 100 Ml",
+   "size_ml": 100,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_23021081-d580-4ff6-b6b4-f1b630086e2a.png?v=1789047330&width=200",
+   "offers": []
+  },
+  {
+   "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774202986841",
+   "title": "Golden Notes - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/15_cf9c21f6-69df-458c-9c01-b7945b738679.png?v=1788955239&width=200",
+   "offers": []
+  },
+  {
+   "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774203019609",
+   "title": "Golden Notes - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_cf5879f2-7656-4386-a614-f040f42a7d62.png?v=1793949364&width=200",
+   "offers": []
+  },
+  {
+   "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209081689",
+   "title": "Bergamot & Musk - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_dc91eebf-b1bf-4ca7-9a51-1e7ce67c4f9d.png?v=1788952052&width=200",
+   "offers": []
+  },
+  {
+   "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209114457",
+   "title": "Bergamot & Musk - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_024b5c5c-4ea0-49bf-9b4b-b33e957119b0.png?v=1793949439&width=200",
+   "offers": []
+  },
+  {
+   "id": "v608-fame-50-ml-perfumy-damskie-sorvella",
+   "title": "V608 - Fame 50 ML Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v608-fame-50-ml-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v614-dylan-purple-50-ml-slodkie-perfumy-damskie-sorvella",
+   "title": "V614 - Dylan Purple 50 ml Słodkie Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v614-dylan-purple-50-ml-slodkie-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "v602-paradoxe-50-ml-kwiatowe-perfumy-damskie-sorvella",
+   "title": "V602 - Paradoxe 50 ml Kwiatowe Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v602-paradoxe-50-ml-kwiatowe-perfumy-damskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "neroli-citron-perfumy-unisex-sorvella-signature-100-ml-55774222025049",
+   "title": "Neroli & Citron - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/neroli-citron-perfumy-unisex-sorvella-signature-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_a4eb4871-b305-4b93-9560-5035858e4596.png?v=1788955474&width=200",
+   "offers": []
+  },
+  {
+   "id": "neroli-citron-perfumy-unisex-sorvella-signature-100-ml-55774222057817",
+   "title": "Neroli & Citron - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/neroli-citron-perfumy-unisex-sorvella-signature-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/15_395339cb-7dbd-4ce9-9717-b5b136e1c023.png?v=1793950253&width=200",
+   "offers": []
+  },
+  {
+   "id": "vanilia-oud-perfumy-unisex-sorvella-signature-100-ml-55774217371993",
+   "title": "Vanilia & Oud - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/vanilia-oud-perfumy-unisex-sorvella-signature-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/16_d7f70113-a319-4699-9d42-d29baacc4139.png?v=1788955906&width=200",
+   "offers": []
+  },
+  {
+   "id": "vanilia-oud-perfumy-unisex-sorvella-signature-100-ml-55774217404761",
+   "title": "Vanilia & Oud - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/vanilia-oud-perfumy-unisex-sorvella-signature-100-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/16_7e0e0fff-494b-4f2c-a0b9-9e3826746609.png?v=1793950359&width=200",
+   "offers": []
+  },
+  {
+   "id": "s708-phanton-50-ml-eleganckie-perfumy-meskie-sorvella",
+   "title": "S708 - Phanton 50 ml - Eleganckie Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/s708-phanton-50-ml-eleganckie-perfumy-meskie-sorvella",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
    "offers": []
   },
   {
@@ -119,17 +1003,152 @@
    "size_ml": 120,
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/sandalwood-zapach-domowy-premium-120ml",
-   "image": "https://sorvellaperfume.pl/cdn/shop/files/Strona_Packshoty_709_6.png?v=1789649822&width=200",
-   "offers": [
-    {
-     "channel": "allegro",
-     "title": "Sandalwood - Zapach Domowy Sorvella 120ml",
-     "price": 44.9,
-     "url": "https://example.com/allegro/sandalwood-zapach-domowy-premium-120ml",
-     "match": 97,
-     "flag": false
-    }
-   ]
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/Strona_Packshoty_709_6.png?v=1789649822&width=200",
+   "offers": []
+  },
+  {
+   "id": "amber-saffron-55774217929049",
+   "title": "Amber & Saffron - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/amber-saffron",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/18_8c91b203-a850-47a0-ba1b-4341e7854d15.png?v=1788960236&width=200",
+   "offers": []
+  },
+  {
+   "id": "amber-saffron-55774217961817",
+   "title": "Amber & Saffron - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/amber-saffron",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/13_3f8fe228-0085-4f88-ab3e-34c61061adf9.png?v=1793949773&width=200",
+   "offers": []
+  },
+  {
+   "id": "gruszka-wanilia-zapach-do-samochodu",
+   "title": "Gruszka & Wanilia SAMOCHODOWY ODŚWIEŻACZ POWIETRZA",
+   "size_ml": null,
+   "our_price": 24.99,
+   "url": "https://sorvellaperfume.pl/products/gruszka-wanilia-zapach-do-samochodu",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/310fa11b-f2e7-4562-8ccc-789da47d66e5.png?v=1785403774&width=200",
+   "offers": []
+  },
+  {
+   "id": "roza-bergamotka-zapach-do-samochodu",
+   "title": "Róża & Bergamotka SAMOCHODOWY ODŚWIEŻACZ POWIETRZA",
+   "size_ml": null,
+   "our_price": 19.9,
+   "url": "https://sorvellaperfume.pl/products/roza-bergamotka-zapach-do-samochodu",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/8a2b2348-281d-434a-b173-798e21a29976.png?v=1785403774&width=200",
+   "offers": []
+  },
+  {
+   "id": "red-baccarat-premium-zapach-domowy-w-sprayu-200ml",
+   "title": "Red Baccarat - Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/red-baccarat-premium-zapach-domowy-w-sprayu-200ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/68_b3fb02b9-f240-44e0-a045-0c55ba1c2a5d.png?v=1789674095&width=200",
+   "offers": []
+  },
+  {
+   "id": "blue-angele-premium-zapach-domowy-w-spreyu-200ml",
+   "title": "Blue Angel - Zapach domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/blue-angele-premium-zapach-domowy-w-spreyu-200ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/70_c3de954c-e6fd-4142-af32-123cbb518a6c.png?v=1789674638&width=200",
+   "offers": []
+  },
+  {
+   "id": "day-dreaming-premium-zapach-domowy-premium-200ml",
+   "title": "Day Dreaming - Zapach Domowy w sprayu 250ml",
+   "size_ml": 250,
+   "our_price": 39.9,
+   "url": "https://sorvellaperfume.pl/products/day-dreaming-premium-zapach-domowy-premium-200ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/71_61a5a30f-0971-47d6-8a29-53ca26c34e6a.png?v=1789674680&width=200",
+   "offers": []
+  },
+  {
+   "id": "shaffron-cardamom-perfum-unisex-100ml-sorvella-signature-55774219469145",
+   "title": "Cardamon & Saffron - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/shaffron-cardamom-perfum-unisex-100ml-sorvella-signature",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/Strona_Packshoty_709_1.png?v=1788960666&width=200",
+   "offers": []
+  },
+  {
+   "id": "shaffron-cardamom-perfum-unisex-100ml-sorvella-signature-55774219501913",
+   "title": "Cardamon & Saffron - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/shaffron-cardamom-perfum-unisex-100ml-sorvella-signature",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/14_b0b212a0-bcca-470e-ae85-045a524f564b.png?v=1793950309&width=200",
+   "offers": []
+  },
+  {
+   "id": "cashmere-pepper-perfum-100ml-sorvella-signature-55774220419417",
+   "title": "Cashmere & Pepper - Perfumy Unisex Sorvella Signature 100 ML",
+   "size_ml": 100,
+   "our_price": 249.9,
+   "url": "https://sorvellaperfume.pl/products/cashmere-pepper-perfum-100ml-sorvella-signature",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/14_1ec336e0-0402-4953-9273-772230217140.png?v=1789042422&width=200",
+   "offers": []
+  },
+  {
+   "id": "cashmere-pepper-perfum-100ml-sorvella-signature-55774220452185",
+   "title": "Cashmere & Pepper - Perfumy Unisex Sorvella Signature 30 ML",
+   "size_ml": 30,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/cashmere-pepper-perfum-100ml-sorvella-signature",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/10_e437ba55-4e94-4bc3-bc87-e6197558e2b8.png?v=1793948993&width=200",
+   "offers": []
+  },
+  {
+   "id": "spring-night-zapach-domowy-200ml",
+   "title": "Spring Night - Zapach Domowy Sorvella 120 ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/spring-night-zapach-domowy-200ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/60.png?v=1789648241&width=200",
+   "offers": []
+  },
+  {
+   "id": "v522-bulgari-omnia-cristalline",
+   "title": "V522- Omnia Cristalline Perfumy Damskie Sorvella",
+   "size_ml": null,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/v522-bulgari-omnia-cristalline",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "blue-angel-zapach-domowy-120ml",
+   "title": "Blue Angel - Zapach domowy Sorvella 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/blue-angel-zapach-domowy-120ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/58.png?v=1789648406&width=200",
+   "offers": []
+  },
+  {
+   "id": "chry-tom-ford-lost-cherry-sorvella-perfume-niszowy",
+   "title": "CHRY- Perfumy Premium 50ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/chry-tom-ford-lost-cherry-sorvella-perfume-niszowy",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "green-tea-zapachy-domowe-120ml",
+   "title": "Green Tea - Zapach Domowy Sorvella 120 ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/green-tea-zapachy-domowe-120ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/Strona_Packshoty_709_4.png?v=1789648893&width=200",
+   "offers": []
   },
   {
    "id": "zapach-domowy-sorvella-istanbul-120-ml",
@@ -137,17 +1156,179 @@
    "size_ml": 120,
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-istanbul-120-ml",
-   "image": "https://sorvellaperfume.pl/cdn/shop/files/61.png?v=1789649069&width=200",
-   "offers": [
-    {
-     "channel": "allegro",
-     "title": "Istanbul - Zapach Domowy Sorvella - 120 Ml",
-     "price": 52.0,
-     "url": "https://example.com/allegro/zapach-domowy-sorvella-istanbul-120-ml",
-     "match": 100,
-     "flag": false
-    }
-   ]
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/61.png?v=1789649069&width=200",
+   "offers": []
+  },
+  {
+   "id": "zapach-domowy-sorvella-exotic-mango-120-ml",
+   "title": "Exotic Mango - Zapach Domowy Sorvella 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-exotic-mango-120-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/Strona_Packshoty_709_5.png?v=1789649600&width=200",
+   "offers": []
+  },
+  {
+   "id": "zapach-domowy-sorvella-red-baccarat-120-ml",
+   "title": "Red Baccarat - Zapach Domowy Sorvella 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-red-baccarat-120-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/3_ea0ed38c-6173-4863-84da-639099e2808b.png?v=1716212129&width=200",
+   "offers": []
+  },
+  {
+   "id": "zapach-domowy-sorvella-day-dreaming-120-ml",
+   "title": "Day Dreaming - Zapach Domowy Sorvella 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-day-dreaming-120-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/57.png?v=1789649389&width=200",
+   "offers": []
+  },
+  {
+   "id": "zapach-domowy-sorvella-dark-amber-120-ml",
+   "title": "Dark Amber - Zapach Domowy Sorvella  120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-dark-amber-120-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_d2fc5333-314e-4446-8f70-abc01251af3f.png?v=1721310828&width=200",
+   "offers": []
+  },
+  {
+   "id": "zapach-domowy-sorvella-black-vanilla-120-ml",
+   "title": "Black Vanilla - Zapach Domowy Sorvella 120 Ml",
+   "size_ml": 120,
+   "our_price": 49.9,
+   "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-black-vanilla-120-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/62.png?v=1789648547&width=200",
+   "offers": []
+  },
+  {
+   "id": "flr-perfumy-damskie-premium-50-ml",
+   "title": "FLR - Perfumy Damskie premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/flr-perfumy-damskie-premium-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-era-erba-pura",
+   "title": "ERA - Perfumy unisex premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-era-erba-pura",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-baccarat-rouge-50ml",
+   "title": "BCR - Perfumy Premium unisex Sorvella 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-baccarat-rouge-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s627-50ml",
+   "title": "S627 - Bad Boy 50 ml Słodkie Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s627-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-oud-50-ml",
+   "title": "Oud Arabian  - Perfumy unisex premium 50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-oud-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-v208-50-ml",
+   "title": "V208 - Ange ou demon le secret 50 ml Cytrusowe Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-v208-50-ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-mlc2-50ml",
+   "title": "MLC2 - Perfumy damskie premium  50 ml",
+   "size_ml": 50,
+   "our_price": 119.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-mlc2-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_14e14eab-43d4-4eb2-92e1-60daee151332.png?v=1793952926&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s157-50ml",
+   "title": "S157 - Eros 50 ml Świeże Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s157-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s161-50ml",
+   "title": "S161 - Tobacco Vanille 50 ml Korzenne Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s161-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2a2fef8c-4317-4fab-a825-4ba8b0652f72.png?v=1793952843&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-v242-50ml",
+   "title": "V242 - Olympea 50 ml Pudrowe Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-v242-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_85df0c67-b499-4484-9889-e1709dd09885.png?v=1793952766&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s146-50ml",
+   "title": "S146 - Boss Bottled 50 ml Świeże Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s146-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_568ef4e4-cbfc-498d-9956-59c1a2ed2f73.png?v=1793952663&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-s530-50ml",
+   "title": "S530 - Sauvage 50 ml Świeże Perfumy Męskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-s530-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42.png?v=1793952602&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-v251-50ml",
+   "title": "V251 - Good Girl 50 ml Orientalne Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-v251-50ml",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43.png?v=1793952571&width=200",
+   "offers": []
+  },
+  {
+   "id": "sorvella-v227-limperatrice-1",
+   "title": "V227 - L'imperatrice 50 ml Owocowe Perfumy Damskie Sorvella",
+   "size_ml": 50,
+   "our_price": 99.9,
+   "url": "https://sorvellaperfume.pl/products/sorvella-v227-limperatrice-1",
+   "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
+   "offers": []
   }
  ]
 }
