@@ -1,54 +1,18 @@
 {
- "generated_at": "2026-11-09T14:54:46+00:00",
+ "generated_at": "2026-11-10T10:43:23+00:00",
  "demo": false,
  "channels": [
   {
    "id": "allegro",
    "name": "Allegro",
-   "status": "disabled",
-   "note": "ALLEGRO_CLIENT_ID / ALLEGRO_CLIENT_SECRET not set"
-  },
-  {
-   "id": "ceneo",
-   "name": "Ceneo",
-   "status": "unreadable",
-   "note": "results page unreadable (probably rendered with JavaScript)"
-  },
-  {
-   "id": "notino",
-   "name": "Notino",
    "status": "blocked",
    "note": "HTTP 403"
   },
   {
-   "id": "douglas",
-   "name": "Douglas",
-   "status": "error",
-   "note": "HTTPError: 400 Client Error: Bad Request for url: https://www.douglas.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
-  },
-  {
-   "id": "sephora",
-   "name": "Sephora",
-   "status": "error",
-   "note": "HTTPError: 404 Client Error: Not Found for url: https://www.sephora.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
-  },
-  {
-   "id": "rossmann",
-   "name": "Rossmann",
+   "id": "ceneo",
+   "name": "Ceneo",
    "status": "partial",
-   "note": "time budget reached after 19/142 products"
-  },
-  {
-   "id": "hebe",
-   "name": "Hebe",
-   "status": "unreadable",
-   "note": "results page unreadable (probably rendered with JavaScript)"
-  },
-  {
-   "id": "superpharm",
-   "name": "Super-Pharm",
-   "status": "error",
-   "note": "HTTPError: 404 Client Error: Not Found for url: https://www.superpharm.pl/search?q=sorvella+pistacja+bia%C5%82a+herbata+w+sprayu+250ml"
+   "note": "bot check: sorvella istanbul 120ml - ceneo.pl"
   }
  ],
  "products": [
@@ -149,7 +113,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/pear-musk-perfumy-unisex-sorvella-copy",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/18_e322487f-7ef3-4a60-8a93-bbfe8a4b42d6.png?v=1793950766&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Sorvella Signature Pear & Musk Perfumy 30ml",
+     "price": 90,
+     "url": "https://www.ceneo.pl/202457488",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "tobacco-honey-perfumy-unisex-sorvella",
@@ -167,7 +140,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/crd-perfumy-unisex-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Crd Woda Perfumowana 50 ml",
+     "price": 79,
+     "url": "https://www.ceneo.pl/157540571",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "solar-flare-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml-copy",
@@ -230,7 +212,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/leonis-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/8_b27883ef-530d-46af-a013-398710f7ae7f.png?v=1770038985&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Leonis Woda Perfumowana 10ml",
+     "price": 22.99,
+     "url": "https://www.ceneo.pl/197331024",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "leonis-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -239,7 +230,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/leonis-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/23_cc01f2c7-30f7-4f9c-9c85-c0a11a02db35.png?v=1788944568&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Leonis Woda Perfumowana 50ml",
+     "price": 83.99,
+     "url": "https://www.ceneo.pl/197331000",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sun-kisses-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
@@ -275,7 +275,16 @@
    "our_price": 169.9,
    "url": "https://sorvellaperfume.pl/products/orcd-tom-ford-black-orchid-sorvella",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Orcd Woda Perfumowana 50Ml",
+     "price": 35,
+     "url": "https://www.ceneo.pl/142160255",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sorvella-s18-50ml",
@@ -302,7 +311,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/jazz-perfumy-meskie-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "SORVELLA PREMIUM JAZZ 50ML WODA PERFUMOWANA UNISEX PERFUMY DAMSKIE MĘSKIE",
+     "price": 79.99,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=FPVCNBxIJpie2YU_XJEe3IdaHr8RR_CXRYOFaKhjMLQXFHmPXsCIxMJWBI2k3K3adC5eP3dFPFh1Yn39wsOcsAcCZ3ecKajYq_r2xwkj0E-7ShOCRIyFYfqCd4FwK5g9izZG4z3wZ_xMMZKWQ4zgNURcZzo4r-y1z2A671y5m2_jfX-q_ougZMUiFxUU3Cu5_hqXjNpOJUylUEzCWQUN3e2BRyYzrPIJARSBeMb0GFunI3cTvAcfqvckCBbar4zjQp11veUJ1T3haJm1CKncDaCIskGuVTKuLbnjMQ_3Z2eC_DwPrQliiRvVJylsOB-mhOf1lp1hoaMwIB3RUKwDTSZ5PV7hvxNucCrdvRytynnp63E7YQsf83H9znAGRc69W5VAEOgglFZ32gLso2TWLlI3rT5cx3JdNLy-WbKCFLmyiNwj537hqMUJL0ySH0Yh9aWPTzjDT2phJB0YNQ1lHwMx-TPAXlvnKc-Qfr2j1lpMQU2gjJY2gvQRPqc9cZBu7IZKQSFXoHE=&ctx=CgsI4IzIwJbI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRjNzdhNmIxYy1kY2YyLTExZjEtOWNhYi05YzNmOTdhNjRhZjE=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "mine-perfumy-meskie-premium-50-ml",
@@ -311,7 +329,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/mine-perfumy-meskie-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "SORVELLA PREMIUM MINE 50ML WODA PERFUMOWANA UNISEX PERFUMY DAMSKIE MĘSKIE",
+     "price": 79.99,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=wzjoEVBZag2e2YU_XJEe3IdaHr8RR_CXRYOFaKhjMLQXFHmPXsCIxMJWBI2k3K3a-_pR4LnRp_x1Yn39wsOcsAcCZ3ecKajYq_r2xwkj0E-7ShOCRIyFYfqCd4FwK5g9izZG4z3wZ_xMMZKWQ4zgNURcZzo4r-y1-r_ZgXzXUaSfCWj5r1teusUiFxUU3Cu5_hqXjNpOJUylUEzCWQUN3e2BRyYzrPIJARSBeMb0GFunI3cTvAcfqvckCBbar4zjQp11veUJ1T3haJm1CKncDQGg-5nyQMULLbnjMQ_3Z2eC_DwPrQliiRvVJylsOB-mhOf1lp1hoaMwIB3RUKwDTSZ5PV7hvxNucCrdvRytynnp63E7YQsf86-aXB4oGX8sW5VAEOgglFZ32gLso2TWLlI3rT5cx3JdNLy-WbKCFLmyiNwj537hqMUJL0ySH0Yh9aWPTzjDT2pCJDOyWEbjQhL8DtvnNtyoKc-Qfr2j1lpMQU2gjJY2gvQRPqc9cZBu7IZKQSFXoHE=&ctx=CgsIhPrQ3JbI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRjOTM3ZTA4NS1kY2YyLTExZjEtODUyMC1kOGI2ZTcxYmQ1OTU=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "milky-way-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -320,7 +347,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/milky-way-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/10_73901c82-2f94-4e33-af8e-16aa71f193a6.png?v=1770038985&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Milky Way Woda Perfumowana 10ml",
+     "price": 22.99,
+     "url": "https://www.ceneo.pl/197331037",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "merger-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -329,7 +365,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/merger-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/9_0b244fb5-fafb-4a9e-9b91-75634a0aafd8.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Merger Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331058",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "andromeda-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -338,7 +383,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/andromeda-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/4_9857aafe-4f5a-436d-803a-deb28c97170d.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Galaxy Collection Andromeda Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331074",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "tucana-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -347,7 +401,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/tucana-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_e690ac27-f396-4de3-ab27-466176347c54.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Tucana Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331040",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "abell-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -356,7 +419,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/abell-perfumy-damskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/3_8347c509-593c-4971-ac4b-4df765250f0c.png?v=1770038985&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Abell Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=JBxiFAVSnJ9zL7LX731tPa86wrCHVzRQW1TfHA-YilaOGJNebrXkh8Ojoc9pX30zUYAnXxJa7OHl4t4kUToDHutOU-LTfkHZzzn_pnTDDpkAH5cdcBDQvznkoYLv8nnETOHZ8_ZQLZqgZFJufWbCxo7ZDIo-fy0yhvaMnYOQVodhsOv8f90hZ8CnzSpivl4bpVBMwlkFDd2lUEzCWQUN3Q7q8m3sgx-Ahh3QM0f2Y8ClUEzCWQUN3aVQTMJZBQ3dAM9wa677_5Ht0QE5fF9QSdY7RLkaHTJf0ZP8dYBHM74F6Ut1EsKxsYu9wkFxPlD5np7VKQazst_NkLvxcXNiBKNKcelBvpp1RevmBZUajWCHpDsTtWHCVqVQTMJZBQ3dP8fhmNswdm0=&ctx=CgsIlJ6L45fI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRkMWFmNGUzZC1kY2YyLTExZjEtYmQ4ZS04N2FjZmY5OWRjY2U=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "black-eye-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -365,7 +437,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/black-eye-perfumy-meskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_3700862d-d76c-4619-aebb-2a9ba768c729.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Black Eye Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331082",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -383,7 +464,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/perseus-perfumy-meskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_78ccea8c-ff24-47d4-9a5e-6b920838f7a8.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Perseus Woda Perfumowana 10ml",
+     "price": 22,
+     "url": "https://www.ceneo.pl/197331078",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "cocoon-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -392,7 +482,16 @@
    "our_price": 29.9,
    "url": "https://sorvellaperfume.pl/products/cocoon-perfumy-meskie-sorvella-galaxy-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_ace559ae-c065-4515-94a4-651ff2b2e8c2.png?v=1770038984&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Cocoon Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=aTZhYs-JvDZzL7LX731tPa86wrCHVzRQW1TfHA-YilaOGJNebrXkh8Ojoc9pX30zUYAnXxJa7OGVJjxrG3qsQZnXu-vpCvlwTtpFaARMFeYAxdhRZuZo38KLn26-QFa9OV0wwDmSPZ7fujLrjjjMvwbPo0hkAalLO5HwHoNr3HhEpdXOvlOJBLbfCxtutxebZS_R-Own5BelUEzCWQUN3aVQTMJZBQ3dEDhq7iTphRr5ubOyFrSrCqVQTMJZBQ3dw0_rruOqTEo-cRML2JU2PyHy_7Wxn4-li-jB3NwKNGfzQjK_cvnMSLn9ZiAek3WqnBu-gbCaNAYZC9LIihPq-jSpMCJE1HHsaJ2jSk4i7c0YyxSYCTQB0qVQTMJZBQ3d777bhnXTXn8=&ctx=CgsIuteHz5jI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRkODZlZWMzYi1kY2YyLTExZjEtYmIyYy1hODQyNmE1YmMzNTM=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "cocoon-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -401,7 +500,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/cocoon-perfumy-meskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/29_99d910c1-7f9e-4de4-b845-879ce84f8d5f.png?v=1788944569&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Cocoon Woda Perfumowana 50ml",
+     "price": 81.92,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=R2KkNfNmwnNMX8_XN2en6OtT6lW7EMUb7jCjzBr8nJqOGJNebrXkh9U5y_JikWRJb5cR07xbrTrd3LoRHJgKCzzmMFnfeSbreaEDP3JO0sTQF08JHxS9cXlogQAhnhFNbYIoGzpfgv5FDiB_j6avpMNCO8yjTHvYNy5XaysHju8UNdR0PaHeBz8PIpalIfzQqL0c2dFj43i5x_QBnQsIOkRcZzo4r-y1UZw4Q4pK9Bdpc3nLAK64JcUiFxUU3Cu5_hqXjNpOJUylUEzCWQUN3e2BRyYzrPIJARSBeMb0GFulUEzCWQUN3aVQTMJZBQ3dSsiacTYCJ4OLSgr50aCYjiAni3Cdzc5R1jtEuRodMl9i4b3200PftUSCHfLeIs2jMHJI31ya7xDhg36eZL9tMB6CWPikzYd5AuGXPZ95qAauPD0QVy828qVQTMJZBQ3dE_tJwSJpVoo=&ctx=CgsInJn56ZjI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRkYTFkMGQ2Ny1kY2YyLTExZjEtYTc0ZC1iNzA0MTU2MDZmNjU=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "perseus-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -410,7 +518,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/perseus-perfumy-meskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/27_968b45ba-58b4-4fbd-82ea-2c2335199258.png?v=1788944569&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Perseus Woda Perfumowana 50ml",
+     "price": 83.99,
+     "url": "https://www.ceneo.pl/197331073",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -419,7 +536,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/eye-of-god-perfumy-meskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/30_2a8aecb8-661c-4e6c-8825-4e2d0ce58956.png?v=1788944570&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Galaxy Collection Eye Of The God Woda perfumowana 50ml",
+     "price": 94,
+     "url": "https://www.ceneo.pl/200884660",
+     "match": 88,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "black-eye-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -428,7 +554,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/black-eye-perfumy-meskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/28_5be5d144-9213-4c7c-81cf-4595af5f1966.png?v=1788944569&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Black Eye Woda Perfumowana 50ml",
+     "price": 84.92,
+     "url": "https://www.ceneo.pl/197331100",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "abell-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -437,7 +572,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/abell-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/25_e571672b-acdb-41b5-b57c-f56343325a55.png?v=1788944569&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Abell Woda Perfumowana 50ml",
+     "price": 84.92,
+     "url": "https://www.ceneo.pl/197331063",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "tucana-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -446,7 +590,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/tucana-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/24_e8351e30-5a7f-48aa-a28c-096d9da208c8.png?v=1788944570&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Tucana Woda Perfumowana 50ml",
+     "price": 84.99,
+     "url": "https://www.ceneo.pl/197331034",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "andromeda-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -455,7 +608,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/andromeda-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/21_0c9aa8f8-9c69-4904-bffe-6df4689298f3.png?v=1788944570&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Galaxy Collection Andromeda Woda Perfumowana 50ml",
+     "price": 88,
+     "url": "https://www.ceneo.pl/195484560",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "merger-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -464,7 +626,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/merger-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/26.png?v=1788944570&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Merger Woda Perfumowana 50ml",
+     "price": 84.99,
+     "url": "https://www.ceneo.pl/197331013",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "milky-way-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -473,7 +644,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/milky-way-perfumy-damskie-sorvella-galaxy-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/22_0dba3978-7eb5-49d0-91b1-225f7cd73443.png?v=1788944569&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Milky Way Woda Perfumowana 50ml",
+     "price": 88.2,
+     "url": "https://www.ceneo.pl/197331027",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "s500-van-milion-50-ml-perfumy-meskie-sorvella",
@@ -500,7 +680,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/sun-perfumy-unisex-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "SORVELLA PREMIUM SUN 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+     "price": 84.99,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=06pmbUlr_U-e2YU_XJEe3IdaHr8RR_CXRYOFaKhjMLQXFHmPXsCIxMJWBI2k3K3aMd5IQHjKc1ZQb2ncaxTzKU7aRWgETBXmVMRNAin_pKSeo5vszWijii3XzxQKzv60aIOI7f-KZoH1X5ZKvkEsZTMmPaPeCciGgXRDzNNP_Ua6G5jJGfNuyaVQTMJZBQ3dpVBMwlkFDd3Ufz4CkTh1vOilz7IBjejD8bqpF6U10HVuXrsybcgRPXNlP0RflZ2rigdsFQXvxsd94GiVsC5GrClMfOR_vz4_7dyOW_H_mZwT9NnMw9m6VpMhw3TrdUTiFs234tPFTXM8dUHg_pQMTjZTO_vzx8FP2-5DrYh1HC2EwK8E7UvNy-3RATl8X1BJ1jtEuRodMl_Rk_x1gEczvgXpS3USwrGxi73CQXE-UPmentUpBrOy33BmsQofroVqKc-Qfr2j1lpMQU2gjJY2gvQRPqc9cZBu7IZKQSFXoHE=&ctx=CgsI1PC-kZvI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiRlYzg3YTBiNi1kY2YyLTExZjEtYjZlMC0zMWJjYTNjOGVhMzc=&a=2",
+     "match": 88,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "woodall-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -509,7 +698,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/woodall-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/40.webp?v=1763717831&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Woodall Woda Perfumowana 10ml",
+     "price": 26.09,
+     "url": "https://www.ceneo.pl/197552248",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "granite-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -518,7 +716,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/granite-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/39.webp?v=1763717831&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Granite Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331065",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -527,7 +734,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/sugarloaf-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/38.webp?v=1763717831&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Sugarloaf Woda Perfumowana 10ml",
+     "price": 26.2,
+     "url": "https://www.ceneo.pl/197456174",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "s722-la-nuit-de-l-homme-50-ml-zmyslowe-perfumy-meskie-sorvella",
@@ -563,7 +779,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/jo-lo-perfumy-damskie-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Premium Jo Lo Woda Perfumowana 50ml",
+     "price": 60,
+     "url": "https://www.ceneo.pl/188946860",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "shy-perfumy-damskie-premium-50-ml",
@@ -572,7 +797,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/shy-perfumy-damskie-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Premium Shy Woda Perfumowana 50ml",
+     "price": 58,
+     "url": "https://www.ceneo.pl/188946873",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "s717-scandal-50-ml-orientalne-perfumy-meskie-sorvella",
@@ -590,7 +824,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/peach-perfumy-damskie-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Sorevlla Premium Peach Woda Perfumowana 50ml",
+     "price": 79,
+     "url": "https://www.ceneo.pl/188849037",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "mont-verde-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -599,7 +842,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/mont-verde-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/41_950d6d7e-0b45-4a0c-a79b-17da62b5c7bf.png?v=1793952433&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Mont Verde Woda Perfumowana 50ml",
+     "price": 122,
+     "url": "https://www.ceneo.pl/197331022",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "v622-perfect-elixir-slodkie-perfumy-damskie-sorvella",
@@ -680,7 +932,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/woodall-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/37_038f9000-1ee6-4f15-8b1f-7a059a1517c4.png?v=1793951742&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Woodall Woda Perfumowana 50ml",
+     "price": 84.9,
+     "url": "https://www.ceneo.pl/190146032",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -689,7 +950,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/sugarloaf-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/36_69ef140f-7b56-4352-ba51-44194a02b5a6.png?v=1793951680&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Sugarloaf Woda Perfumowana 50ml",
+     "price": 85.8,
+     "url": "https://www.ceneo.pl/188849068",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -698,7 +968,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/35_4ba26dfa-7cd0-4549-828b-55c7063bc97d.png?v=1793951615&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Granite Woda Perfumowana 50ml",
+     "price": 109,
+     "url": "https://www.ceneo.pl/197331035",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "blanca-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -707,7 +986,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/blanca-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/40_663f9217-1974-465b-96cd-5426c9bef465.png?v=1793952394&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Blanca Woda Perfumowana 50ml",
+     "price": 75,
+     "url": "https://www.ceneo.pl/188849088",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "vermont-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -716,7 +1004,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/vermont-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094052.584.png?v=1747040575&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Vermont Woda Perfumowana 10ml",
+     "price": 60.15,
+     "url": "https://www.ceneo.pl/190145994",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "charles-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -725,7 +1022,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094045.512.png?v=1747040575&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Charles Woda Perfumowana 10ml",
+     "price": 24.99,
+     "url": "https://www.ceneo.pl/190146006",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -734,7 +1040,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094038.332.png?v=1747040574&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Saint Elias Woda Perfumowana 10ml",
+     "price": 18.99,
+     "url": "https://www.ceneo.pl/197331011",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "marcy-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -743,7 +1058,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/marcy-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T093808.417.png?v=1747040574&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Marcy Woda Perfumowana 10ml",
+     "price": 60.15,
+     "url": "https://www.ceneo.pl/190146020",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "whitney-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -752,7 +1076,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountain-edp-10-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094059.074.png?v=1747040574&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Whitney Woda Perfumowana 10ml",
+     "price": 27,
+     "url": "https://www.ceneo.pl/190146039",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "signature-home-gift-set-bergamot-musk",
@@ -770,7 +1103,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/miss-baccarat-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/8_52b866ca-89a9-4d51-b1fa-05653bee81a5.png?v=1789045601&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Body & Hair Mist Miss Baccarat Mgiełka Do Ciała I Włosów 100ml",
+     "price": 20.89,
+     "url": "https://www.ceneo.pl/178094222",
+     "match": 82,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "mountain-discovery-set-5szt-57911711564121",
@@ -797,7 +1139,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/tom-perfumy-unisex-premium-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Premium Tom Woda Perfumowana 50ml",
+     "price": 56.9,
+     "url": "https://www.ceneo.pl/179201007",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "spring-night-premium-zapach-domowy-w-sprayu-200ml",
@@ -806,7 +1157,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/spring-night-premium-zapach-domowy-w-sprayu-200ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/67_52b9792c-b6cd-40c3-bbca-10710fd07baf.png?v=1789674283&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Premium Zapach Domowy W Sprayu Spring Night 250ml",
+     "price": 28.89,
+     "url": "https://www.ceneo.pl/178350937",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "whitney-perfumy-unisex-sorvella-mountains-edp-100-ml-54121813377369",
@@ -815,7 +1175,16 @@
    "our_price": 199.9,
    "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/29_0f9bd37f-b229-46d9-8cdb-b06900cf9909.png?v=1793951136&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Whitney Woda Perfumowana Spray 100Ml",
+     "price": 130.79,
+     "url": "https://www.ceneo.pl/171006504",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "whitney-perfumy-unisex-sorvella-mountains-edp-100-ml-54121813410137",
@@ -824,7 +1193,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/whitney-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/30_5a1396fa-88b2-4b44-b443-e2bcc60f007b.png?v=1793951149&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Whitney Woda Perfumowana 50ml",
+     "price": 109,
+     "url": "https://www.ceneo.pl/185179582",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810526553",
@@ -833,7 +1211,16 @@
    "our_price": 199.9,
    "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/34_1c45a515-8baf-49d6-ba44-5079b1be4633.png?v=1793951386&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Mountain Saint Elias Woda Perfumowana Unisex 100ml",
+     "price": 141.99,
+     "url": "https://www.ceneo.pl/171006432",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810559321",
@@ -842,7 +1229,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/33_5470817e-34d6-432e-98f5-d1feeebdafcd.png?v=1793951464&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Saint Elias Woda Perfumowana 50ml",
+     "price": 111,
+     "url": "https://www.ceneo.pl/185179654",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741484377",
@@ -851,7 +1247,16 @@
    "our_price": 199.9,
    "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/38_43d7c29c-27bb-4d0a-81e5-afdad9685bcf.png?v=1793951845&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Mountain Charles Woda Perfumowana Unisex 100ml",
+     "price": 189.98,
+     "url": "https://www.ceneo.pl/171006413",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741517145",
@@ -860,7 +1265,16 @@
    "our_price": 139.9,
    "url": "https://sorvellaperfume.pl/products/charles-perfumy-unisex-sorvella-mountains-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/39_93475613-8fe5-430a-b6ec-23ea8fe4a572.png?v=1793951818&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Mountain Charles Woda Perfumowana 50ml",
+     "price": 109.9,
+     "url": "https://www.ceneo.pl/185179573",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "bonita-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -869,7 +1283,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/bonita-mgielka-do-ciala-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_189c9af6-01ee-4a67-87bd-f61bd0fcf336.png?v=1789047246&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Bonita Mgiełka Do Ciała I Włosów 100ml",
+     "price": 24.97,
+     "url": "https://www.ceneo.pl/171120005",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -878,7 +1301,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/4_ef82db47-44f4-4c6b-b9f9-901ad6dc9d57.png?v=1789047280&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Cosme Mgiełka Do Ciała I Włosów 100ml",
+     "price": 26.9,
+     "url": "https://www.ceneo.pl/171120059",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -887,7 +1319,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_23021081-d580-4ff6-b6b4-f1b630086e2a.png?v=1789047330&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Bella Vista Mgiełka Do Ciała I Włosów 100ml",
+     "price": 27.9,
+     "url": "https://www.ceneo.pl/171119961",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774202986841",
@@ -896,7 +1337,16 @@
    "our_price": 249.9,
    "url": "https://sorvellaperfume.pl/products/golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/15_cf9c21f6-69df-458c-9c01-b7945b738679.png?v=1788955239&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Golden Notes Woda Perfumowana 100ml",
+     "price": 172.99,
+     "url": "https://www.ceneo.pl/174938297",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774203019609",
@@ -905,7 +1355,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_cf5879f2-7656-4386-a614-f040f42a7d62.png?v=1793949364&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Golden Notes Parfum Perfumy 30ml",
+     "price": 85.49,
+     "url": "https://www.ceneo.pl/188946918",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209081689",
@@ -914,7 +1373,16 @@
    "our_price": 249.9,
    "url": "https://sorvellaperfume.pl/products/bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_dc91eebf-b1bf-4ca7-9a51-1e7ce67c4f9d.png?v=1788952052&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Bergamot & Musk Perfumy Damskie 100ml Sorvella Signature",
+     "price": 151.68,
+     "url": "https://www.ceneo.pl/159140400",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209114457",
@@ -923,7 +1391,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_024b5c5c-4ea0-49bf-9b4b-b33e957119b0.png?v=1793949439&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Bergamot Musk Parfum Perfumy 30ml",
+     "price": 68.7,
+     "url": "https://www.ceneo.pl/188946859",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "v608-fame-50-ml-perfumy-damskie-sorvella",
@@ -959,7 +1436,16 @@
    "our_price": 249.9,
    "url": "https://sorvellaperfume.pl/products/neroli-citron-perfumy-unisex-sorvella-signature-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_a4eb4871-b305-4b93-9560-5035858e4596.png?v=1788955474&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Signature Neroli & Citron Woda Perfumowana 100ml",
+     "price": 120,
+     "url": "https://www.ceneo.pl/159140416",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "neroli-citron-perfumy-unisex-sorvella-signature-100-ml-55774222057817",
@@ -968,7 +1454,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/neroli-citron-perfumy-unisex-sorvella-signature-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/15_395339cb-7dbd-4ce9-9717-b5b136e1c023.png?v=1793950253&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Neroli Citron Perfumy 30ml",
+     "price": 68.7,
+     "url": "https://www.ceneo.pl/188849009",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "vanilia-oud-perfumy-unisex-sorvella-signature-100-ml-55774217371993",
@@ -1013,7 +1508,16 @@
    "our_price": 249.9,
    "url": "https://sorvellaperfume.pl/products/amber-saffron",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/18_8c91b203-a850-47a0-ba1b-4341e7854d15.png?v=1788960236&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Amber & Saffron Sorvella Signature Woda Perfumowana 100ml",
+     "price": 166.5,
+     "url": "https://www.ceneo.pl/158321876",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "amber-saffron-55774217961817",
@@ -1022,7 +1526,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/amber-saffron",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/13_3f8fe228-0085-4f88-ab3e-34c61061adf9.png?v=1793949773&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Amber Saffron Parfum Perfumy 30ml",
+     "price": 85.49,
+     "url": "https://www.ceneo.pl/188946909",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "gruszka-wanilia-zapach-do-samochodu",
@@ -1058,7 +1571,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/blue-angele-premium-zapach-domowy-w-spreyu-200ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/70_c3de954c-e6fd-4142-af32-123cbb518a6c.png?v=1789674638&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "SORVELLA PERFUME Home Spray Blue Angel 250ml",
+     "price": 34.6,
+     "url": "https://www.ceneo.pl/188856329",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "day-dreaming-premium-zapach-domowy-premium-200ml",
@@ -1067,7 +1589,16 @@
    "our_price": 39.9,
    "url": "https://sorvellaperfume.pl/products/day-dreaming-premium-zapach-domowy-premium-200ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/71_61a5a30f-0971-47d6-8a29-53ca26c34e6a.png?v=1789674680&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Home Air Spray Day Dreaming 250ml Zapach Do Domu Do Pomieszczeń",
+     "price": 34.6,
+     "url": "https://www.ceneo.pl/178404740",
+     "match": 82,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "shaffron-cardamom-perfum-unisex-100ml-sorvella-signature-55774219469145",
@@ -1094,7 +1625,16 @@
    "our_price": 249.9,
    "url": "https://sorvellaperfume.pl/products/cashmere-pepper-perfum-100ml-sorvella-signature",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/14_1ec336e0-0402-4953-9273-772230217140.png?v=1789042422&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Cashmere Pepper Woda Perfumowana 100ml",
+     "price": 144.99,
+     "url": "https://www.ceneo.pl/150729564",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "cashmere-pepper-perfum-100ml-sorvella-signature-55774220452185",
@@ -1103,7 +1643,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/cashmere-pepper-perfum-100ml-sorvella-signature",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/10_e437ba55-4e94-4bc3-bc87-e6197558e2b8.png?v=1793948993&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Signature Cashmere & Pepper Woda Perfumowana 30ml",
+     "price": 68.7,
+     "url": "https://www.ceneo.pl/Click/Offer/?e=tw73SbKjYpHbCm4WLhuEtxCBlI1jOhyS_W_5kwybbTp0DbZGl_U-km9jJIx8ttujy6iLpQf9qP8HAmd3nCmo2HYKfTo-liyFocjbuHTfbmaiocYcPRESCEJ-VDQD1v7oBs-jSGQBqUs7kfAeg2vceGI5Nz8wr-Rdtt8LG263F5tlL9H47CfkF6VQTMJZBQ3dpVBMwlkFDd0QOGruJOmFGttr2yPn8odyPx2WyGtFnzr5QB80wLV63rDdkL3eFHu6QlPDV04DlioIyDfIacg_fEkYMiHXWja2jndHt1r4QHVvJKUyTxFhNPxDTIhIY4dBbVcIlQJmt0YQdz2DfGgjKnm9jHaeNI-HFDGD9zyLPiC36JMK0GsXbq8of9mIlCtX52PT908vSs40vL5ZsoIUuTsUN5PpOwl0AC8WVYkUBmyOGJNebrXkh5xg87eD7pEFVsaPSVUMaxdyOyqCc5Fw2wLhlz2feagGrjw9EFcvNvKlUEzCWQUN3RP7ScEiaVaK&ctx=CgsIuIvB0anI3z8QBRIkOWEzYTJmNGMtZGNmMi0xMWYxLWFjYzQtMWQ3OTdiNmY0YWRjGiQ2MDk1OWEzOC1kY2YzLTExZjEtYjhkYS1iNDhiYzNkZjI4MGE=&a=2",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "spring-night-zapach-domowy-200ml",
@@ -1112,7 +1661,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/spring-night-zapach-domowy-200ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/60.png?v=1789648241&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Spring Night Patyczki Zapachowe 120Ml",
+     "price": 26.9,
+     "url": "https://www.ceneo.pl/164736642",
+     "match": 88,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "v522-bulgari-omnia-cristalline",
@@ -1121,7 +1679,16 @@
    "our_price": 99.9,
    "url": "https://sorvellaperfume.pl/products/v522-bulgari-omnia-cristalline",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella V522 Omnia Cristalline Woda Perfumowana 50 ml",
+     "price": 54.99,
+     "url": "https://www.ceneo.pl/162197646",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "blue-angel-zapach-domowy-120ml",
@@ -1139,7 +1706,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/chry-tom-ford-lost-cherry-sorvella-perfume-niszowy",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Chry Woda Perfumowana 50Ml",
+     "price": 47.9,
+     "url": "https://www.ceneo.pl/142160252",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "green-tea-zapachy-domowe-120ml",
@@ -1166,7 +1742,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-exotic-mango-120-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/Strona_Packshoty_709_5.png?v=1789649600&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Dyfuzor Zapachowy Z Patyczkami Exotic Mango 120Ml 150420",
+     "price": 38.9,
+     "url": "https://www.ceneo.pl/150514528",
+     "match": 88,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "zapach-domowy-sorvella-red-baccarat-120-ml",
@@ -1175,7 +1760,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-red-baccarat-120-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/3_ea0ed38c-6173-4863-84da-639099e2808b.png?v=1716212129&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Red Baccarat Dyfuzor Zapachowy 120ml",
+     "price": 32,
+     "url": "https://www.ceneo.pl/178247226",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "zapach-domowy-sorvella-day-dreaming-120-ml",
@@ -1184,7 +1778,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-day-dreaming-120-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/57.png?v=1789649389&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Day Dreaming Dyfuzor Zapachowy 120Ml",
+     "price": 31.98,
+     "url": "https://www.ceneo.pl/183802422",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "zapach-domowy-sorvella-dark-amber-120-ml",
@@ -1193,7 +1796,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-dark-amber-120-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/6_d2fc5333-314e-4446-8f70-abc01251af3f.png?v=1721310828&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Dark Amber Dyfuzor Zapachowy 120Ml",
+     "price": 48,
+     "url": "https://www.ceneo.pl/183802424",
+     "match": 94,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "zapach-domowy-sorvella-black-vanilla-120-ml",
@@ -1202,7 +1814,16 @@
    "our_price": 49.9,
    "url": "https://sorvellaperfume.pl/products/zapach-domowy-sorvella-black-vanilla-120-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/62.png?v=1789648547&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Dyfuzor Zapachowy Czarna Wanilia Black Vanilla 120Ml 618190",
+     "price": 33.4,
+     "url": "https://www.ceneo.pl/123262299",
+     "match": 82,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "flr-perfumy-damskie-premium-50-ml",
@@ -1220,7 +1841,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/sorvella-era-erba-pura",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Era Woda Perfumowana 50ml",
+     "price": 71.25,
+     "url": "https://www.ceneo.pl/116327182",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sorvella-baccarat-rouge-50ml",
@@ -1229,7 +1859,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/sorvella-baccarat-rouge-50ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Perfume Bcr Woda Perfumowana 50 ml",
+     "price": 79.99,
+     "url": "https://www.ceneo.pl/124090000",
+     "match": 100,
+     "flag": false
+    }
+   ]
   },
   {
    "id": "sorvella-s627-50ml",
@@ -1247,7 +1886,16 @@
    "our_price": 119.9,
    "url": "https://sorvellaperfume.pl/products/sorvella-oud-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
-   "offers": []
+   "offers": [
+    {
+     "channel": "ceneo",
+     "title": "Sorvella Oud Inspirowane Ressala Arabian Oud Woda Perfumowana 50ml",
+     "price": 55,
+     "url": "https://www.ceneo.pl/107744120",
+     "match": 88,
+     "flag": true
+    }
+   ]
   },
   {
    "id": "sorvella-v208-50-ml",
