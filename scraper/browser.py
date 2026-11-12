@@ -1,5 +1,6 @@
 """Browser-based scraper (Playwright). Run: python -m scraper.browser"""
 import os
+import re
 import time
 from pathlib import Path
 from urllib.parse import quote_plus
@@ -12,9 +13,27 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 EXTRACT_JS = (Path(__file__).parent / "extract.js").read_text(encoding="utf-8")
 
 BOT_WORDS = ("captcha", "access denied", "just a moment", "attention required", "are you a robot")
+TOTAL_RE = re.compile(r"(\d+)\s*(?:products|produkt\w*)|(?:liczba produkt\w*|number of products)\s*:?\s*(\d+)", re.I)
+DIAG_JS = r"""() => {
+  const out = [], w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  let n;
+  while ((n = w.nextNode()) && out.length < 2) {
+    if (!/sorvella/i.test(n.nodeValue) || !n.parentElement.offsetParent) continue;
+    let card = n.parentElement;
+    for (let i = 0; i < 8 && card && !/\d/.test((card.innerText || '').replace(/sorvella/ig, '')); i++) card = card.parentElement;
+    for (let i = 0; i < 3 && card && card.parentElement && (card.innerText || '').length < 120; i++) card = card.parentElement;
+    out.push({text: n.nodeValue.trim().slice(0, 60), card_text: card ? card.innerText.replace(/\s+/g, ' ').slice(0, 200) : null,
+              card_html: card ? card.outerHTML.replace(/\s+/g, ' ').slice(0, 800) : null});
+  }
+  return out;
+}"""
+MORE_BUTTONS = ("button:has-text('Pokaż więcej'), button:has-text('Załaduj więcej'), button:has-text('Show more'), "
+                "button:has-text('Load more'), a:has-text('Pokaż więcej'), a:has-text('Załaduj więcej')")
 
 
 class BrowserChannel(Channel):
+    """One search per product (Allegro, Ceneo)."""
+
     def __init__(self, id, name, url):
         self.id, self.name, self.url = id, name, url
         self._pw = self._browser = self._ctx = self._page = None
@@ -72,26 +91,15 @@ class BrowserChannel(Channel):
                     return f"bot check (page): {w!r}"
         return None
 
-    def search(self, product):
-        """Retry once with a fresh browser if the page crashed, timed out or came back empty."""
-        for attempt in (1, 2):
-            try:
-                return self._search(product)
-            except Blocked:
-                raise
-            except Exception as e:           # includes Unreadable, timeouts, "Page crashed"
-                if attempt == 2:
-                    raise
-                print(f"[{self.id}] {type(e).__name__}: retrying once with a fresh browser", flush=True)
-                self.close()
-                time.sleep(3)
-
-    def _search(self, product):
-        if not self._page:
-            self._start()
+    def _open(self, url, settle=False):
+        """Load a results page. Returns its listings; raises Blocked / Unreadable."""
         page = self._page
-        resp = page.goto(self.url.format(q=quote_plus(self.query(product))),
-                         wait_until="domcontentloaded", timeout=30000)
+        resp = page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        if settle:
+            try:
+                page.wait_for_load_state("networkidle", timeout=10000)
+            except Exception:
+                pass
         page.wait_for_timeout(1200)
         items = page.evaluate(EXTRACT_JS)
         if items:
@@ -113,10 +121,95 @@ class BrowserChannel(Channel):
             raise Unreadable("page rendered almost empty")
         return []
 
+    def _with_retry(self, fn, *args):
+        """Retry once with a fresh browser if the page crashed, timed out or came back empty."""
+        for attempt in (1, 2):
+            try:
+                return fn(*args)
+            except Blocked:
+                raise
+            except Exception as e:           # includes Unreadable, timeouts, "Page crashed"
+                if attempt == 2:
+                    raise
+                print(f"[{self.id}] {type(e).__name__}: retrying once with a fresh browser", flush=True)
+                self.close()
+                time.sleep(3)
+
+    def search(self, product):
+        return self._with_retry(self._search, product)
+
+    def _search(self, product):
+        if not self._page:
+            self._start()
+        return self._open(self.url.format(q=quote_plus(self.query(product))))
+
+
+class CatalogChannel(BrowserChannel):
+    """Shops with a modest number of Sorvella products (Hebe, Rossmann): read the whole
+    'sorvella' result list once, then match our products against it locally."""
+
+    def __init__(self, id, name, url, page_url=None, max_pages=10):
+        super().__init__(id, name, url)
+        self.page_url, self.max_pages, self._items = page_url, max_pages, None
+
+    def search(self, product):
+        if self._items is None:
+            self._items = self._with_retry(self._collect)
+        return self._items
+
+    def _declared_total(self):
+        m = TOTAL_RE.search(self._page.inner_text("body")[:6000])
+        return int(m.group(1) or m.group(2)) if m else None
+
+    def _collect(self):
+        if not self._page:
+            self._start()
+        page, found, q = self._page, {}, quote_plus("sorvella")
+        if self.page_url:                                  # numbered pages
+            for n in range(1, self.max_pages + 1):
+                new = [i for i in self._open(self.page_url.format(page=n, q=q), settle=True) if i["url"] not in found]
+                for i in new:
+                    found[i["url"]] = i
+                if not new:
+                    break
+        else:                                              # one page that grows: scroll / "show more"
+            for i in self._open(self.url.format(q=q), settle=True):
+                found[i["url"]] = i
+            still = 0
+            for _ in range(self.max_pages * 3):
+                before = len(found)
+                page.mouse.wheel(0, 5000)
+                page.wait_for_timeout(1500)
+                try:
+                    btn = page.locator(MORE_BUTTONS).first
+                    if btn.is_visible(timeout=300):
+                        btn.click()
+                        page.wait_for_timeout(2000)
+                except Exception:
+                    pass
+                for i in page.evaluate(EXTRACT_JS):
+                    found.setdefault(i["url"], i)
+                still = still + 1 if len(found) == before else 0
+                if still >= 2:
+                    break
+        total = self._declared_total()
+        print(f"[{self.id}] catalog read: {len(found)} products" + (f" (page says {total})" if total else ""), flush=True)
+        if not found and (total or "sorvella" in page.inner_text("body").lower()):
+            print(f"[{self.id}] WARNING: the page mentions Sorvella but no product could be read. Send this block:", flush=True)
+            print("=== DIAGNOSTIC " + self.id + " ===", flush=True)
+            for hit in page.evaluate(DIAG_JS):
+                print(hit, flush=True)
+            print("=== END DIAGNOSTIC ===", flush=True)
+        return list(found.values())
+
+
 def browser_channels():
     return [
         BrowserChannel("allegro", "Allegro", "https://allegro.pl/listing?string={q}"),
         BrowserChannel("ceneo", "Ceneo", "https://www.ceneo.pl/;szukaj-{q}"),
+        CatalogChannel("hebe", "Hebe", "https://www.hebe.pl/search?q={q}&lang=pl_PL"),
+        CatalogChannel("rossmann", "Rossmann", "https://www.rossmann.pl/szukaj?Search={q}",
+                       page_url="https://www.rossmann.pl/szukaj?Page={page}&Search={q}"),
     ]
 
 

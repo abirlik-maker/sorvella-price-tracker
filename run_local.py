@@ -13,6 +13,8 @@ import sys
 os.environ.setdefault("BROWSER_CHANNEL", "chrome")   # the real, installed Chrome
 os.environ.setdefault("HEADLESS", "0")               # visible window looks less like a bot
 os.environ.setdefault("CHANNEL_BUDGET", "1500")      # up to 25 min per channel
+os.environ.setdefault("PROFILE_DIR", os.path.expanduser("~/.sorvella-profile"))   # remembers solved checks
+os.environ.setdefault("HUMAN_WAIT", "90")            # seconds you get to solve a check in the window
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -24,7 +26,7 @@ def run(*cmd, check=True):
 
 run("git", "pull", "--rebase", "--autostash")
 run(sys.executable, "-m", "scraper.browser")
-run("git", "add", "docs/data")
+run("git", "add", "docs/data", "scraper", "run_local.py")   # data and the code that produced it
 if run("git", "diff", "--cached", "--quiet", check=False).returncode != 0:
     run("git", "commit", "-m", f"data: {dt.date.today()} (local run)")
     run("git", "push")
