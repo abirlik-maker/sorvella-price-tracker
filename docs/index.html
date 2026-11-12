@@ -3,84 +3,111 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Sorvella price comparison</title>
+<title>Sorvella price analysis</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F1F2F7; --surface:#FFFFFF; --ink:#1B2238; --muted:#5B637A; --line:#DCDFEA;
-  --ours:#3A3AD1; --cheaper:#B8174F; --pricier:#0B7A64; --wash:#E7E9F6;
+  --bg:#F1F2F7; --surface:#FFFFFF; --ink:#1B2238; --muted:#5B637A; --line:#DCDFEA; --wash:#E7E9F6;
+  --ours:#3A3AD1; --cheaper:#B8174F; --pricier:#0B7A64; --allegro:#D96A00; --ceneo:#0A7E8C;
+  --c0:#0072B2; --c1:#E69F00; --c2:#009E73; --c3:#CC79A7; --c4:#D55E00; --c5:#56B4E9; --c6:#8A6FDF; --c7:#8B93A7;
   --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042;
-    --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --wash:#222842; color-scheme:dark;
+    --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042; --wash:#222842;
+    --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --allegro:#FF9A3D; --ceneo:#3FC3D1;
+    --c0:#4DA3E0; --c1:#F2B83A; --c2:#2FC79B; --c3:#E09BC3; --c4:#F08A4A; --c5:#7CC8F0; --c6:#A794F0; --c7:#8F98AE; color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042;
-  --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --wash:#222842; color-scheme:dark;
+  --bg:#11141C; --surface:#181C27; --ink:#E7E9F2; --muted:#9AA2BA; --line:#2A3042; --wash:#222842;
+  --ours:#9B9BFF; --cheaper:#FF7FAE; --pricier:#3FCBA7; --allegro:#FF9A3D; --ceneo:#3FC3D1;
+  --c0:#4DA3E0; --c1:#F2B83A; --c2:#2FC79B; --c3:#E09BC3; --c4:#F08A4A; --c5:#7CC8F0; --c6:#A794F0; --c7:#8F98AE; color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--font);
-  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);
-  font-variant-numeric:tabular-nums}
-.wrap{max-width:1040px;margin:0 auto;padding:28px 20px 64px}
-.top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--font);font-variant-numeric:tabular-nums;
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+.wrap{max-width:1180px;margin:0 auto;padding:26px 20px 70px}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:14px}
 .top strong{color:var(--ink);font-weight:600}
-.demo{margin:16px 0 0;padding:10px 14px;border:1px dashed var(--cheaper);border-radius:8px;color:var(--ink);font-size:14px;background:var(--surface)}
-h1{font:800 clamp(28px,5.2vw,52px)/1.08 var(--font);letter-spacing:-.02em;margin:26px 0 8px;max-width:20ch}
-.lead{margin:0 0 22px;color:var(--muted);max-width:62ch}
-.sources{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+h1{font:800 clamp(26px,4.4vw,46px)/1.1 var(--font);letter-spacing:-.02em;margin:22px 0 10px;max-width:26ch}
+.lead{margin:0 0 20px;color:var(--muted);max-width:70ch}
+.sources{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
 .src{display:inline-flex;align-items:center;gap:7px;padding:5px 11px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:13px}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--pricier)}
 .src[data-s=blocked] .dot,.src[data-s=error] .dot{background:var(--cheaper)}
-.src[data-s=unreadable] .dot,.src[data-s=partial] .dot,.src[data-s=disabled] .dot{background:transparent;border:2px solid var(--muted)}
+.src[data-s=partial] .dot,.src[data-s=unreadable] .dot,.src[data-s=disabled] .dot{background:transparent;border:2px solid var(--muted)}
 .src small{color:var(--muted)}
-.bar{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.kpi b{display:block;font:800 28px/1.15 var(--font);letter-spacing:-.01em}
+.kpi span{display:block;color:var(--muted);font-size:13px;margin-top:2px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;margin:4px 0 16px;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line)}
 .seg{display:flex;gap:4px;flex-wrap:wrap}
-.seg button,.btn{font:600 14px var(--font);padding:7px 13px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button,.btn{font:600 13px var(--font);padding:6px 11px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
 .seg button[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.seg button span{color:inherit;opacity:.65;font-weight:400;margin-left:4px}
-button:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid var(--ours);outline-offset:2px}
-.list{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
-details{border-top:1px solid var(--line)}
-details:first-child{border-top:0}
-summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(260px,1.5fr) minmax(190px,1.5fr) minmax(130px,.8fr);gap:18px;align-items:center;padding:16px 18px}
+.seg button i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.switch{display:inline-flex;gap:8px;align-items:center;font-size:13px;cursor:pointer}
+.switch input{width:16px;height:16px;accent-color:var(--ours)}
+.lbl{font-size:12px;color:var(--muted);margin-right:2px}
+.grp{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+button:focus-visible,summary:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.dotc:focus-visible{outline:3px solid var(--ours);outline-offset:2px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 16px 12px;min-width:0}
+.card h2{font:600 16px/1.3 var(--font);margin:0 0 2px}
+.card p.sub{margin:0 0 10px;color:var(--muted);font-size:13px}
+.s7{grid-column:span 7}.s5{grid-column:span 5}.s12{grid-column:span 12}
+svg{display:block;width:100%;height:auto}
+svg text{fill:var(--muted);font:12px var(--font)}
+svg .strong{fill:var(--ink);font-weight:600}
+.grid-line{stroke:var(--line)}
+.dotc{cursor:pointer;stroke:var(--surface);stroke-width:1.5}
+.dotc:hover{stroke:var(--ink)}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:6px}
+.legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.note{font-size:12px;color:var(--muted);margin:6px 0 0}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:14px}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:26px 0 0}
+.tools h2{font:600 20px var(--font);margin:0}
+.tools input[type=search],.tools select{font:400 14px var(--font);padding:7px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+details{border-top:1px solid var(--line)}details:first-child{border-top:0}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(240px,1.6fr) 90px minmax(170px,1.2fr) minmax(150px,1fr) 60px;gap:14px;align-items:center;padding:12px 16px}
 summary::-webkit-details-marker{display:none}
 summary:hover{background:var(--wash)}
-.prod{display:flex;gap:14px;align-items:center;min-width:0}
-.thumb{width:64px;height:64px;flex:none;object-fit:contain;border-radius:10px;background:var(--wash)}
-.name{font-weight:600;line-height:1.25}
-.name small{display:block;color:var(--muted);font-weight:400;font-size:13px;margin-top:2px}
-.ladder{position:relative;height:34px}
-.ladder .rail{position:absolute;left:0;right:0;top:16px;height:2px;background:var(--line)}
-.ladder .us{position:absolute;top:3px;bottom:3px;width:3px;margin-left:-1.5px;background:var(--ours);border-radius:2px}
-.ladder .us i{position:absolute;top:-1px;left:7px;font:600 12px/1 var(--font);font-style:normal;color:var(--ours);white-space:nowrap}
-.ladder .c{position:absolute;top:10px;width:13px;height:13px;margin-left:-6.5px;border-radius:50%;box-sizing:border-box}
-.c.cheaper{background:var(--cheaper)}
-.c.pricier{border:2.5px solid var(--pricier);background:var(--surface)}
-.none{color:var(--muted);font-size:14px}
-.verdict{text-align:right;font-weight:600}
-.verdict small{display:block;font-weight:400;color:var(--muted);font-size:13px}
-.verdict.cheaper{color:var(--cheaper)} .verdict.ours{color:var(--pricier)}
-.flag{display:inline-block;margin-left:6px;padding:1px 7px;border:1px solid var(--muted);border-radius:99px;font-size:12px;font-weight:400;color:var(--muted)}
-.panel{padding:4px 18px 22px;display:grid;grid-template-columns:1.2fr 1fr;gap:26px}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th{font-weight:600;text-align:left;color:var(--muted);font-size:13px;padding:6px 8px 6px 0;border-bottom:1px solid var(--line)}
-td{padding:8px 8px 8px 0;border-bottom:1px solid var(--line)}
-td.n,th.n{text-align:right}
+.prod{display:flex;gap:12px;align-items:center;min-width:0}
+.thumb{width:52px;height:52px;flex:none;object-fit:contain;border-radius:9px;background:var(--wash)}
+.name{font-weight:600;line-height:1.25;min-width:0}
+.name small{display:block;color:var(--muted);font-weight:400;font-size:12px;margin-top:2px}
+.fam{display:inline-block;padding:0 7px;border-radius:99px;border:1px solid var(--line);font-size:11px;font-weight:400;color:var(--muted);margin-left:6px;vertical-align:1px}
+.num{text-align:right}
+.best b{font-weight:600}.best small{display:block;color:var(--muted);font-size:12px}
+.gap{display:flex;align-items:center;gap:8px}
+.gapbar{flex:1;height:8px;background:var(--wash);border-radius:4px;position:relative;overflow:hidden}
+.gapbar i{position:absolute;top:0;bottom:0;border-radius:4px}
+.gapval{min-width:46px;text-align:right;font-weight:600}
+.cheaper{color:var(--cheaper)}.pricier{color:var(--pricier)}
+.panel{padding:4px 16px 18px;display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font-weight:600;text-align:left;color:var(--muted);font-size:12px;padding:5px 8px 5px 0;border-bottom:1px solid var(--line)}
+td{padding:7px 8px 7px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;white-space:nowrap}
+td:last-child{white-space:nowrap}
 a{color:var(--ours)}
-.chart text{fill:var(--muted);font:12px var(--font)}
-.empty{padding:34px 18px;text-align:center;color:var(--muted)}
-.foot{margin-top:22px;color:var(--muted);font-size:13px;max-width:70ch}
-@media (max-width:760px){
-  summary{grid-template-columns:1fr;gap:10px}
-  .verdict{text-align:left}
+.tag{display:inline-block;margin-left:5px;padding:0 6px;border:1px solid var(--muted);border-radius:99px;font-size:11px;font-weight:400;color:var(--muted);white-space:nowrap}
+.chip{display:inline-block;padding:1px 8px;border-radius:99px;font-size:12px;font-weight:600;color:#fff}
+.chip.allegro{background:var(--allegro)}.chip.ceneo{background:var(--ceneo)}
+.empty{padding:30px 16px;text-align:center;color:var(--muted)}
+.more{display:block;margin:12px auto}
+.foot{margin-top:24px;color:var(--muted);font-size:13px;max-width:80ch}
+@media (max-width:900px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .s7,.s5{grid-column:span 12}
+  summary{grid-template-columns:1fr 1fr;gap:8px 14px}
+  .prod{grid-column:1/-1}
   .panel{grid-template-columns:1fr}
   .tw{overflow-x:auto}
 }
@@ -90,163 +117,331 @@ a{color:var(--ours)}
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><span><strong>sorvellaperfume.pl</strong> price comparison</span><span id="stamp"></span></div>
-  <div id="demo" class="demo" hidden>This page is running on sample data. Competitor prices are not real; they are replaced once the daily script has run.</div>
+  <div class="top"><span><strong>sorvellaperfume.pl</strong> price analysis</span><span id="stamp"></span></div>
   <h1 id="headline">Loading…</h1>
   <p class="lead" id="lead"></p>
   <ul class="sources" id="sources" aria-label="Source status"></ul>
-  <div class="bar">
-    <div class="seg" id="filters" role="group" aria-label="Filter"></div>
-    <button class="btn" id="csv" type="button">Download CSV</button>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="controls" role="group" aria-label="Filters">
+    <div class="grp"><span class="lbl">Collection</span><div class="seg" id="fFam"></div></div>
+    <div class="grp"><span class="lbl">Channel</span><div class="seg" id="fCh"></div></div>
+    <label class="switch"><input type="checkbox" id="fClean" checked> Exclude unboxed &amp; suspicious listings</label>
+  </div>
+
+  <div class="grid">
+    <section class="card s7"><h2>Where we stand</h2>
+      <p class="sub">Each dot is a product: our price (across) against the cheapest competitor listing (up). Below the line, a competitor is cheaper. Products with identical prices are fanned out slightly.</p>
+      <div id="cScatter"></div><div class="legend" id="legend"></div></section>
+    <section class="card s5"><h2>Gap by collection</h2>
+      <p class="sub">Median difference of the cheapest competitor vs our price.</p><div id="cBars"></div></section>
+    <section class="card s7"><h2>How big are the gaps?</h2>
+      <p class="sub">Every matched listing, by how far it is from our price.</p><div id="cHist"></div></section>
+    <section class="card s5"><h2>Allegro vs Ceneo</h2>
+      <p class="sub">Only products listed on both channels.</p><div id="cDuel"></div></section>
+    <section class="card s12"><h2>Over time</h2>
+      <p class="sub">Median gap of the cheapest competitor, per daily run.</p><div id="cTrend"></div></section>
+  </div>
+
+  <div class="tools">
+    <h2 id="tTitle">Products</h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input type="search" id="q" placeholder="Search product…" aria-label="Search product">
+      <select id="sort" aria-label="Sort">
+        <option value="gap">Biggest gap first</option><option value="gapUp">Smallest gap first</option>
+        <option value="priceDown">Our price, high to low</option><option value="name">Name</option></select>
+      <button class="btn" id="csv" type="button">Download CSV</button>
+    </div>
   </div>
   <div class="list" id="list"></div>
-  <p class="foot">The vertical line is our price. A filled dot is a competitor listing cheaper than us; a hollow dot is more expensive. Listings are matched by product name and size (ml). Matches tagged “Check” have low confidence and should be verified by hand.</p>
+  <p class="foot">Listings are matched to our products by name and size (ml). “Unboxed” marks listings that say <em>bez kartonika</em>, tester or decant, which are not like-for-like. “Outlier” marks prices below 30% or above 220% of ours, which are usually a mismatch. “Check” marks low-confidence matches. Allegro and Ceneo are read with a real browser from a company computer.</p>
 </div>
+
 <script>
 (() => {
   const $ = s => document.querySelector(s);
-  const money = n => (n < 0 ? '-' : '') + new Intl.NumberFormat('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}).format(Math.abs(n)) + ' zł';
-  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const money = n => (n < 0 ? '−' : '') + new Intl.NumberFormat('en-US', {minimumFractionDigits:2, maximumFractionDigits:2}).format(Math.abs(n)) + ' zł';
+  const pct = (n, d = 0) => (n > 0.5 * Math.pow(10, -d) ? '+' : n < -0.5 * Math.pow(10, -d) ? '−' : '') + Math.abs(n).toFixed(d) + '%';
+  const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
   const STATUS = {ok:'Working', partial:'Partly working', blocked:'Blocked', unreadable:'Unreadable', error:'Error', disabled:'Off'};
-  let D, H, filter = 'all', chName = {};
+  const CH = {allegro:'Allegro', ceneo:'Ceneo'};
+  const FAMS = ['Premium','Signature','Galaxy','Mountain','S/V series','Home','Body mist','Car','Sets','Other'];
+  const FCOL = {Premium:'--c0', Signature:'--c1', Galaxy:'--c2', Mountain:'--c3', 'S/V series':'--c4', Home:'--c5', 'Body mist':'--c6', Car:'--c7', Sets:'--c7', Other:'--c7'};
+  const col = f => `var(${FCOL[f] || '--c7'})`;
+  const UNBOXED = /bez\s+kartonik|bez\s+pude|tester|odlew|decant/i;
+  const isBad = o => o.tags.some(t => t === 'unboxed' || t === 'outlier');
+
+  function family(t) {
+    t = t.toLowerCase();
+    if (/zapach domowy|dyfuzor|diffuser|domow/.test(t)) return 'Home';
+    if (/samochod/.test(t)) return 'Car';
+    if (/mgie[łl]k/.test(t)) return 'Body mist';
+    if (/discovery|zestaw|\bset\b/.test(t)) return 'Sets';
+    if (/galaxy/.test(t)) return 'Galaxy';
+    if (/mountain/.test(t)) return 'Mountain';
+    if (/signature/.test(t)) return 'Signature';
+    if (/premium/.test(t)) return 'Premium';
+    if (/^\s*[sv]\d{2,3}\b/.test(t)) return 'S/V series';
+    return 'Other';
+  }
+
+  let D, H, S = {fam:'All', ch:'All', clean:true, q:'', sort:'gap', all:false};
 
   async function load() {
     const inline = document.getElementById('inline-data');
     if (inline) { const j = JSON.parse(inline.textContent); return [j.latest, j.history]; }
-    const [a, b] = await Promise.all([fetch('data/latest.json'), fetch('data/history.json')]);
+    const [a, b] = await Promise.all([fetch('data/latest.json', {cache:'no-cache'}), fetch('data/history.json', {cache:'no-cache'})]);
     if (!a.ok) throw new Error('data/latest.json not found');
     return [await a.json(), b.ok ? await b.json() : {}];
   }
 
-  function analyse(p) {
-    const offers = [...p.offers].sort((x, y) => x.price - y.price);
-    const best = offers[0];
-    let state = 'none';
-    if (best) state = best.price < p.our_price - 0.005 ? 'cheaper' : 'ours';
-    return {...p, offers, best, state, flagged: offers.some(o => o.flag),
-            gap: best ? best.price - p.our_price : 0, gapPct: best ? (best.price / p.our_price - 1) * 100 : 0};
+  // ---- model -------------------------------------------------------------
+  function model() {
+    return D.products.map(p => {
+      const fam = family(p.title);
+      const offers = p.offers.map(o => {
+        const ratio = o.price / p.our_price, tags = [];
+        if (UNBOXED.test(o.title)) tags.push('unboxed');
+        if (ratio < 0.3 || ratio > 2.2) tags.push('outlier');
+        if (o.flag) tags.push('check');
+        return {...o, ratio, tags, gap: (ratio - 1) * 100};
+      });
+      const usable = offers.filter(o => (S.ch === 'All' || o.channel === S.ch) && (!S.clean || !isBad(o)));
+      const best = usable.length ? usable.reduce((a, b) => a.price <= b.price ? a : b) : null;
+      return {...p, fam, offers, usable, best, gap: best ? best.gap : null};
+    });
   }
+  const inScope = m => S.fam === 'All' || m.fam === S.fam;
 
+  // ---- render ------------------------------------------------------------
   function render() {
-    const items = D.products.map(analyse);
-    const count = {all: items.length, cheaper: 0, ours: 0, none: 0, flag: 0};
-    items.forEach(i => { count[i.state]++; if (i.flagged) count.flag++; });
+    const M = model(), scope = M.filter(inScope), matched = scope.filter(m => m.best);
+    const gaps = matched.map(m => m.gap), med = median(gaps);
+    const cheaper = matched.filter(m => m.gap < -0.5).length;
+    const excl = scope.reduce((n, m) => n + m.offers.filter(o => (S.ch === 'All' || o.channel === S.ch) && isBad(o)).length, 0);
 
     $('#stamp').textContent = 'Last updated: ' + new Date(D.generated_at).toLocaleString('en-GB', {dateStyle:'long', timeStyle:'short'});
-    $('#demo').hidden = !D.demo;
-    $('#headline').textContent = count.cheaper
-      ? `${count.cheaper} of ${count.all} products ${count.cheaper === 1 ? 'is' : 'are'} cheaper at a competitor.`
-      : `No competitor is cheaper than us on any product.`;
-    const bits = [];
-    if (count.ours) bits.push(`We’re cheapest on ${count.ours}`);
-    if (count.none) bits.push(`${count.none} not found at competitors`);
-    if (count.flag) bits.push(`${count.flag} ${count.flag === 1 ? 'match needs' : 'matches need'} a manual check`);
-    $('#lead').textContent = bits.join(' · ') + (bits.length ? '.' : '');
+    $('#sources').innerHTML = D.channels.map(c => `<li class="src" data-s="${esc(c.status)}" title="${esc(c.note || '')}"><span class="dot"></span>${esc(c.name)} <small>${STATUS[c.status] || esc(c.status)}</small></li>`).join('');
 
-    $('#sources').innerHTML = D.channels.map(c =>
-      `<li class="src" data-s="${esc(c.status)}" title="${esc(c.note || '')}"><span class="dot"></span>${esc(c.name)} <small>${STATUS[c.status] || esc(c.status)}</small></li>`).join('');
+    $('#headline').textContent = matched.length
+      ? `The cheapest competitor listing is ${Math.abs(Math.round(med))}% ${med < 0 ? 'below' : 'above'} our price (median).`
+      : 'No competitor listings match this selection.';
+    $('#lead').textContent = `We found a competitor listing for ${matched.length} of ${scope.length} products${S.fam !== 'All' ? ' in ' + S.fam : ''}. In ${cheaper} of them a competitor is cheaper.`
+      + (D.channels.some(c => c.status !== 'ok') ? ' Some channels were only partly read in the last run, so coverage is not complete.' : '');
 
-    const F = [['all','All'],['cheaper','Competitor cheaper'],['ours','We’re cheapest'],['none','No match'],['flag','Check']];
-    $('#filters').innerHTML = F.map(([k, t]) => `<button type="button" data-f="${k}" aria-pressed="${filter===k}">${t}<span>${count[k]}</span></button>`).join('');
+    $('#kpis').innerHTML = [
+      [scope.length, 'products tracked'],
+      [`${matched.length}`, `with a competitor price (${scope.length ? Math.round(matched.length / scope.length * 100) : 0}%)`],
+      [med == null ? '–' : pct(med), 'median gap to the cheapest competitor'],
+      [`${cheaper}`, `where a competitor is cheaper (${matched.length ? Math.round(cheaper / matched.length * 100) : 0}%)`]
+    ].map(([b, s]) => `<div class="kpi"><b>${b}</b><span>${s}</span></div>`).join('');
 
-    let shown = items.filter(i => filter === 'all' || (filter === 'flag' ? i.flagged : i.state === filter));
-    const order = {cheaper:0, ours:1, none:2};
-    shown.sort((a, b) => order[a.state] - order[b.state] || a.gapPct - b.gapPct);
-    $('#list').innerHTML = shown.length ? shown.map(row).join('') : '<div class="empty">No products match this filter.</div>';
+    const fams = FAMS.filter(f => M.some(m => m.fam === f));
+    $('#fFam').innerHTML = ['All', ...fams].map(f => `<button type="button" data-fam="${esc(f)}" aria-pressed="${S.fam === f}">${f === 'All' ? '' : `<i style="background:${col(f)}"></i>`}${esc(f)}</button>`).join('');
+    $('#fCh').innerHTML = ['All', 'allegro', 'ceneo'].map(c => `<button type="button" data-ch="${c}" aria-pressed="${S.ch === c}">${c === 'All' ? 'All' : CH[c]}</button>`).join('');
+    $('#fClean').checked = S.clean;
+
+    scatter(matched); bars(M); hist(scope); duel(scope); trend(scope);
+    $('#legend').innerHTML = FAMS.filter(f => matched.some(m => m.fam === f)).map(f => `<span><i style="background:${col(f)}"></i>${esc(f)}</span>`).join('')
+      + (excl && S.clean ? `<span>· ${excl} listing${excl > 1 ? 's' : ''} excluded as unboxed or outlier</span>` : '');
+    table(scope);
   }
 
-  function ladder(p) {
-    if (!p.offers.length) return '<span class="none">Not found at competitors</span>';
-    const all = [p.our_price, ...p.offers.map(o => o.price)];
-    let lo = Math.min(...all), hi = Math.max(...all);
-    const pad = Math.max((hi - lo) * .12, p.our_price * .03);
-    lo -= pad; hi += pad;
-    const pos = v => ((v - lo) / (hi - lo) * 100).toFixed(2);
-    const dots = p.offers.map(o => {
-      const cls = o.price < p.our_price - 0.005 ? 'cheaper' : 'pricier';
-      return `<span class="c ${cls}" style="left:${pos(o.price)}%" title="${esc(chName[o.channel] || o.channel)}: ${money(o.price)}"></span>`;
-    }).join('');
-    return `<div class="ladder" role="img" aria-label="Price spread"><span class="rail"></span>${dots}<span class="us" style="left:${pos(p.our_price)}%"><i>${money(p.our_price)}</i></span></div>`;
+  // ---- charts ------------------------------------------------------------
+  function niceStep(r) { const p = Math.pow(10, Math.floor(Math.log10(r))); const f = r / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * p; }
+
+  function scatter(matched) {
+    if (!matched.length) { $('#cScatter').innerHTML = '<div class="empty">No data</div>'; return; }
+    const W = 640, Hh = 420, L = 46, R = 14, T = 12, B = 40;
+    const hi = Math.max(...matched.flatMap(m => [m.our_price, m.best.price]));
+    const step = niceStep(hi / 5), mx = Math.ceil(hi / step) * step;
+    const X = v => L + v / mx * (W - L - R), Y = v => Hh - B - v / mx * (Hh - T - B);
+    let g = '';
+    for (let v = 0; v <= mx + 1e-6; v += step) {
+      g += `<line class="grid-line" x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${L - 6}" y="${Y(v) + 4}" text-anchor="end">${v}</text>`;
+      g += `<text x="${X(v)}" y="${Hh - B + 16}" text-anchor="middle">${v}</text>`;
+    }
+    const seen = {};   // products with identical prices would sit on one spot: fan them out in a small spiral
+    const pts = matched.map(m => {
+      const kx = X(m.our_price).toFixed(0), ky = Y(m.best.price).toFixed(0), k = seen[kx + ',' + ky] = (seen[kx + ',' + ky] ?? -1) + 1;
+      m._dx = k ? Math.cos(k * 2.4) * 4.6 * Math.sqrt(k) : 0; m._dy = k ? Math.sin(k * 2.4) * 4.6 * Math.sqrt(k) : 0;
+      return `<circle class="dotc" tabindex="0" role="button" data-id="${esc(m.id)}" cx="${(X(m.our_price) + m._dx).toFixed(1)}" cy="${(Y(m.best.price) + m._dy).toFixed(1)}" r="5" fill="${col(m.fam)}" aria-label="${esc(m.title)}: ours ${m.our_price}, competitor ${m.best.price}"><title>${esc(m.title)}\nours ${money(m.our_price)} · ${CH[m.best.channel]} ${money(m.best.price)} (${pct(m.gap)})</title></circle>`; }).join('');
+    $('#cScatter').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Scatter of our price against the cheapest competitor price">
+      <polygon points="${X(0)},${Y(0)} ${X(mx)},${Y(0)} ${X(mx)},${Y(mx)}" fill="var(--wash)" opacity=".7"/>${g}
+      <line x1="${X(0)}" y1="${Y(0)}" x2="${X(mx)}" y2="${Y(mx)}" stroke="var(--muted)" stroke-dasharray="5 4"/>
+      <text x="${X(mx) - 8}" y="${Y(mx * .93)}" text-anchor="end" class="strong">same price</text>
+      <text x="${X(mx) - 10}" y="${Y(0) - 10}" text-anchor="end">competitor cheaper</text>
+      <text x="${(L + W - R) / 2}" y="${Hh - 6}" text-anchor="middle">our price (zł)</text>
+      <text transform="translate(12 ${(T + Hh - B) / 2}) rotate(-90)" text-anchor="middle">cheapest competitor (zł)</text>${pts}</svg>`;
   }
 
-  function verdict(p) {
-    if (p.state === 'none') return `<div class="verdict">${money(p.our_price)}<small>our price</small></div>`;
-    const ch = esc(chName[p.best.channel] || p.best.channel);
-    if (p.state === 'cheaper')
-      return `<div class="verdict cheaper">${money(p.gap)}<small>${ch} · ${Math.abs(p.gapPct).toFixed(1)}% cheaper</small></div>`;
-    return `<div class="verdict ours">We’re cheapest<small>closest: ${ch} ${money(p.best.price)}</small></div>`;
+  function bars(M) {
+    const rows = FAMS.map(f => {
+      const ms = M.filter(m => m.fam === f), mt = ms.filter(m => m.best);
+      return {f, n: ms.length, k: mt.length, med: median(mt.map(m => m.gap))};
+    }).filter(r => r.k > 0).sort((a, b) => a.med - b.med);
+    if (!rows.length) { $('#cBars').innerHTML = '<div class="empty">No data</div>'; return; }
+    const W = 520, rh = 38, L = 118, R = 70, Hh = rows.length * rh + 26;
+    const lo = Math.min(0, ...rows.map(r => r.med)), hi = Math.max(0, ...rows.map(r => r.med));
+    const PAD = 54, span = (hi - lo) || 1, X = v => L + PAD + (v - lo) / span * (W - L - PAD - R), z = X(0);
+    $('#cBars').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Median gap by collection">
+      <line x1="${z}" x2="${z}" y1="0" y2="${Hh - 22}" stroke="var(--muted)"/>
+      ${rows.map((r, i) => { const y = i * rh + 4, x0 = Math.min(z, X(r.med)), w = Math.max(2, Math.abs(X(r.med) - z));
+        return `<g opacity="${S.fam === 'All' || S.fam === r.f ? 1 : .35}"><text x="${L - 10}" y="${y + 17}" text-anchor="end" class="strong">${esc(r.f)}</text>
+        <text x="${L - 10}" y="${y + 31}" text-anchor="end">${r.k} of ${r.n} matched</text>
+        <rect x="${x0}" y="${y + 6}" width="${w}" height="20" rx="4" fill="${col(r.f)}"/>
+        <text x="${r.med < 0 ? x0 - 6 : x0 + w + 6}" y="${y + 21}" text-anchor="${r.med < 0 ? 'end' : 'start'}" class="strong">${pct(r.med)}</text></g>`; }).join('')}
+      <text x="${z}" y="${Hh - 6}" text-anchor="middle">same price</text></svg>`;
   }
 
-  function row(p) {
-    const tr = p.offers.map(o => {
-      const d = o.price - p.our_price;
-      return `<tr><td>${esc(chName[o.channel] || o.channel)}${o.flag ? '<span class="flag">Check</span>' : ''}</td>
-        <td class="n">${money(o.price)}</td><td class="n">${(d > 0 ? '+' : '') + money(d)}</td>
-        <td class="n">${o.match}%</td><td><a href="${esc(o.url)}" target="_blank" rel="noopener">listing</a></td></tr>`;
-    }).join('');
-    const table = p.offers.length
-      ? `<div class="tw"><table><thead><tr><th>Channel</th><th class="n">Price</th><th class="n">Diff</th><th class="n">Match</th><th></th></tr></thead><tbody>${tr}</tbody></table></div>`
-      : '<p class="none">No matching listing found on any channel.</p>';
-    const img = p.image ? `<img class="thumb" src="${esc(p.image)}" alt="${esc(p.title)}" loading="lazy" onerror="this.style.visibility='hidden'">` : '<span class="thumb"></span>';
-    return `<details><summary>
-      <div class="prod">${img}<div class="name">${esc(p.title)}${p.flagged ? '<span class="flag">Check</span>' : ''}<small>${p.size_ml ? p.size_ml + ' ml' : ''}${p.size_ml ? ' · ' + money(p.our_price / p.size_ml * 10) + ' / 10 ml' : ''}</small></div></div>
-      ${ladder(p)}${verdict(p)}</summary>
-      <div class="panel"><div>${table}<p><a href="${esc(p.url)}" target="_blank" rel="noopener">Our product page</a></p></div>${chart(p)}</div></details>`;
+  function hist(scope) {
+    const offs = scope.flatMap(m => m.offers.filter(o => (S.ch === 'All' || o.channel === S.ch) && (!S.clean || !isBad(o))));
+    if (!offs.length) { $('#cHist').innerHTML = '<div class="empty">No data</div>'; return; }
+    const lo = -90, hi = 90, st = 10, n = (hi - lo) / st, bins = Array.from({length:n}, () => ({allegro:0, ceneo:0}));
+    offs.forEach(o => { let i = Math.floor((Math.max(lo, Math.min(hi - 0.001, o.gap)) - lo) / st); bins[i][o.channel]++; });
+    const mx = Math.max(...bins.map(b => b.allegro + b.ceneo), 1);
+    const W = 640, Hh = 250, L = 34, R = 10, T = 10, B = 44, bw = (W - L - R) / n;
+    const Y = v => Hh - B - v / mx * (Hh - T - B);
+    const bx = i => L + i * bw, zero = L + (0 - lo) / st * bw;
+    $('#cHist').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Histogram of gaps between competitor listings and our price">
+      <line class="grid-line" x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}"/>
+      ${bins.map((b, i) => `<g><title>${pct(lo + i * st)} to ${pct(lo + (i + 1) * st)}: ${b.allegro} Allegro, ${b.ceneo} Ceneo</title>
+        <rect x="${bx(i) + 1.5}" y="${Y(b.allegro)}" width="${bw - 3}" height="${Y(0) - Y(b.allegro)}" fill="var(--allegro)"/>
+        <rect x="${bx(i) + 1.5}" y="${Y(b.allegro + b.ceneo)}" width="${bw - 3}" height="${Y(b.allegro) - Y(b.allegro + b.ceneo)}" fill="var(--ceneo)"/></g>`).join('')}
+      <line x1="${zero}" x2="${zero}" y1="${T}" y2="${Y(0)}" stroke="var(--ink)" stroke-dasharray="4 3"/>
+      <text x="${zero + 5}" y="${T + 10}" class="strong">same price</text>
+      ${[-80,-60,-40,-20,0,20,40,60,80].map(v => `<text x="${L + (v - lo) / st * bw}" y="${Hh - B + 16}" text-anchor="middle">${pct(v)}</text>`).join('')}
+      <text x="${L}" y="${Hh - 6}">← cheaper than us</text><text x="${W - R}" y="${Hh - 6}" text-anchor="end">pricier than us →</text>
+      <text x="${L - 6}" y="${Y(mx) + 4}" text-anchor="end">${mx}</text>
+      <g transform="translate(${W - R - 150} ${T})"><rect width="10" height="10" fill="var(--allegro)"/><text x="15" y="9">Allegro</text><rect x="75" width="10" height="10" fill="var(--ceneo)"/><text x="90" y="9">Ceneo</text></g></svg>`;
   }
 
-  function chart(p) {
-    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort();
-    const pts = days.map(d => {
-      const e = H[d][p.id]; if (!e) return null;
-      const rv = Object.entries(e).filter(([k]) => k !== 'own').map(([, v]) => v);
-      return {d, own: e.own, min: rv.length ? Math.min(...rv) : null};
+  function duel(scope) {
+    const both = scope.map(m => {
+      const ok = o => !S.clean || !isBad(o);
+      const a = m.offers.filter(o => o.channel === 'allegro' && ok(o)).sort((x, y) => x.price - y.price)[0];
+      const c = m.offers.filter(o => o.channel === 'ceneo' && ok(o)).sort((x, y) => x.price - y.price)[0];
+      return a && c ? {m, a, c} : null;
     }).filter(Boolean);
-    if (pts.length < 2) return '<div class="none">Price history will appear here after a few days.</div>';
-    const W = 440, Hh = 190, L = 40, R = 100, T = 14, B = 26;
-    const vals = pts.flatMap(x => [x.own, x.min]).filter(v => v != null);
-    let lo = Math.min(...vals), hi = Math.max(...vals);
-    const pad = Math.max((hi - lo) * .15, 1); lo -= pad; hi += pad;
-    const X = i => L + i / (pts.length - 1) * (W - L - R);
-    const Y = v => T + (1 - (v - lo) / (hi - lo)) * (Hh - T - B);
-    const path = k => { let s = '', pen = false;
-      pts.forEach((x, i) => { if (x[k] == null) { pen = false; return; } s += (pen ? 'L' : 'M') + X(i).toFixed(1) + ' ' + Y(x[k]).toFixed(1); pen = true; }); return s; };
-    const last = pts[pts.length - 1];
+    if (!both.length) { $('#cDuel').innerHTML = '<div class="empty">No product is listed on both channels in this selection.</div>'; return; }
+    const aw = both.filter(x => x.a.price < x.c.price * .995).length, cw = both.filter(x => x.c.price < x.a.price * .995).length, tie = both.length - aw - cw;
+    const W = 520, Hh = 150, L = 8, bw = W - 2 * L, f = v => v / both.length * bw;
+    const ma = median(both.map(x => x.a.gap)), mc = median(both.map(x => x.c.gap));
+    $('#cDuel').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Which channel is cheaper on ${both.length} shared products">
+      <text x="${L}" y="14" class="strong">${both.length} products on both channels</text>
+      <rect x="${L}" y="26" width="${f(aw)}" height="30" fill="var(--allegro)"/><rect x="${L + f(aw)}" y="26" width="${f(tie)}" height="30" fill="var(--c7)"/>
+      <rect x="${L + f(aw + tie)}" y="26" width="${f(cw)}" height="30" fill="var(--ceneo)"/>
+      <text x="${L}" y="76">Allegro cheaper: <tspan class="strong">${aw}</tspan></text>
+      <text x="${W / 2}" y="76" text-anchor="middle">same: ${tie}</text>
+      <text x="${W - L}" y="76" text-anchor="end">Ceneo cheaper: <tspan class="strong">${cw}</tspan></text>
+      <text x="${L}" y="110">Median vs our price</text>
+      <text x="${L}" y="132" class="strong">Allegro ${pct(ma)}</text><text x="${W - L}" y="132" text-anchor="end" class="strong">Ceneo ${pct(mc)}</text></svg>`;
+  }
+
+  function trend(scope) {
+    const ids = new Set(scope.map(m => m.id));
+    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort().map(d => {
+      const g = [];
+      Object.entries(H[d]).forEach(([id, e]) => {
+        if (!ids.has(id)) return;
+        const comp = Object.entries(e).filter(([k]) => k !== 'own' && (S.ch === 'All' || k === S.ch)).map(([, v]) => v);
+        if (comp.length) g.push((Math.min(...comp) / e.own - 1) * 100);
+      });
+      return {d, n: g.length, med: median(g)};
+    }).filter(x => x.n >= 20);
+    if (days.length < 2) { $('#cTrend').innerHTML = '<div class="empty">History builds up with each run. The trend appears once two runs with good coverage exist.</div>'; return; }
+    const W = 1000, Hh = 190, L = 54, R = 40, T = 24, B = 40;
+    const vals = days.map(x => x.med), lo = Math.min(...vals, 0) - 5, hi = Math.max(...vals, 0) + 5;
+    const X = i => L + i / (days.length - 1) * (W - L - R), Y = v => T + (1 - (v - lo) / (hi - lo)) * (Hh - T - B);
     const fd = d => new Date(d).toLocaleDateString('en-GB', {day:'numeric', month:'short'});
-    return `<svg class="chart" viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Price history: our price and the cheapest competitor">
-      <line x1="${L}" x2="${W-R}" y1="${Y(hi-pad)}" y2="${Y(hi-pad)}" stroke="var(--line)"/>
-      <line x1="${L}" x2="${W-R}" y1="${Y(lo+pad)}" y2="${Y(lo+pad)}" stroke="var(--line)"/>
-      <text x="${L-6}" y="${Y(hi-pad)+4}" text-anchor="end">${(hi-pad).toFixed(0)}</text>
-      <text x="${L-6}" y="${Y(lo+pad)+4}" text-anchor="end">${(lo+pad).toFixed(0)}</text>
-      <path d="${path('min')}" fill="none" stroke="var(--cheaper)" stroke-width="2" stroke-dasharray="5 4"/>
-      <path d="${path('own')}" fill="none" stroke="var(--ours)" stroke-width="2.5"/>
-      <text x="${W-R+6}" y="${Y(last.own)+4}" style="fill:var(--ours);font-weight:600">Us</text>
-      ${last.min != null ? `<text x="${W-R+6}" y="${Y(last.min)+(Math.abs(Y(last.min)-Y(last.own))<14?16:4)}" style="fill:var(--cheaper);font-weight:600">Cheapest rival</text>` : ''}
-      <text x="${L}" y="${Hh-6}">${fd(pts[0].d)}</text><text x="${W-R}" y="${Hh-6}" text-anchor="end">${fd(last.d)}</text></svg>`;
+    $('#cTrend').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Median gap per run">
+      <line class="grid-line" x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}"/><text x="${L - 8}" y="${Y(0) + 4}" text-anchor="end">0%</text>
+      <polyline fill="none" stroke="var(--ours)" stroke-width="2.5" points="${days.map((x, i) => `${X(i)},${Y(x.med)}`).join(' ')}"/>
+      ${days.map((x, i) => `<circle cx="${X(i)}" cy="${Y(x.med)}" r="5" fill="var(--ours)"/><text x="${X(i)}" y="${Y(x.med) - 11}" text-anchor="middle" class="strong">${pct(x.med)}</text>
+        <text x="${X(i)}" y="${Hh - 20}" text-anchor="middle">${fd(x.d)}</text><text x="${X(i)}" y="${Hh - 6}" text-anchor="middle">${x.n} products</text>`).join('')}</svg>
+      <p class="note">Runs differ in how many products were read, so compare points with similar product counts.</p>`;
+  }
+
+  function spark(m) {
+    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort();
+    const pts = days.map(d => { const e = H[d][m.id]; if (!e) return null;
+      const c = Object.entries(e).filter(([k]) => k !== 'own').map(([, v]) => v); return {d, own:e.own, min:c.length ? Math.min(...c) : null}; }).filter(x => x && x.min != null);
+    if (pts.length < 2) return '<p class="note">Price history will appear after more runs.</p>';
+    const hn = '<p class="note">History shows the lowest price seen on any channel, including unboxed listings.</p>';
+    const W = 320, Hh = 130, L = 40, R = 60, T = 10, B = 22, v = pts.flatMap(x => [x.own, x.min]), lo = Math.min(...v) - 3, hi = Math.max(...v) + 3;
+    const X = i => L + i / (pts.length - 1) * (W - L - R), Y = q => T + (1 - (q - lo) / (hi - lo)) * (Hh - T - B);
+    const ln = k => pts.map((x, i) => `${X(i)},${Y(x[k])}`).join(' ');
+    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Price history"><polyline fill="none" stroke="var(--cheaper)" stroke-width="2" stroke-dasharray="5 4" points="${ln('min')}"/>
+      <polyline fill="none" stroke="var(--ours)" stroke-width="2.5" points="${ln('own')}"/>
+      <text x="${W - R + 6}" y="${Y(pts.at(-1).own) + 4}" style="fill:var(--ours)" class="strong">Us</text>
+      <text x="${W - R + 6}" y="${Y(pts.at(-1).min) + (Math.abs(Y(pts.at(-1).min) - Y(pts.at(-1).own)) < 14 ? 16 : 4)}" style="fill:var(--cheaper)" class="strong">Rival</text>
+      <text x="${L - 6}" y="${Y(hi - 3) + 4}" text-anchor="end">${Math.round(hi - 3)}</text><text x="${L - 6}" y="${Y(lo + 3) + 4}" text-anchor="end">${Math.round(lo + 3)}</text></svg>` + (m.usable.length < m.offers.length ? hn : '');
+  }
+
+  // ---- table -------------------------------------------------------------
+  function table(scope) {
+    let rows = scope.slice();
+    const q = S.q.trim().toLowerCase();
+    if (q) rows = rows.filter(m => m.title.toLowerCase().includes(q));
+    const key = {gap:(a, b) => (a.gap ?? 9e9) - (b.gap ?? 9e9), gapUp:(a, b) => (b.gap ?? -9e9) - (a.gap ?? -9e9),
+      priceDown:(a, b) => b.our_price - a.our_price, name:(a, b) => a.title.localeCompare(b.title)}[S.sort];
+    rows.sort(key);
+    $('#tTitle').textContent = `Products (${rows.length})`;
+    const shown = S.all || q ? rows : rows.slice(0, 30);
+    $('#list').innerHTML = shown.length ? shown.map(row).join('') + (rows.length > shown.length ? `<button class="btn more" id="more" type="button">Show all ${rows.length}</button>` : '') : '<div class="empty">No products match.</div>';
+  }
+
+  function row(m) {
+    const best = m.best, g = m.gap;
+    const img = m.image ? `<img class="thumb" src="${esc(m.image)}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">` : '<span class="thumb"></span>';
+    const bar = g == null ? '<span class="note">no competitor listing</span>' :
+      `<div class="gap"><div class="gapbar"><i style="${g < 0 ? `right:50%;width:${Math.min(50, Math.abs(g) / 2)}%;background:var(--cheaper)` : `left:50%;width:${Math.min(50, g / 2)}%;background:var(--pricier)`}"></i></div><span class="gapval ${g < 0 ? 'cheaper' : 'pricier'}">${pct(g)}</span></div>`;
+    const offs = m.offers.slice().sort((a, b) => a.price - b.price);
+    const tr = offs.map(o => `<tr style="${m.usable.includes(o) ? '' : 'opacity:.55'}"><td><span class="chip ${o.channel}">${CH[o.channel]}</span></td><td class="n">${money(o.price)}</td><td class="n ${o.gap < 0 ? 'cheaper' : 'pricier'}">${pct(o.gap)}</td>
+        <td>${esc(o.title.length > 70 ? o.title.slice(0, 68) + '…' : o.title)}${o.tags.map(t => `<span class="tag">${t === 'check' ? 'Check' : t === 'unboxed' ? 'Unboxed' : 'Outlier'}</span>`).join('')}</td>
+        <td><a href="${esc(o.url)}" target="_blank" rel="noopener">Open ↗</a></td></tr>`).join('');
+    return `<details id="p-${esc(m.id)}"><summary>
+      <div class="prod">${img}<div class="name">${esc(m.title)}<small>${m.size_ml ? m.size_ml + ' ml' : ''}<span class="fam" style="border-color:${col(m.fam)}">${esc(m.fam)}</span></small></div></div>
+      <div class="num"><b>${money(m.our_price)}</b><small class="note" style="display:block;margin:0">ours</small></div>
+      <div class="best">${best ? `<b>${money(best.price)}</b><small><span class="chip ${best.channel}">${CH[best.channel]}</span></small>` : '<span class="note">–</span>'}</div>
+      ${bar}<div class="num note">${m.usable.length}${m.usable.length < m.offers.length ? '/' + m.offers.length : ''} listings</div></summary>
+      <div class="panel"><div class="tw">${offs.length ? `<table><thead><tr><th>Channel</th><th class="n">Price</th><th class="n">vs us</th><th>Listing</th><th></th></tr></thead><tbody>${tr}</tbody></table>` : '<p class="note">No matching listing found on any channel.</p>'}
+        <p><a href="${esc(m.url)}" target="_blank" rel="noopener">Our product page ↗</a></p></div><div>${spark(m)}</div></div></details>`;
+  }
+
+  function focusProduct(id) {
+    S.fam = 'All'; S.q = ''; S.all = true; $('#q').value = ''; render();
+    const el = document.getElementById('p-' + id);
+    if (el) { el.open = true; el.scrollIntoView({behavior:'smooth', block:'center'}); }
   }
 
   function csv() {
-    const rows = [['product','size_ml','our_price','channel','competitor_price','diff','match','check','url']];
-    D.products.forEach(p => {
-      if (!p.offers.length) rows.push([p.title, p.size_ml || '', p.our_price, '', '', '', '', '', '']);
-      p.offers.forEach(o => rows.push([p.title, p.size_ml || '', p.our_price, chName[o.channel] || o.channel, o.price,
-        (o.price - p.our_price).toFixed(2), o.match, o.flag ? 'yes' : '', o.url]));
-    });
-    const body = rows.map(r => r.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
+    const M = model().filter(inScope), r = [['product','collection','size_ml','our_price','channel','competitor_price','gap_pct','tags','listing_url']];
+    M.forEach(m => { if (!m.offers.length) r.push([m.title, m.fam, m.size_ml || '', m.our_price, '', '', '', '', '']);
+      m.offers.forEach(o => r.push([m.title, m.fam, m.size_ml || '', m.our_price, CH[o.channel], o.price, o.gap.toFixed(1), o.tags.join('|'), o.url])); });
+    const body = r.map(x => x.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
     const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob(['\ufeff' + body], {type: 'text/csv;charset=utf-8'}));
-    a.download = 'sorvella-price-comparison.csv';
-    a.click();
+    a.href = URL.createObjectURL(new Blob(['\ufeff' + body], {type:'text/csv;charset=utf-8'}));
+    a.download = 'sorvella-price-analysis.csv'; a.click();
   }
 
   document.addEventListener('click', e => {
-    const f = e.target.closest('[data-f]');
-    if (f) { filter = f.dataset.f; render(); }
+    const f = e.target.closest('[data-fam]'), c = e.target.closest('[data-ch]'), d = e.target.closest('.dotc'), m = e.target.closest('#more');
+    if (f) { S.fam = f.dataset.fam; S.all = false; render(); }
+    else if (c) { S.ch = c.dataset.ch; render(); }
+    else if (d) focusProduct(d.dataset.id);
+    else if (m) { S.all = true; render(); }
   });
+  document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.classList && e.target.classList.contains('dotc')) { e.preventDefault(); focusProduct(e.target.dataset.id); } });
+  $('#fClean').addEventListener('change', e => { S.clean = e.target.checked; render(); });
+  $('#q').addEventListener('input', e => { S.q = e.target.value; render(); });
+  $('#sort').addEventListener('change', e => { S.sort = e.target.value; render(); });
   $('#csv').addEventListener('click', csv);
 
-  load().then(([d, h]) => { D = d; H = h; D.channels.forEach(c => chName[c.id] = c.name); render(); })
+  load().then(([d, h]) => { D = d; H = h; render(); })
     .catch(err => { $('#headline').textContent = 'Could not load data.';
-      $('#lead').textContent = err.message + '. Open the page through a web server (GitHub Pages or python -m http.server) and make sure data/latest.json exists.'; });
+      $('#lead').textContent = err.message + '. Open the page through a web server (GitHub Pages or python -m http.server).'; });
 })();
 </script>
 </body>
