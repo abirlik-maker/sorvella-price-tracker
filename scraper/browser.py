@@ -1,4 +1,5 @@
 """Browser-based scraper (Playwright). Run: python -m scraper.browser"""
+import json
 import os
 import re
 import time
@@ -27,6 +28,23 @@ DIAG_JS = r"""() => {
   }
   return out;
 }"""
+PAGINATION_JS = r"""() => {
+  const cur = new URL(location.href), keys = /^(page|p|pg|strona|start|offset|pagenumber|currentpage)$/i, out = new Map();
+  for (const a of document.querySelectorAll('a[href]')) {
+    let u; try { u = new URL(a.href, location.href); } catch (e) { continue; }
+    if (u.origin !== cur.origin || u.href === cur.href) continue;
+    let val = null;
+    for (const [k, v] of u.searchParams) if (keys.test(k) && /^\d+$/.test(v)) val = +v;
+    const nav = a.closest('nav, [class*="pagination" i], [class*="pager" i], [aria-label*="pagin" i], [aria-label*="stron" i]');
+    const num = /^\d+$/.test((a.textContent || '').trim()) ? +(a.textContent.trim()) : null;
+    if (val === null && !(nav && num !== null)) continue;
+    if (u.pathname !== cur.pathname && !(nav && num !== null)) continue;
+    out.set(u.href, val !== null ? val : num);
+  }
+  return [...out.entries()].sort((x, y) => x[1] - y[1]).map(x => x[0]);
+}"""
+NEXT_BUTTONS = ("a[rel='next'], [aria-label*='następn' i], [aria-label*='next' i], button:has-text('Następna'), "
+                "a:has-text('Następna'), button:has-text('Next'), a:has-text('Next'), li.next a, .pagination .next a")
 MORE_BUTTONS = ("button:has-text('Pokaż więcej'), button:has-text('Załaduj więcej'), button:has-text('Show more'), "
                 "button:has-text('Load more'), a:has-text('Pokaż więcej'), a:has-text('Załaduj więcej')")
 
@@ -37,6 +55,7 @@ class BrowserChannel(Channel):
     def __init__(self, id, name, url):
         self.id, self.name, self.url = id, name, url
         self._pw = self._browser = self._ctx = self._page = None
+        self._seen = self._with_seller = 0
 
     def _start(self):
         from playwright.sync_api import sync_playwright
@@ -64,6 +83,9 @@ class BrowserChannel(Channel):
         self._page = self._ctx.pages[0] if self._ctx.pages else self._ctx.new_page()
 
     def close(self):
+        if self._seen:
+            print(f"[{self.id}] listings read: {self._seen}, with seller info: {self._with_seller}", flush=True)
+            self._seen = self._with_seller = 0
         try:
             if self._ctx:
                 self._ctx.close()
@@ -136,7 +158,9 @@ class BrowserChannel(Channel):
                 time.sleep(3)
 
     def search(self, product):
-        return self._with_retry(self._search, product)
+        items = self._with_retry(self._search, product)
+        self._seen += len(items); self._with_seller += sum(1 for i in items if i.get("seller"))
+        return items
 
     def _search(self, product):
         if not self._page:
@@ -165,6 +189,7 @@ class CatalogChannel(BrowserChannel):
         if not self._page:
             self._start()
         page, found, q = self._page, {}, quote_plus("sorvella")
+        pages = 0
         if self.page_url:                                  # numbered pages
             for n in range(1, self.max_pages + 1):
                 new = [i for i in self._open(self.page_url.format(page=n, q=q), settle=True) if i["url"] not in found]
@@ -172,28 +197,47 @@ class CatalogChannel(BrowserChannel):
                     found[i["url"]] = i
                 if not new:
                     break
-        else:                                              # one page that grows: scroll / "show more"
+                pages += 1
+        else:                                              # one result list across several pages
             for i in self._open(self.url.format(q=q), settle=True):
                 found[i["url"]] = i
-            still = 0
+            visited, still, pages = {page.url}, 0, 1
             for _ in range(self.max_pages * 3):
                 before = len(found)
-                page.mouse.wheel(0, 5000)
-                page.wait_for_timeout(1500)
-                try:
-                    btn = page.locator(MORE_BUTTONS).first
-                    if btn.is_visible(timeout=300):
-                        btn.click()
-                        page.wait_for_timeout(2000)
-                except Exception:
-                    pass
-                for i in page.evaluate(EXTRACT_JS):
-                    found.setdefault(i["url"], i)
+                nxt = [h for h in page.evaluate(PAGINATION_JS) if h not in visited]
+                if nxt:                                    # 1) numbered page links, any parameter name
+                    visited.add(nxt[0]); pages += 1
+                    for i in self._open(nxt[0], settle=True):
+                        found.setdefault(i["url"], i)
+                else:                                      # 2) "next" button, "show more" button, infinite scroll
+                    clicked = False
+                    for sel in (NEXT_BUTTONS, MORE_BUTTONS):
+                        try:
+                            btn = page.locator(sel).first
+                            if btn.is_visible(timeout=300) and btn.is_enabled(timeout=300):
+                                btn.click(); clicked = True; pages += 1
+                                page.wait_for_timeout(2500)
+                                break
+                        except Exception:
+                            pass
+                    if not clicked:
+                        page.mouse.wheel(0, 5000)
+                        page.wait_for_timeout(1500)
+                    for i in page.evaluate(EXTRACT_JS):
+                        found.setdefault(i["url"], i)
                 still = still + 1 if len(found) == before else 0
                 if still >= 2:
                     break
+        try:
+            out_dir = Path(os.getenv("CATALOG_DUMP_DIR") or Path(__file__).resolve().parent.parent / "docs" / "data")
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir / f"catalog_{self.id}.json").write_text(json.dumps(list(found.values()), ensure_ascii=False, indent=1))
+        except Exception:
+            pass
         total = self._declared_total()
-        print(f"[{self.id}] catalog read: {len(found)} products" + (f" (page says {total})" if total else ""), flush=True)
+        print(f"[{self.id}] sellers captured: {sum(1 for i in found.values() if i.get('seller'))} of {len(found)}", flush=True)
+        print(f"[{self.id}] catalog read: {len(found)} products" + (f" (page says {total})" if total else "")
+              + f", {pages} pages", flush=True)
         if not found and (total or "sorvella" in page.inner_text("body").lower()):
             print(f"[{self.id}] WARNING: the page mentions Sorvella but no product could be read. Send this block:", flush=True)
             print("=== DIAGNOSTIC " + self.id + " ===", flush=True)
@@ -206,7 +250,7 @@ class CatalogChannel(BrowserChannel):
 def browser_channels():
     return [
         BrowserChannel("allegro", "Allegro", "https://allegro.pl/listing?string={q}"),
-        BrowserChannel("ceneo", "Ceneo", "https://www.ceneo.pl/;szukaj-{q}"),
+        CatalogChannel("ceneo", "Ceneo", "https://www.ceneo.pl/;szukaj-{q}"),
         CatalogChannel("hebe", "Hebe", "https://www.hebe.pl/search?q={q}&lang=pl_PL"),
         CatalogChannel("rossmann", "Rossmann", "https://www.rossmann.pl/szukaj?Search={q}",
                        page_url="https://www.rossmann.pl/szukaj?Page={page}&Search={q}"),

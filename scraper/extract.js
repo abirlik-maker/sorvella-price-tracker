@@ -19,7 +19,18 @@
   };
   const priceIn = el => { const v = fromMatch(PRICE.exec(el.innerText || '')); return v != null ? v : supPrice(el); };
   const out = [], seen = new Set();
-  const push = (title, price, url) => { if (!url || seen.has(url) || !(price > 0)) return; seen.add(url); out.push({title, price, url}); };
+  // Who sells it, as far as the listing shows: Allegro seller link, "Hebe Partner sells", "in 8 stores" (Ceneo).
+  const sellerOf = card => {
+    if (!card) return null;
+    const a = card.querySelector('a[href*="/uzytkownik/"], a[href*="/sklep/"]');
+    if (a && (a.textContent || '').trim()) return a.textContent.trim().replace(/\s+/g, ' ').slice(0, 60);
+    const lines = (card.innerText || '').split('\n').map(x => x.replace(/\s+/g, ' ').trim()).filter(Boolean);
+    const l = lines.find(x => x.length < 70 && /(sprzedaj|sprzedawc|sold by|seller|sells|selling)/i.test(x));
+    if (l) return l;
+    const m = /(?:\bw\s+|\bin\s+)?(\d+)\s+(?:sklep\w*|stores?|shops?)/i.exec(card.innerText || '');
+    return m ? 'in ' + m[1] + ' stores' : null;
+  };
+  const push = (title, price, url, seller) => { if (!url || seen.has(url) || !(price > 0)) return; seen.add(url); const o = {title, price, url}; if (seller) o.seller = seller; out.push(o); };
   // Titles without a size ("Sorvella S-530"): add the line under the title and the first "N ml" of the card.
   const enrich = (title, card) => {
     if (/\d\s?ml/i.test(title) || !card) return title;
@@ -37,7 +48,7 @@
     const title = ((h && h.innerText) || '').trim().replace(/\s+/g, ' ');
     if (!/sorvella/i.test(title)) continue;
     const links = [...ar.querySelectorAll('a[href]')].map(a => a.href);
-    push(enrich(title, ar), priceIn(ar), links.find(u => !/\/events\//.test(u)) || links[0]);
+    push(enrich(title, ar), priceIn(ar), links.find(u => !/\/events\//.test(u)) || links[0], sellerOf(ar));
   }
   if (!out.length) {
     for (const a of document.querySelectorAll('a[href]')) {
@@ -45,7 +56,7 @@
       if (title.length < 8 || !/sorvella/i.test(title)) continue;
       let node = a, price = null, card = null;
       for (let i = 0; i < 6; i++) { node = node.parentElement; if (!node) break; price = priceIn(node); if (price) { card = node; break; } }
-      push(enrich(title, card), price, a.href);
+      push(enrich(title, card), price, a.href, sellerOf(card));
     }
   }
   if (!out.length) {
@@ -63,7 +74,7 @@
       const pure = [...el.querySelectorAll('*')].filter(x => !x.children.length && PURE.test(x.innerText || '') && !/\//.test(x.innerText || ''))
         .map(x => fromMatch(PRICE.exec(x.innerText))).filter(n => n > 0);
       const link = [...el.querySelectorAll('a[href]')].map(a => a.href).find(u => u && !u.endsWith('#') && !/^javascript:/.test(u));
-      push(title.replace(/\s+/g, ' '), pure.length ? Math.min(...pure) : priceIn(el), link);
+      push(title.replace(/\s+/g, ' '), pure.length ? Math.min(...pure) : priceIn(el), link, sellerOf(el));
     }
   }
   return out;
