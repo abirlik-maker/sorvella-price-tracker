@@ -15,14 +15,10 @@ from pathlib import Path
 from scraper.browser import EXTRACT_JS, BOT_WORDS
 
 SITES = {
-    "rossmann": ["https://www.rossmann.pl/szukaj?Query=sorvella", "https://www.rossmann.pl/szukaj?query=sorvella"],
-    "hebe": ["https://www.hebe.pl/search?q=sorvella", "https://www.hebe.pl/szukaj?q=sorvella"],
-    "biedronka": ["https://www.biedronka.pl/pl/szukaj?query=sorvella", "https://zakupy.biedronka.pl/search?q=sorvella"],
-    "notino": ["https://www.notino.pl/search/?f=sorvella", "https://www.notino.pl/szukaj/?f=sorvella"],
-    "douglas": ["https://www.douglas.pl/pl/search?q=sorvella", "https://www.douglas.pl/search?q=sorvella"],
-    "sephora": ["https://www.sephora.pl/search?q=sorvella", "https://www.sephora.pl/szukaj?q=sorvella"],
-    "superpharm": ["https://www.superpharm.pl/search?query=sorvella", "https://www.superpharm.pl/szukaj?q=sorvella"],
+    "hebe": ["https://www.hebe.pl/search?q=sorvella"],
+    "rossmann": ["https://www.rossmann.pl/szukaj?Query=sorvella"],
 }
+# Set aside for now: notino (wait page), douglas (no results), biedronka / sephora / superpharm (no working search URL).
 
 
 def look(page, status):
@@ -34,7 +30,8 @@ def look(page, status):
     items = [] if bot else page.evaluate(EXTRACT_JS)
     return {"status": status, "final_url": page.url.split("?")[0], "title": title[:70], "chars": len(body),
             "mentions": low.count("sorvella"), "bot_check": bot, "items": len(items),
-            "examples": [f'{i["title"][:50]} = {i["price"]}' for i in items[:3]]}
+            "examples": [f'{i["title"][:60]} = {i["price"]}' for i in items[:5]],
+            "snippet": " ".join(body.split())[:160]}
 
 
 def verdict(r):
@@ -44,8 +41,10 @@ def verdict(r):
         return "wrong URL or empty page"
     if r["items"]:
         return "READABLE - can be added"
+    if r["mentions"] > 2:
+        return "Sorvella is on the page but the product cards are not readable (needs a custom reader)"
     if r["mentions"]:
-        return "Sorvella is mentioned but the product cards are not readable (needs a custom reader)"
+        return "no products (the only mention is the search word itself)"
     return "no Sorvella found (not sold there, or the page did not render)"
 
 
@@ -66,7 +65,14 @@ def probe(sites, out_dir, wait_human=60):
             for i, url in enumerate(urls):
                 try:
                     resp = page.goto(url, wait_until="domcontentloaded", timeout=30000)
-                    page.wait_for_timeout(3500)
+                    try:
+                        page.wait_for_load_state("networkidle", timeout=12000)
+                    except Exception:
+                        pass
+                    end = time.monotonic() + 30          # "Cierpliwosci..." / "Just a moment" pages clear by themselves
+                    while time.monotonic() < end and any(w in (page.title() or "").lower() for w in ("cierpliwo", "just a moment", "please wait")):
+                        page.wait_for_timeout(2000)
+                    page.wait_for_timeout(2500)
                     r = look(page, resp.status if resp else None)
                     if r["bot_check"] and wait_human:
                         print(f"[{site}] bot check - solve it in the window (up to {wait_human}s)...", flush=True)
@@ -96,11 +102,17 @@ def probe(sites, out_dir, wait_human=60):
 def main():
     out = Path.home() / "sorvella-probe"
     os.environ.setdefault("BROWSER_CHANNEL", "chrome")
-    rep = probe(SITES, out)
+    import sys
+    sites = {k: v for k, v in SITES.items() if not sys.argv[1:] or k in sys.argv[1:]}
+    rep = probe(sites, out)
     print("\n=== COPY FROM HERE ===")
     for site, r in rep.items():
         print(f'{site} | HTTP {r["status"]} | title "{r["title"]}" | sorvella x{r["mentions"]} | items {r["items"]} | {r["verdict"]}'
-              + (f' | e.g. {r["examples"][0]}' if r["examples"] else "") + f' | {r["final_url"]}')
+              + f' | {r["final_url"]}')
+        for ex in r["examples"]:
+            print(f'    - {ex}')
+        if not r["items"]:
+            print(f'    page text: {r["snippet"]}')
     print("=== TO HERE ===")
     print(f"Screenshots: {out}")
 
