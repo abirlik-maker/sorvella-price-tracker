@@ -26,6 +26,7 @@ def run(*cmd, check=True):
 
 run("pkill", "-f", "sorvella-profile", check=False)   # browsers left over from an interrupted run
 run("git", "pull", "--rebase", "--autostash")
+run(sys.executable, "-m", "scraper.base", check=False)   # competitor sellers from Base.com (login once in its window)
 run(sys.executable, "-m", "scraper.browser")
 run("git", "add", "docs/data", "scraper", "run_local.py", ".github")   # data and the code that produced it
 if run("git", "diff", "--cached", "--quiet", check=False).returncode != 0:

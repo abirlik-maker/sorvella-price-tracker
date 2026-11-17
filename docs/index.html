@@ -93,6 +93,10 @@ summary:hover{background:var(--wash)}
 .gapbar i{position:absolute;top:0;bottom:0;border-radius:4px}
 .gapval{min-width:46px;text-align:right;font-weight:600}
 .cheaper{color:var(--cheaper)}.pricier{color:var(--pricier)}
+.sellers td,.sellers th{padding:6px 10px 6px 0}
+.sellers button{font:600 13px var(--font);color:var(--ours);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.selbar{display:inline-flex;gap:8px;align-items:center;margin-left:10px;font:400 13px var(--font)}
+.ownshop{margin:0 0 10px;padding:8px 10px;border-radius:8px;background:var(--wash);font-size:13px}
 .panel{padding:4px 16px 18px;display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
 table{width:100%;border-collapse:collapse;font-size:13px}
 th{font-weight:600;text-align:left;color:var(--muted);font-size:12px;padding:5px 8px 5px 0;border-bottom:1px solid var(--line)}
@@ -143,7 +147,9 @@ a{color:var(--ours)}
     <section class="card s5"><h2>Channels compared</h2>
       <p class="sub">How far each channel is from our price, and how often it has the lowest price.</p><div id="cDuel"></div></section>
     <section class="card s12"><h2>Over time</h2>
-      <p class="sub">Median gap of the cheapest competitor, per daily run.</p><div id="cTrend"></div></section>
+      <p class="sub">Median gap of the cheapest competitor, per weekly update.</p><div id="cTrend"></div></section>
+    <section class="card s12" id="sellersCard" hidden><h2>Who sells our products on Allegro</h2>
+      <p class="sub" id="sellersSub"></p><div class="tw" id="cSellers"></div></section>
   </div>
 
   <div class="tools">
@@ -190,7 +196,7 @@ a{color:var(--ours)}
     return 'Other';
   }
 
-  let D, H, S = {fam:'All', ch:'All', clean:true, q:'', sort:'gap', all:false};
+  let D, H, S = {fam:'All', ch:'All', clean:true, q:'', sort:'gap', all:false, seller:null};
 
   async function load() {
     const inline = document.getElementById('inline-data');
@@ -232,7 +238,8 @@ a{color:var(--ours)}
       ? `The cheapest competitor listing is ${Math.abs(Math.round(med))}% ${med < 0 ? 'below' : 'above'} our price (median).`
       : 'No competitor listings match this selection.';
     $('#lead').textContent = `We found a competitor listing for ${matched.length} of ${scope.length} products${S.fam !== 'All' ? ' in ' + S.fam : ''}. In ${cheaper} of them a competitor is cheaper.`
-      + (D.channels.some(c => c.status !== 'ok') ? ' Some channels were only partly read in the last run, so coverage is not complete.' : '');
+      + (D.channels.some(c => c.status !== 'ok') ? ' Some channels were only partly read in the last run, so coverage is not complete.' : '')
+      + ownShopLine(scope);
 
     $('#kpis').innerHTML = [
       [scope.length, 'products tracked'],
@@ -246,10 +253,18 @@ a{color:var(--ours)}
     $('#fCh').innerHTML = ['All', ...D.channels.map(c => c.id)].map(c => `<button type="button" data-ch="${esc(c)}" aria-pressed="${S.ch === c}">${c === 'All' ? 'All' : esc(CH[c])}</button>`).join('');
     $('#fClean').checked = S.clean;
 
-    scatter(matched); bars(M); hist(scope); duel(scope); trend(scope);
+    scatter(matched); bars(M); hist(scope); duel(scope); trend(scope); sellers(scope);
     $('#legend').innerHTML = FAMS.filter(f => matched.some(m => m.fam === f)).map(f => `<span><i style="background:${col(f)}"></i>${esc(f)}</span>`).join('')
       + (excl && S.clean ? `<span>· ${excl} listing${excl > 1 ? 's' : ''} excluded as unboxed or outlier</span>` : '');
     table(scope);
+  }
+
+  function ownShopLine(scope) {
+    const own = scope.filter(m => m.own_allegro);
+    if (!own.length) return '';
+    const diff = own.filter(m => Math.abs(m.own_allegro.price / m.our_price - 1) > .01);
+    const below = diff.filter(m => m.own_allegro.price < m.our_price).length;
+    return ` Our own Allegro shop lists ${own.length} of these products; ${diff.length ? `${diff.length} are priced differently from our website (${below} lower, ${diff.length - below} higher)` : 'all at the website price'}. Our own Allegro listings are not counted as competitors.`;
   }
 
   // ---- charts ------------------------------------------------------------
@@ -376,6 +391,24 @@ a{color:var(--ours)}
     });
   }
 
+  function sellers(scope) {
+    const withBase = scope.filter(m => m.base);
+    $('#sellersCard').hidden = !withBase.length;
+    if (!withBase.length) return;
+    const agg = {};
+    withBase.forEach(m => m.base.sellers.filter((c, i, l) => l.findIndex(x => x.login === c.login) === i).forEach(c => {   // sellers are sorted by price: one row per seller, their cheapest listing
+      const a = agg[c.login] = agg[c.login] || {n: 0, cheaper: 0, gaps: [], sold: 0};
+      a.n++; const g = (c.price / m.our_price - 1) * 100;
+      if (g < -0.5) { a.cheaper++; a.gaps.push(g); }
+      if (/[1-9]/.test(c.sold30 || '')) a.sold++;
+    }));
+    const rows = Object.entries(agg).sort((a, b) => b[1].cheaper - a[1].cheaper || b[1].n - a[1].n).slice(0, 15);
+    const asOf = D.base && D.base.as_of ? new Date(D.base.as_of).toLocaleDateString('en-GB', {day: 'numeric', month: 'short'}) : '';
+    $('#sellersSub').textContent = `From Base.com competition monitoring on our ${withBase.length} Allegro listings${asOf ? ' (' + asOf + ')' : ''}: ${Object.keys(agg).length} other sellers. Sorted by how many of our products they sell below our website price. Click a seller to see those products.`;
+    $('#cSellers').innerHTML = `<table class="sellers"><thead><tr><th>Seller</th><th class="n">Our products they sell</th><th class="n">Cheaper than our website on</th><th class="n">Median vs our website</th><th class="n">With sales in the last 30 days</th></tr></thead><tbody>${
+      rows.map(([k, a]) => `<tr><td><button type="button" data-seller="${esc(k)}">${esc(k)}</button></td><td class="n">${a.n}</td><td class="n">${a.cheaper}</td><td class="n ${a.gaps.length ? 'cheaper' : ''}">${a.gaps.length ? pct(median(a.gaps)) : '–'}</td><td class="n">${a.sold}</td></tr>`).join('')}</tbody></table>`;
+  }
+
   function spark(m) {
     const pts = goodDays().map(d => { const e = H[d][m.id]; if (!e) return null;
       const c = Object.entries(e).filter(([k]) => k !== 'own');
@@ -409,11 +442,12 @@ a{color:var(--ours)}
     let rows = scope.slice();
     const q = S.q.trim().toLowerCase();
     if (q) rows = rows.filter(m => m.title.toLowerCase().includes(q));
+    if (S.seller) rows = rows.filter(m => m.base && m.base.sellers.some(c => c.login === S.seller));
     const key = {gap:(a, b) => (a.gap ?? 9e9) - (b.gap ?? 9e9), gapUp:(a, b) => (b.gap ?? -9e9) - (a.gap ?? -9e9),
       priceDown:(a, b) => b.our_price - a.our_price, name:(a, b) => a.title.localeCompare(b.title)}[S.sort];
     rows.sort(key);
-    $('#tTitle').textContent = `Products (${rows.length})`;
-    const shown = S.all || q ? rows : rows.slice(0, 30);
+    $('#tTitle').innerHTML = S.seller ? `Products sold by ${esc(S.seller)} (${rows.length}) <span class="selbar"><button class="btn" type="button" data-seller="">Show all products</button></span>` : `Products (${rows.length})`;
+    const shown = S.all || q || S.seller ? rows : rows.slice(0, 30);
     $('#list').innerHTML = shown.length ? shown.map(row).join('') + (rows.length > shown.length ? `<button class="btn more" id="more" type="button">Show all ${rows.length}</button>` : '') : '<div class="empty">No products match.</div>';
   }
 
@@ -424,15 +458,22 @@ a{color:var(--ours)}
       `<div class="gap"><div class="gapbar"><i style="${g < 0 ? `right:50%;width:${Math.min(50, Math.abs(g) / 2)}%;background:var(--cheaper)` : `left:50%;width:${Math.min(50, g / 2)}%;background:var(--pricier)`}"></i></div><span class="gapval ${g < 0 ? 'cheaper' : 'pricier'}">${pct(g)}</span></div>`;
     const offs = m.offers.slice().sort((a, b) => a.price - b.price);
     const tr = offs.map(o => `<tr style="${m.usable.includes(o) ? '' : 'opacity:.55'}"><td>${chip(o.channel)}</td><td class="n">${money(o.price)}</td><td class="n ${o.gap < 0 ? 'cheaper' : 'pricier'}">${pct(o.gap)}</td>
-        <td>${esc(o.title.length > 70 ? o.title.slice(0, 68) + '…' : o.title)}${o.tags.map(t => `<span class="tag">${t === 'check' ? 'Check' : t === 'unboxed' ? 'Unboxed' : 'Outlier'}</span>`).join('')}</td>
+        <td>${esc(o.title.length > 70 ? o.title.slice(0, 68) + '…' : o.title)}${o.seller ? `<br><small class="note">Seller: ${esc(o.seller)}</small>` : ''}${o.tags.map(t => `<span class="tag">${t === 'check' ? 'Check' : t === 'unboxed' ? 'Unboxed' : 'Outlier'}</span>`).join('')}</td>
         <td><a href="${esc(o.url)}" target="_blank" rel="noopener">Open ↗</a></td></tr>`).join('');
     return `<details id="p-${esc(m.id)}"><summary>
       <div class="prod">${img}<div class="name">${esc(m.title)}<small>${m.size_ml ? m.size_ml + ' ml' : ''}<span class="fam" style="border-color:${col(m.fam)}">${esc(m.fam)}</span></small></div></div>
       <div class="num"><b>${money(m.our_price)}</b><small class="note" style="display:block;margin:0">ours</small></div>
       <div class="best">${best ? `<b>${money(best.price)}</b><small>${chip(best.channel)}</small>` : '<span class="note">–</span>'}</div>
       ${bar}<div class="num note">${m.usable.length}${m.usable.length < m.offers.length ? '/' + m.offers.length : ''} listings</div></summary>
-      <div class="panel"><div class="tw">${offs.length ? `<table><thead><tr><th>Channel</th><th class="n">Price</th><th class="n">vs us</th><th>Listing</th><th></th></tr></thead><tbody>${tr}</tbody></table>` : '<p class="note">No matching listing found on any channel.</p>'}
-        <p><a href="${esc(m.url)}" target="_blank" rel="noopener">Our product page ↗</a></p></div><div>${spark(m)}</div></div></details>`;
+      <div class="panel"><div class="tw">${m.own_allegro ? `<p class="ownshop"><b>Our Allegro shop:</b> ${money(m.own_allegro.price)} <span class="${m.own_allegro.price < m.our_price - .005 ? 'cheaper' : m.own_allegro.price > m.our_price + .005 ? 'pricier' : 'note'}">(${pct((m.own_allegro.price / m.our_price - 1) * 100)} vs our website)</span> · <a href="${esc(m.own_allegro.url)}" target="_blank" rel="noopener">Open ↗</a></p>` : ''}${offs.length ? `<table><thead><tr><th>Channel</th><th class="n">Price</th><th class="n">vs us</th><th>Listing</th><th></th></tr></thead><tbody>${tr}</tbody></table>` : '<p class="note">No matching listing found on any channel.</p>'}
+        ${baseTable(m)}<p><a href="${esc(m.url)}" target="_blank" rel="noopener">Our product page ↗</a></p></div><div>${spark(m)}</div></div></details>`;
+  }
+
+  function baseTable(m) {
+    if (!m.base || !m.base.sellers.length) return '';
+    const list = m.base.sellers.slice(0, 12);
+    return `<p class="note" style="margin-top:14px"><b>Allegro sellers</b> (Base.com, ${m.base.sellers.length} listings)</p><table><thead><tr><th>Seller</th><th class="n">Price</th><th class="n">Shipping</th><th class="n">vs our website</th><th class="n">Sales 30d</th><th></th></tr></thead><tbody>${
+      list.map(c => { const g = (c.price / m.our_price - 1) * 100; return `<tr${S.seller === c.login ? ' style="background:var(--wash)"' : ''}><td>${esc(c.login)}</td><td class="n">${money(c.price)}</td><td class="n">${c.ship != null ? money(c.ship) : '–'}</td><td class="n ${g < -0.5 ? 'cheaper' : g > 0.5 ? 'pricier' : ''}">${pct(g)}</td><td class="n">${esc(c.sold30 || '')}</td><td>${c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">Open ↗</a>` : ''}</td></tr>`; }).join('')}</tbody></table>${m.base.sellers.length > list.length ? `<p class="note">+${m.base.sellers.length - list.length} more sellers</p>` : ''}`;
   }
 
   function focusProduct(id) {
@@ -442,9 +483,9 @@ a{color:var(--ours)}
   }
 
   function csv() {
-    const M = model().filter(inScope), r = [['product','collection','size_ml','our_price','channel','competitor_price','gap_pct','tags','listing_url']];
-    M.forEach(m => { if (!m.offers.length) r.push([m.title, m.fam, m.size_ml || '', m.our_price, '', '', '', '', '']);
-      m.offers.forEach(o => r.push([m.title, m.fam, m.size_ml || '', m.our_price, CH[o.channel], o.price, o.gap.toFixed(1), o.tags.join('|'), o.url])); });
+    const M = model().filter(inScope), r = [['product','collection','size_ml','our_price','our_allegro_price','channel','competitor_price','gap_pct','tags','listing_url']];
+    M.forEach(m => { const oa = m.own_allegro ? m.own_allegro.price : ''; if (!m.offers.length) r.push([m.title, m.fam, m.size_ml || '', m.our_price, oa, '', '', '', '', '']);
+      m.offers.forEach(o => r.push([m.title, m.fam, m.size_ml || '', m.our_price, oa, CH[o.channel], o.price, o.gap.toFixed(1), o.tags.join('|'), o.url])); });
     const body = r.map(x => x.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
     const a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob(['\ufeff' + body], {type:'text/csv;charset=utf-8'}));
@@ -452,8 +493,9 @@ a{color:var(--ours)}
   }
 
   document.addEventListener('click', e => {
-    const f = e.target.closest('[data-fam]'), c = e.target.closest('[data-ch]'), d = e.target.closest('.dotc'), m = e.target.closest('#more');
-    if (f) { S.fam = f.dataset.fam; S.all = false; render(); }
+    const f = e.target.closest('[data-fam]'), c = e.target.closest('[data-ch]'), d = e.target.closest('.dotc'), m = e.target.closest('#more'), sl = e.target.closest('[data-seller]');
+    if (sl) { S.seller = sl.dataset.seller || null; S.fam = 'All'; render(); document.querySelector('.tools').scrollIntoView({behavior: 'smooth'}); }
+    else if (f) { S.fam = f.dataset.fam; S.all = false; render(); }
     else if (c) { S.ch = c.dataset.ch; render(); }
     else if (d) focusProduct(d.dataset.id);
     else if (m) { S.all = true; render(); }

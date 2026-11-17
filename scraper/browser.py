@@ -251,6 +251,9 @@ def browser_channels():
         CatalogChannel("hebe", "Hebe", "https://www.hebe.pl/search?q={q}&lang=pl_PL"),
         CatalogChannel("rossmann", "Rossmann", "https://www.rossmann.pl/szukaj?Search={q}",
                        page_url="https://www.rossmann.pl/szukaj?Page={page}&Search={q}"),
+        # our own Allegro shop (seller "sorvella"): used to tell our listings apart from competitors
+        CatalogChannel("own_allegro", "Our Allegro shop", "https://allegro.pl/uzytkownik/sorvella",
+                       page_url="https://allegro.pl/uzytkownik/sorvella?p={page}"),
     ]
 
 

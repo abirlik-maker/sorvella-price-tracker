@@ -97,7 +97,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854423052",
+    "price": 111,
+    "monitoring": false,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854423052",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION VERMONT 50 ML owocowe słodkie"
+   }
   },
   {
    "id": "signature-discovery-set-7szt",
@@ -178,7 +190,19 @@
      "match": 82,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18929763671",
+    "price": 119.9,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 119.9,
+    "url": "https://allegro.pl/oferta/18929763671",
+    "title": "Perfumy SORVELLA LAT Unisex Premium 50 ml EDP słodkie + próbka GRATIS"
+   }
   },
   {
    "id": "angl-perfumy-damskie-premium-50-ml",
@@ -223,7 +247,28 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18929792293",
+    "price": 119.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "PERFUMY UNISEX SORVELLA SIGNATURE PEAR & MUSK 30 ML",
+      "sold30": "0",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 119.9,
+    "url": "https://allegro.pl/oferta/18929792293",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE PEAR & MUSK PARFUM KWIATOWE OWOCOWE 30 ML"
+   }
   },
   {
    "id": "tobacco-honey-perfumy-unisex-sorvella",
@@ -236,12 +281,43 @@
     {
      "channel": "allegro",
      "title": "PERFUMY UNISEX SORVELLA SIGNATURE TOBACCO & HONEY PARFUM CYTRUSOWE 30 ML",
-     "price": 109.65,
-     "url": "https://allegro.pl/produkt/perfumy-unisex-sorvella-signature-tobacco-honey-parfum-cytrusowe-30-ml-a3dcb1ed-c675-46c2-8fde-287b8d37cbc8?offerId=19009390648",
-     "match": 94,
+     "price": 98.99,
+     "seller": "ProDealPolska",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/ProDealPolska",
+     "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18929844284",
+    "price": 119.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ProDealPolska",
+      "title": "PERFUMY UNISEX SORVELLA SIGNATURE TOBACCO & HONEY PARFUM CYTRUSOWE 30 ML",
+      "sold30": "[1-5]",
+      "price": 98.99,
+      "ship": 10.49,
+      "total": 109.48
+     },
+     {
+      "login": "alleloombard831",
+      "title": "SORVELLA SIGNATURE TABACCO & HONEY",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 119.9,
+    "url": "https://allegro.pl/oferta/18929844284",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE TOBACCO & HONEY PARFUM CYTRUSOWE 30 ML"
+   }
   },
   {
    "id": "crd-perfumy-unisex-premium-50-ml",
@@ -312,7 +388,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834699302",
+    "price": 99,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99,
+    "url": "https://allegro.pl/oferta/18834699302",
+    "title": "Perfumy męskie SORVELLA S901 orientalne korzenne 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "v802-energiczne-perfumy-damskie-sorvella-50-ml",
@@ -330,7 +418,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834723590",
+    "price": 99,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99,
+    "url": "https://allegro.pl/oferta/18834723590",
+    "title": "Perfumy damskie SORVELLA V802 owocowe kwiatowe EDP 50 ml + próbka GRATIS"
+   }
   },
   {
    "id": "v801-zmyslowe-perfumy-damskie-sorvella-50-ml",
@@ -348,7 +448,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834712946",
+    "price": 99,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99,
+    "url": "https://allegro.pl/oferta/18834712946",
+    "title": "Perfumy damskie SORVELLA V801 owocowe kwiatowe EDP 50 ml + próbka GRATIS"
+   }
   },
   {
    "id": "v628-pudrowe-perfumy-damskie-sorvella-50-ml",
@@ -357,7 +469,19 @@
    "our_price": 99.9,
    "url": "https://sorvellaperfume.pl/products/v628-pudrowe-perfumy-damskie-sorvella-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_49239829-e910-4587-b2d7-9fd0c4c68e08.png?v=1793965076&width=200",
-   "offers": []
+   "offers": [],
+   "base": {
+    "allegro_offer": "18929853171",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18929853171",
+    "title": "Perfumy damskie SORVELLA V628 kwiatowe owocowe EDP 50 ml + próbka GRATIS"
+   }
   },
   {
    "id": "crd-perfumy-meskie-premium-50-ml",
@@ -375,7 +499,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834709079",
+    "price": 99,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99,
+    "url": "https://allegro.pl/oferta/18834709079",
+    "title": "Perfumy męskie SORVELLA S902 drzewne korzenne 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "leonis-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -402,7 +538,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817449992",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION LEONIS EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.63,
+      "ship": 9.99,
+      "total": 35.62
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION LEONIS EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.9,
+      "ship": 9.99,
+      "total": 35.89
+     },
+     {
+      "login": "Domoteka",
+      "title": "Leonis Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 26.29,
+      "ship": 10.49,
+      "total": 36.78
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Leonis woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 26.88,
+      "ship": 10.49,
+      "total": 37.37
+     },
+     {
+      "login": "FUTBOL90_com",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 26.99,
+      "ship": 7.99,
+      "total": 34.98
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 27.38,
+      "ship": 10.49,
+      "total": 37.87
+     },
+     {
+      "login": "Bonito-pl",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 10ml Sorvella Perfume",
+      "sold30": "0",
+      "price": 29.69,
+      "ship": 10.49,
+      "total": 40.18
+     },
+     {
+      "login": "Bonito-Plus",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 10ml Sorvella Perfume",
+      "sold30": "0",
+      "price": 29.69,
+      "ship": 10.49,
+      "total": 40.18
+     },
+     {
+      "login": "Bonito-24",
+      "title": "Sorvella Perfume Sorvella Perfume Leonis woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 29.69,
+      "ship": 10.49,
+      "total": 40.18
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18817449992",
+    "title": "Perfumy damskie SORVELLA Galaxy LEONIS kwiatowe świeże PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "leonis-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -415,12 +644,107 @@
     {
      "channel": "allegro",
      "title": "SORVELLA GALAXY COLLECTION LEONIS EDP 50ml SPRAY",
-     "price": 91.23,
-     "url": "https://allegro.pl/produkt/leonis-perfumy-sorvella-galaxy-50-ml-c7679c4e-6d98-4213-9141-acc970ff4518?offerId=18731730802",
-     "match": 94,
+     "price": 83.99,
+     "seller": "Lemur_24",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/Lemur_24",
+     "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18742536610",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION LEONIS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 83.99,
+      "ship": 9.99,
+      "total": 93.98
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION LEONIS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 89.52,
+      "ship": 9.99,
+      "total": 99.51
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 89.54,
+      "ship": 10.49,
+      "total": 100.03
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 89.54,
+      "ship": 10.49,
+      "total": 100.03
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Leonis EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 91.93,
+      "ship": 10.49,
+      "total": 102.42
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Leonis woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 92.5,
+      "ship": 10.49,
+      "total": 102.99
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Leonis EDP spray 50ml",
+      "sold30": "0",
+      "price": 94.47,
+      "ship": 10.49,
+      "total": 104.96
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Leonis EDP 50ml",
+      "sold30": "0",
+      "price": 96.15,
+      "ship": 10.49,
+      "total": 106.64
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 96.41,
+      "ship": 10.49,
+      "total": 106.9
+     },
+     {
+      "login": "FUTBOL90_com",
+      "title": "Sorvella Perfume Leonis woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 97.99,
+      "ship": 7.99,
+      "total": 105.98
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18742536610",
+    "title": "Perfumy Damskie Świeże Czyste Zamiennik EDP SORVELLA GALAXY Leonis 50 ml"
+   }
   },
   {
    "id": "sun-kisses-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
@@ -438,7 +762,19 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834765413",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18834765413",
+    "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Sun Kisses 100 ml Damska"
+   }
   },
   {
    "id": "coco-bliss-mgielka-do-ciala-i-wlosow-sorvella-perfume-100-ml",
@@ -456,7 +792,19 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18834741761",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18834741761",
+    "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Coco Bliss 100 ml Damska"
+   }
   },
   {
    "id": "sorvella-v244-50ml",
@@ -482,7 +830,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800066302",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800066302",
+    "title": "Perfumy damskie Sorvella V244 kwiatowe EDP 50 ml"
+   }
   },
   {
    "id": "orcd-tom-ford-black-orchid-sorvella",
@@ -536,7 +896,60 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800091104",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S-18 - Męska Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S-18 - Męska Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "Sanibelle_pl",
+      "title": "Sorvella S18 50 ml perfumy męskie",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella S18 50 ml perfumy męskie kwiatowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "e-drogeria24_pl",
+      "title": "Sorvella S18 50 ml perfumy męskie kwiatowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800091104",
+    "title": "Perfumy męskie SORVELLA S-18 drzewne skórzane 50 ml EDP"
+   }
   },
   {
    "id": "cytrus-rozmaryna-zapach-do-samochodu",
@@ -563,7 +976,36 @@
      "match": 88,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18695099812",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM JAZZ 50ML WODA PERFUMOWANA UNISEX PERFUMY DAMSKIE MĘSKIE",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Jazz 50ml - Unisex Woda Perfumowana z Nutami Rumu i Wanilii",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18695099812",
+    "title": "Perfumy SORVELLA JAZZ 50 ml Unisex"
+   }
   },
   {
    "id": "mine-perfumy-meskie-premium-50-ml",
@@ -599,7 +1041,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822670318",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Milky Way woda perfumowana dla kobiet 10 ml",
+      "sold30": "[1-5]",
+      "price": 18.99,
+      "ship": 10.49,
+      "total": 29.48
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Milky Way Woda perfumowana dla kobiet, 1...",
+      "sold30": "[1-5]",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION MILY WAY 10ML WODA PERFUMOWANA DLA KOBIET",
+      "sold30": "0",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Milky Way woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Milky Way woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION MILKY WAY EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.64,
+      "ship": 9.99,
+      "total": 35.63
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Milky Way woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 25.83,
+      "ship": 10.49,
+      "total": 36.32
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Milky Way EDP 10ml",
+      "sold30": "0",
+      "price": 25.83,
+      "ship": 10.49,
+      "total": 36.32
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Milky Way EDP 10ml",
+      "sold30": "0",
+      "price": 25.83,
+      "ship": 10.49,
+      "total": 36.32
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Milky Way EDP spray 10ml",
+      "sold30": "0",
+      "price": 25.84,
+      "ship": 10.49,
+      "total": 36.33
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822670318",
+    "title": "Perfumy damskie SORVELLA Galaxy MILKY WAY kwiatowe PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "merger-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -626,7 +1161,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817457807",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Merger woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 18.99,
+      "ship": 10.49,
+      "total": 29.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Merger EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 22.35,
+      "ship": 10.49,
+      "total": 32.84
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Merger EDP 10ml",
+      "sold30": "0",
+      "price": 22.97,
+      "ship": 10.49,
+      "total": 33.46
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Merger woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Merger EDP spray 10ml",
+      "sold30": "0",
+      "price": 25.84,
+      "ship": 10.49,
+      "total": 36.33
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION MERGER EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.89,
+      "ship": 9.99,
+      "total": 35.88
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION MERGER EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.9,
+      "ship": 9.99,
+      "total": 35.89
+     },
+     {
+      "login": "FUTBOL90_com",
+      "title": "Sorvella Perfume Merger woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 26.99,
+      "ship": 7.99,
+      "total": 34.98
+     },
+     {
+      "login": "stylemania-pl",
+      "title": "Sorvella Perfume Merger woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 27.24,
+      "ship": 10.49,
+      "total": 37.73
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Merger woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 27.38,
+      "ship": 10.49,
+      "total": 37.87
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18817457807",
+    "title": "Perfumy damskie SORVELLA Galaxy MERGER aromatyczne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "andromeda-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -653,7 +1281,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817462217",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Andromeda EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 18.99,
+      "ship": 10.49,
+      "total": 29.48
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Andromeda woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 21.84,
+      "ship": 10.49,
+      "total": 32.33
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Andromeda EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 21.99,
+      "ship": 10.49,
+      "total": 32.48
+     },
+     {
+      "login": "hotfm",
+      "title": "Andromeda Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 22,
+      "ship": 10.49,
+      "total": 32.49
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Andromeda Woda perfumowana dla kobiet, 1...",
+      "sold30": "0",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Andromeda woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 24.19,
+      "ship": 10.49,
+      "total": 34.68
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Andromeda woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 24.19,
+      "ship": 10.49,
+      "total": 34.68
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Andromeda EDP spray 10ml",
+      "sold30": "0",
+      "price": 25.84,
+      "ship": 10.49,
+      "total": 36.33
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION ANDROMEDA EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 26.02,
+      "ship": 9.99,
+      "total": 36.01
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION ANDROMEDA EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 26.28,
+      "ship": 9.99,
+      "total": 36.27
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18817462217",
+    "title": "Perfumy damskie SORVELLA Galaxy ANDROMEDA orientalne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "tucana-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -664,14 +1385,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/11_e690ac27-f396-4de3-ab27-466176347c54.png?v=1770038984&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUME Galaxy Collection Tucana EDP 10ml",
-     "price": 22.36,
-     "url": "https://allegro.pl/produkt/sorvella-galaxy-collection-tucana-10ml-woda-perfumowana-dla-kobiet-7150b4ea-41f7-4fa1-ad17-4a85ce2bc27c?offerId=18708272625",
-     "match": 94,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Perfume Tucana Woda Perfumowana 10ml",
      "price": 18.99,
@@ -679,8 +1392,111 @@
      "seller": "in 6 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA PERFUME Galaxy Collection Tucana EDP 10ml",
+     "price": 21.24,
+     "seller": "Perfumeria-pl",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/Perfumeria-pl",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822692395",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Tucana EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 21.24,
+      "ship": 10.49,
+      "total": 31.73
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Tucana EDP 10ml",
+      "sold30": "0",
+      "price": 21.82,
+      "ship": 10.49,
+      "total": 32.31
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Tucana woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 22.65,
+      "ship": 10.49,
+      "total": 33.14
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Tucana Woda perfumowana dla kobiet, 10 ml",
+      "sold30": "0",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "UniqueProductsPL",
+      "title": "SORVELLA GALAXY COLLECTION TUCANA 10ML WODA PERFUMOWANA DLA KOBIET",
+      "sold30": "0",
+      "price": 24.46,
+      "ship": 10.49,
+      "total": 34.95
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Tucana woda perfumowana dla kobiet 10 ml",
+      "sold30": "[1-5]",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Tucana woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION TUCANA EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.63,
+      "ship": 9.99,
+      "total": 35.62
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Tucana EDP spray 10ml",
+      "sold30": "0",
+      "price": 25.84,
+      "ship": 10.49,
+      "total": 36.33
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION TUCANA EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.9,
+      "ship": 9.99,
+      "total": 35.89
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822692395",
+    "title": "Perfumy damskie SORVELLA Galaxy TUCANA kwiatowe PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "abell-perfumy-damskie-sorvella-galaxy-edp-10-ml",
@@ -706,7 +1522,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822700265",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Abell Woda perfumowana dla kobiet, 10 ml",
+      "sold30": "[1-5]",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Abell Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "[1-5]",
+      "price": 34.9,
+      "ship": 10.49,
+      "total": 45.39
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822700265",
+    "title": "Perfumy damskie SORVELLA Galaxy ABELL świeże drzewne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "black-eye-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -717,14 +1562,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_3700862d-d76c-4619-aebb-2a9ba768c729.png?v=1770038984&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "Sorvella Galaxy Black Eye woda perfumowana dla mężczyzn 10 ml",
-     "price": 19.99,
-     "url": "https://allegro.pl/produkt/black-eye-perfumy-sorvella-galaxy-10-ml-8985bf79-4aa1-49b7-8b6b-e648f2ee2c45?offerId=18419500618",
-     "match": 88,
-     "flag": true
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Perfume Black Eye Woda Perfumowana 10ml",
      "price": 18.99,
@@ -732,8 +1569,111 @@
      "seller": "in 6 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella Galaxy Black Eye woda perfumowana dla mężczyzn 10 ml",
+     "price": 14.99,
+     "seller": "ikeastyle",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/ikeastyle",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822716966",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Black Eye woda perfumowana dla mężczyzn 10 ml",
+      "sold30": "[1-5]",
+      "price": 14.99,
+      "ship": 10.49,
+      "total": 25.48
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION BLACK EYE 10ML WODA PERFUMOWANA DLA MĘŻCZYZN",
+      "sold30": "0",
+      "price": 19.99,
+      "ship": 10.49,
+      "total": 30.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Black Eye EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 21.72,
+      "ship": 10.49,
+      "total": 32.21
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Black Eye woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 21.84,
+      "ship": 10.49,
+      "total": 32.33
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Black Eye EDP 10ml",
+      "sold30": "0",
+      "price": 21.93,
+      "ship": 10.49,
+      "total": 32.42
+     },
+     {
+      "login": "hotfm",
+      "title": "Black Eye Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 22,
+      "ship": 10.49,
+      "total": 32.49
+     },
+     {
+      "login": "Domoteka",
+      "title": "Black Eye Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 23.24,
+      "ship": 10.49,
+      "total": 33.73
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Black Eye Woda perfumowana dla mężczyzn,...",
+      "sold30": "0",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Black Eye woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION BLACK EYE EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.5,
+      "ship": 9.99,
+      "total": 35.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822716966",
+    "title": "Perfumy męskie SORVELLA Galaxy BLACK EYE aromatyczne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -745,13 +1685,44 @@
    "offers": [
     {
      "channel": "allegro",
-     "title": "Perfumy męskie SORVELLA Galaxy EYE OF GOD orientalne PERFUMETKA 10ml EDP",
-     "price": 24,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=296783af-c349-45e8-aefb-ae973f4daa6e&emission_id=300e8599-5c5d-4ce3-8fd9-bdbca44b7cf3&type=OFFER&ts=1794925734984&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18822682014%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DODFkYzAzMGItZWZlMy00YjVmLWE3NDItODY4OGI4ZjBmZGEwAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=7c6fe81d139d29a1023b897c3fd9a4b0",
-     "match": 88,
-     "flag": true
+     "title": "SORVELLA GALAXY COLLECTION EYE OF THE GOD 10MLWODA PERFUMOWANA DLA MĘŻCZYZN",
+     "price": 19.99,
+     "seller": "indizio-perfumy",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/indizio-perfumy",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822682014",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION EYE OF THE GOD 10MLWODA PERFUMOWANA DLA MĘŻCZYZN",
+      "sold30": "0",
+      "price": 19.99,
+      "ship": 10.49,
+      "total": 30.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Eye of the God woda perfumowana męska 10 ml",
+      "sold30": "0",
+      "price": 19.99,
+      "ship": 10.49,
+      "total": 30.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822682014",
+    "title": "Perfumy męskie SORVELLA Galaxy EYE OF GOD orientalne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "perseus-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -778,7 +1749,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822676255",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Collection Perseus woda perfumowana męska 10 ml",
+      "sold30": "[1-5]",
+      "price": 18.99,
+      "ship": 10.49,
+      "total": 29.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Perseus EDP 10ml",
+      "sold30": "0",
+      "price": 21.72,
+      "ship": 10.49,
+      "total": 32.21
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Perseus woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 21.84,
+      "ship": 10.49,
+      "total": 32.33
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Perseus EDP 10ml",
+      "sold30": "0",
+      "price": 21.93,
+      "ship": 10.49,
+      "total": 32.42
+     },
+     {
+      "login": "hotfm",
+      "title": "Perseus Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 22,
+      "ship": 10.49,
+      "total": 32.49
+     },
+     {
+      "login": "UniqueProductsPL",
+      "title": "Perseus Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 23.24,
+      "ship": 10.49,
+      "total": 33.73
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION PERSEUS 10ML WODA PERFUMOWANA DLA MĘŻCZYZN",
+      "sold30": "0",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Perseus woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Perseus EDP spray 10ml",
+      "sold30": "0",
+      "price": 25.84,
+      "ship": 10.49,
+      "total": 36.33
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION PERSEUS EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.89,
+      "ship": 9.99,
+      "total": 35.88
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822676255",
+    "title": "Perfumy męskie SORVELLA Galaxy PERSEUS orientalne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "cocoon-perfumy-meskie-sorvella-galaxy-edp-10-ml",
@@ -804,7 +1868,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822704860",
+    "price": 24,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Cocoon woda perfumowana dla mężczyzn 10 ml",
+      "sold30": "0",
+      "price": 14.99,
+      "ship": 10.49,
+      "total": 25.48
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION COCOON 10ML WODA PERFUMOWANA DLA MĘŻCZYZN",
+      "sold30": "0",
+      "price": 19.99,
+      "ship": 10.49,
+      "total": 30.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Cocoon EDP 10ml",
+      "sold30": "0",
+      "price": 21.72,
+      "ship": 10.49,
+      "total": 32.21
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Cocoon woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 21.84,
+      "ship": 10.49,
+      "total": 32.33
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Cocoon EDP 10ml",
+      "sold30": "0",
+      "price": 21.93,
+      "ship": 10.49,
+      "total": 32.42
+     },
+     {
+      "login": "hotfm",
+      "title": "Eye of God Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 22,
+      "ship": 10.49,
+      "total": 32.49
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Coccoon Woda perfumowana dla mężczyzn, 1...",
+      "sold30": "0",
+      "price": 23.97,
+      "ship": 10.49,
+      "total": 34.46
+     },
+     {
+      "login": "UniqueProductsPL",
+      "title": "Eye of God Perfumy Sorvella Galaxy 10 ML",
+      "sold30": "0",
+      "price": 24.46,
+      "ship": 10.49,
+      "total": 34.95
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Cocoon woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 25.38,
+      "ship": 10.49,
+      "total": 35.87
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION COCOON EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 25.5,
+      "ship": 9.99,
+      "total": 35.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 24,
+    "url": "https://allegro.pl/oferta/18822704860",
+    "title": "Perfumy męskie SORVELLA Galaxy COCOON gourmand drzewne PERFUMETKA 10ml EDP"
+   }
   },
   {
    "id": "cocoon-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -831,7 +1988,68 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18743377979",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "BellaLuna",
+      "title": "Cocoon Perfumy Sorvella Galaxy 50 ML",
+      "sold30": "[1-5]",
+      "price": 89.12,
+      "ship": 10.49,
+      "total": 99.61
+     },
+     {
+      "login": "MISiKO-Uroda",
+      "title": "Sorvella perfumy męskie Sorvella Galaxy Cocoon 50ml",
+      "sold30": "0",
+      "price": 102.3,
+      "ship": 10.49,
+      "total": 112.79
+     },
+     {
+      "login": "MISiKO-Dom",
+      "title": "Sorvella perfumy męskie Sorvella Galaxy Cocoon 50ml",
+      "sold30": "0",
+      "price": 102.3,
+      "ship": 10.49,
+      "total": 112.79
+     },
+     {
+      "login": "Tuju_ro",
+      "title": "Woda perfumowana dla mężczyzn Cocoon, Sorvella Galaxy, 50 ml",
+      "sold30": "0",
+      "price": 108.6,
+      "ship": 25,
+      "total": 133.6
+     },
+     {
+      "login": "Deall",
+      "title": "Sorvella Perfume Cocoon 50ml męskie perfumy EDP drzewne trwały oryginalne",
+      "sold30": "0",
+      "price": 159.9,
+      "ship": 0,
+      "total": 159.9
+     },
+     {
+      "login": "Deall",
+      "title": "Sorvella Perfume Cocoon 50ml męskie perfumy EDP drzewne trwały oryginalne",
+      "sold30": "0",
+      "price": 159.9,
+      "ship": 0,
+      "total": 159.9
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18743377979",
+    "title": "Perfumy Męskie Gourmand Ciepłe Zamiennik EDP SORVELLA GALAXY Cocoon 50 ml"
+   }
   },
   {
    "id": "perseus-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -858,7 +2076,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18743432526",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "BellaLuna",
+      "title": "Woda perfumowana Sorvella Perseus 50 ml",
+      "sold30": "[1-5]",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Perseus EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 88.84,
+      "ship": 10.49,
+      "total": 99.33
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Perseus woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 89.45,
+      "ship": 10.49,
+      "total": 99.94
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Perseus EDP 50ml",
+      "sold30": "0",
+      "price": 89.68,
+      "ship": 10.49,
+      "total": 100.17
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION PERSEUS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 93.51,
+      "ship": 9.99,
+      "total": 103.5
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Perseus woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 94.17,
+      "ship": 10.49,
+      "total": 104.66
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION PERSEUS EDP 50ml SPRAY",
+      "sold30": "[1-5]",
+      "price": 94.49,
+      "ship": 9.99,
+      "total": 104.48
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Perseus Woda perfumowana dla mężczyzn, 5...",
+      "sold30": "0",
+      "price": 96.01,
+      "ship": 10.49,
+      "total": 106.5
+     },
+     {
+      "login": "Allegro",
+      "title": "Sorvella Perfume Perseus męska woda perfumowana 50 ml",
+      "sold30": "0",
+      "price": 97.18,
+      "ship": 10.49,
+      "total": 107.67
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Perseus EDP spray 50ml",
+      "sold30": "0",
+      "price": 99.17,
+      "ship": 10.49,
+      "total": 109.66
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18743432526",
+    "title": "Perfumy Męskie Aromatyczne Zamiennik EDP SORVELLA GALAXY Perseus 50 ml"
+   }
   },
   {
    "id": "eye-of-god-perfumy-meskie-sorvella-galaxy-50-ml",
@@ -912,7 +2223,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18743362509",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Black Eye woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Black Eye EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 91.57,
+      "ship": 10.49,
+      "total": 102.06
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Black Eye EDP 50ml",
+      "sold30": "0",
+      "price": 91.59,
+      "ship": 10.49,
+      "total": 102.08
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Black Eye woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 94.5,
+      "ship": 10.49,
+      "total": 104.99
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Black Eye Woda perfumowana dla mężczyzn,...",
+      "sold30": "0",
+      "price": 96.01,
+      "ship": 10.49,
+      "total": 106.5
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION BLACK EYE EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 96.88,
+      "ship": 9.99,
+      "total": 106.87
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Black Eye woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 99.01,
+      "ship": 10.49,
+      "total": 109.5
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Black Eye EDP spray 50ml",
+      "sold30": "0",
+      "price": 99.17,
+      "ship": 10.49,
+      "total": 109.66
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Black Eye woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 101.48,
+      "ship": 10.49,
+      "total": 111.97
+     },
+     {
+      "login": "stylemania-pl",
+      "title": "Sorvella Perfume Black Eye woda perfumowana 50ml",
+      "sold30": "0",
+      "price": 101.94,
+      "ship": 10.49,
+      "total": 112.43
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18743362509",
+    "title": "Perfumy Męskie Świeże Morskie Zamiennik EDP SORVELLA GALAXY Black Eye 50 ml"
+   }
   },
   {
    "id": "tucana-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -939,7 +2343,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18742563506",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Tucana Woda perfumowana dla kobiet, 50 ml",
+      "sold30": "0",
+      "price": 96.01,
+      "ship": 10.49,
+      "total": 106.5
+     },
+     {
+      "login": "MISiKO-Uroda",
+      "title": "Sorvella perfumy damskie Sorvella Galaxy Tucana 50ml",
+      "sold30": "[1-5]",
+      "price": 102.3,
+      "ship": 10.49,
+      "total": 112.79
+     },
+     {
+      "login": "MISiKO-Dom",
+      "title": "Sorvella perfumy damskie Sorvella Galaxy Tucana 50ml",
+      "sold30": "0",
+      "price": 102.3,
+      "ship": 10.49,
+      "total": 112.79
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18742563506",
+    "title": "Perfumy Damskie Kwiatowe Kremowe Zamiennik EDP SORVELLA GALAXY Tucana 50 ml"
+   }
   },
   {
    "id": "andromeda-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -966,7 +2407,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18742549012",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Andromeda - Perfumy Damskie Sorvella Galaxy 50 ML",
+      "sold30": "[1-5]",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Galaxy Collection Andromeda EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 88.84,
+      "ship": 10.49,
+      "total": 99.33
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Andromeda woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 89.45,
+      "ship": 10.49,
+      "total": 99.94
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Galaxy Collection Andromeda EDP 50ml",
+      "sold30": "0",
+      "price": 89.68,
+      "ship": 10.49,
+      "total": 100.17
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Andromeda woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 93.51,
+      "ship": 10.49,
+      "total": 104
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA GALAXY COLLECTION ANDROMEDA EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 95.88,
+      "ship": 9.99,
+      "total": 105.87
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Galaxy Collection Andromeda Woda perfumowana dla kobiet, 5...",
+      "sold30": "0",
+      "price": 96.01,
+      "ship": 10.49,
+      "total": 106.5
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA GALAXY COLLECTION ANDROMEDA EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 96.88,
+      "ship": 9.99,
+      "total": 106.87
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Andromeda woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 99.01,
+      "ship": 10.49,
+      "total": 109.5
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Galaxy Collection Andromeda EDP spray 50ml",
+      "sold30": "0",
+      "price": 99.17,
+      "ship": 10.49,
+      "total": 109.66
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18742549012",
+    "title": "Perfumy Damskie Orientalne Zamiennik EDP SORVELLA GALAXY Andromeda 50 ml"
+   }
   },
   {
    "id": "merger-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -984,7 +2518,44 @@
      "match": 88,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18741822392",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA GALAXY COLLECTION MERGER 50ML WODA PERFUMOWANA DLA KOBIET",
+      "sold30": "[6-10]",
+      "price": 97.89,
+      "ship": 10.49,
+      "total": 108.38
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Galaxy Merger woda perfumowana dla kobiet 50 ml",
+      "sold30": "0",
+      "price": 99.99,
+      "ship": 10.49,
+      "total": 110.48
+     },
+     {
+      "login": "Tuju_ro",
+      "title": "Woda perfumowana dla kobiet Merger, Sorvella Galaxy, 50 ml",
+      "sold30": "0",
+      "price": 108.6,
+      "ship": 25,
+      "total": 133.6
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18741822392",
+    "title": "Perfumy Damskie Aromatyczne Zamiennik EDP SORVELLA GALAXY Merger 50 ml"
+   }
   },
   {
    "id": "milky-way-perfumy-damskie-sorvella-galaxy-50-ml",
@@ -1011,7 +2582,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18720270211",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18720270211",
+    "title": "Perfumy Damskie Waniliowe Zamiennik EDP SORVELLA GALAXY Milky Way 50 ml"
+   }
   },
   {
    "id": "s500-van-milion-50-ml-perfumy-meskie-sorvella",
@@ -1064,8 +2647,111 @@
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-V-237-woda-perfumowana-dla-kobiet-50-ml,2091713,13266",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Woda perfumowana Perfume 50 ml kwiatowa",
+     "price": 69.89,
+     "seller": "OTLFreshandFunky",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/OTLFreshandFunky",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18782727919",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "OTLFreshandFunky",
+      "title": "Woda perfumowana Perfume 50 ml kwiatowa",
+      "sold30": "[1-5]",
+      "price": 69.89,
+      "ship": 10.49,
+      "total": 80.38
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume V237 For Women Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 73.43,
+      "ship": 10.49,
+      "total": 83.92
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA V-237 - Woda Perfumowana, 50 ml",
+      "sold30": "[1-5]",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA V-237 - Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V237 perfumy 50 ml",
+      "sold30": "[21-50]",
+      "price": 75,
+      "ship": 10.49,
+      "total": 85.49
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume V237 For Women Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 77.93,
+      "ship": 10.49,
+      "total": 88.42
+     },
+     {
+      "login": "cool-tura",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-237+",
+      "sold30": "0",
+      "price": 83.97,
+      "ship": 10.49,
+      "total": 94.46
+     },
+     {
+      "login": "BigBigDeal",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-237+",
+      "sold30": "0",
+      "price": 83.98,
+      "ship": 10.49,
+      "total": 94.47
+     },
+     {
+      "login": "dvdmaxpl",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-237+",
+      "sold30": "0",
+      "price": 85.99,
+      "ship": 10.49,
+      "total": 96.48
+     },
+     {
+      "login": "D-MAX-plus",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-237+",
+      "sold30": "0",
+      "price": 86.01,
+      "ship": 10.49,
+      "total": 96.5
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18782727919",
+    "title": "Perfumy damskie Sorvella V237 kwiatowe EDP 50 ml"
+   }
   },
   {
    "id": "sun-perfumy-unisex-premium-50-ml",
@@ -1083,7 +2769,36 @@
      "match": 88,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18695076402",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM SUN 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Premium Sun Woda Perfumowana Unisex 50ml - Świeży i Elegancki",
+      "sold30": "0",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18695076402",
+    "title": "Perfumy SORVELLA SUN 50 ml Unisex"
+   }
   },
   {
    "id": "woodall-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1110,7 +2825,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18929860885",
+    "price": 39.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 30.99,
+      "ship": 10.49,
+      "total": 41.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "[1-5]",
+      "price": 30.99,
+      "ship": 10.49,
+      "total": 41.48
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 30.99,
+      "ship": 10.49,
+      "total": 41.48
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Mountain Collection Woodall EDP spray 10ml",
+      "sold30": "0",
+      "price": 32.49,
+      "ship": 10.49,
+      "total": 42.98
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 33.94,
+      "ship": 10.49,
+      "total": 44.43
+     },
+     {
+      "login": "Bonito-pl",
+      "title": "SORVELLA Mountain Collection Woodall EDP spray 10ml Sorvella",
+      "sold30": "0",
+      "price": 37.39,
+      "ship": 10.49,
+      "total": 47.88
+     },
+     {
+      "login": "Bonito-Plus",
+      "title": "SORVELLA Mountain Collection Woodall EDP spray 10ml Sorvella",
+      "sold30": "0",
+      "price": 37.39,
+      "ship": 10.49,
+      "total": 47.88
+     },
+     {
+      "login": "Bonito-24",
+      "title": "Sorvella SORVELLA Mountain Collection Woodall EDP spray 10ml",
+      "sold30": "0",
+      "price": 37.39,
+      "ship": 10.49,
+      "total": 47.88
+     },
+     {
+      "login": "strefa-etui",
+      "title": "Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 61.99,
+      "ship": 7.99,
+      "total": 69.98
+     },
+     {
+      "login": "PrimeBox",
+      "title": "Mountain Woodall woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 61.99,
+      "ship": 7.99,
+      "total": 69.98
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39.9,
+    "url": "https://allegro.pl/oferta/18929860885",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION WOODALL 10ML drzewne PERFUMETKA"
+   }
   },
   {
    "id": "granite-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1137,7 +2945,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854385154",
+    "price": 31,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Granite EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 28.79,
+      "ship": 10.49,
+      "total": 39.28
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Granite EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 29.02,
+      "ship": 10.49,
+      "total": 39.51
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Granite woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 30.12,
+      "ship": 10.49,
+      "total": 40.61
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION GRANITE EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 31.38,
+      "ship": 9.99,
+      "total": 41.37
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION GRANITE EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 31.71,
+      "ship": 9.99,
+      "total": 41.7
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 32.41,
+      "ship": 10.49,
+      "total": 42.9
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Mountain Collection Granite EDP spray 10ml",
+      "sold30": "0",
+      "price": 32.49,
+      "ship": 10.49,
+      "total": 42.98
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 33.94,
+      "ship": 10.49,
+      "total": 44.43
+     },
+     {
+      "login": "stylemania-pl",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 34.56,
+      "ship": 10.49,
+      "total": 45.05
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 34.91,
+      "ship": 10.49,
+      "total": 45.4
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 31,
+    "url": "https://allegro.pl/oferta/18854385154",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION GRANITE 10 ML perfumetka"
+   }
   },
   {
    "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1148,14 +3049,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/38.webp?v=1763717831&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUME Mountain Sugarloaf EDP 10ml",
-     "price": 27.42,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=d3ad7760-ec2c-4736-b68b-0ba848907d3d&emission_id=097e0a71-740c-4334-a333-bee61e5973c1&type=OFFER&ts=1794925787926&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18720637464%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DZDgyNDYxNmEtODM0My00N2QxLWExM2YtNDYyM2Q5ZDY4MTRiAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=6330ebb322cff4ddac8f9794a04a89aa",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Perfume Mountain Sugarloaf Woda Perfumowana 10ml",
      "price": 26.2,
@@ -1163,8 +3056,111 @@
      "seller": "in 4 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA PERFUME Mountain Sugarloaf woda perfumowana spray 10ml",
+     "price": 26.2,
+     "seller": "DrogeriaPrymulka",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/DrogeriaPrymulka",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854374153",
+    "price": 31,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 26.2,
+      "ship": 10.49,
+      "total": 36.69
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Mountain Collection Sugarloaf Woda perfumowana unisex",
+      "sold30": "[1-5]",
+      "price": 26.27,
+      "ship": 10.49,
+      "total": 36.76
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SUGARLOAF 10 ML MOUNTAIN NEW COLLECTION",
+      "sold30": "0",
+      "price": 27,
+      "ship": 10.49,
+      "total": 37.49
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf EDP 10ml",
+      "sold30": "0",
+      "price": 27.42,
+      "ship": 10.49,
+      "total": 37.91
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf EDP 10ml",
+      "sold30": "0",
+      "price": 27.69,
+      "ship": 10.49,
+      "total": 38.18
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Sugarloaf woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 31.93,
+      "ship": 10.49,
+      "total": 42.42
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Mountain Collection Sugarloaf EDP spray 10ml",
+      "sold30": "0",
+      "price": 32.49,
+      "ship": 10.49,
+      "total": 42.98
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION SUGARLOAF EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.62,
+      "ship": 9.99,
+      "total": 42.61
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION SUGARLOAF EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.97,
+      "ship": 9.99,
+      "total": 42.96
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Sugarloaf woda perfumowana spray 10ml",
+      "sold30": "0",
+      "price": 34.43,
+      "ship": 10.49,
+      "total": 44.92
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 31,
+    "url": "https://allegro.pl/oferta/18854374153",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION SUGARLOAF 10 ML perfumetka"
+   }
   },
   {
    "id": "s722-la-nuit-de-l-homme-50-ml-zmyslowe-perfumy-meskie-sorvella",
@@ -1182,7 +3178,52 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18695054012",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA S-722 50ML WODA PERFUMOWANA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+      "sold30": "0",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella S-722 Woda Perfumowana dla Mężczyzn 50 ml",
+      "sold30": "[1-5]",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S-722 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S-722 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18695054012",
+    "title": "Perfumy męskie SORVELLA S-722 La Nuit De L Homme 50 ml Zmysłowe"
+   }
   },
   {
    "id": "s727-y-for-men-50-ml-swieze-perfumy-meskie-sorvella",
@@ -1208,7 +3249,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694981341",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA S-727 50ML WODA PERFUMOWANA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+      "sold30": "0",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella S-727 Woda Perfumowana dla Mężczyzn 50 ml",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694981341",
+    "title": "Perfumy męskie SORVELLA S-727 Y For Men 50 ml Świeże"
+   }
   },
   {
    "id": "sorvella-s656-50ml",
@@ -1234,7 +3304,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817429007",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S-656 - Męska Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S-656 - Męska Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18817429007",
+    "title": "Perfumy męskie SORVELLA S-656 morskie cytrusowe 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "jo-lo-perfumy-damskie-premium-50-ml",
@@ -1261,7 +3360,52 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694894684",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella JO LO 50 ml Perfumy Premium New Collection 2025",
+      "sold30": "[1-5]",
+      "price": 61.65,
+      "ship": 10.49,
+      "total": 72.14
+     },
+     {
+      "login": "manius1412",
+      "title": "SORVELLA PREMIUM JO LO 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM JO LO 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 129.99,
+      "ship": 10.49,
+      "total": 140.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Jo Lo 50ml Woda Perfumowana Damska z Bergamotką i Różą",
+      "sold30": "0",
+      "price": 129.99,
+      "ship": 10.49,
+      "total": 140.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694894684",
+    "title": "Perfumy damskie SORVELLA JO LO premium 50 ml"
+   }
   },
   {
    "id": "shy-perfumy-damskie-premium-50-ml",
@@ -1288,7 +3432,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694809998",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella SHY 50 ml Perfumy Premium New Collection 2025",
+      "sold30": "[1-5]",
+      "price": 58,
+      "ship": 10.49,
+      "total": 68.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM SHY 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Premium Shy 50ml - Elegancka Woda Perfumowana Dla Kobiet",
+      "sold30": "0",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694809998",
+    "title": "Perfumy damskie SORVELLA SHY premium 50 ml"
+   }
   },
   {
    "id": "s717-scandal-50-ml-orientalne-perfumy-meskie-sorvella",
@@ -1314,7 +3495,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694938332",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA S-717 50ML WODA PERFUMOWANA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+      "sold30": "0",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella S-717 For Him woda perfumowana męska 50 ml",
+      "sold30": "[1-5]",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694938332",
+    "title": "Perfumy męskie SORVELLA S-717 Scandal 50 ml Orientalne"
+   }
   },
   {
    "id": "peach-perfumy-damskie-premium-50-ml",
@@ -1359,7 +3569,19 @@
      "match": 88,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854432084",
+    "price": 111,
+    "monitoring": false,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854432084",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION MONT VERDE 50 ML kwiatowe"
+   }
   },
   {
    "id": "v622-perfect-elixir-slodkie-perfumy-damskie-sorvella",
@@ -1386,7 +3608,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694859319",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA V622 PERFUMY 50ML",
+      "sold30": "[6-10]",
+      "price": 53.24,
+      "ship": 10.49,
+      "total": 63.73
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "SORVELLA V-622 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694859319",
+    "title": "Perfumy damskie SORVELLA V-622 Perfect Elixir Owocowe premium 50 ml"
+   }
   },
   {
    "id": "v618-million-gold-for-her-slodkie-perfumy-damskie-sorvella",
@@ -1404,7 +3655,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18969614949",
+    "price": 99.9,
+    "monitoring": true,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 99.9,
+    "url": "https://allegro.pl/oferta/18969614949",
+    "title": "Perfumy damskie SORVELLA V618 Million Gold For Her Słodkie 50 ml + GRATIS"
+   }
   },
   {
    "id": "v225-owocowe-perfumy-damskie-sorvella-50-ml",
@@ -1431,7 +3694,52 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18782712065",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V225 Perfumy 50 ml",
+      "sold30": "[6-10]",
+      "price": 53.9,
+      "ship": 10.49,
+      "total": 64.39
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "Sorvella V-225 50ml Woda Perfumowana Dla Kobiet Perfumy Damskie",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella V-225 Woda Perfumowana Dla Kobiet 50 ml",
+      "sold30": "0",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Woda perfumowana V225 Sorvella Perfume 50 ml",
+      "sold30": "0",
+      "price": 67.9,
+      "ship": 10.49,
+      "total": 78.39
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18782712065",
+    "title": "Perfumy damskie Sorvella V-225 kwiatowe owocowe EDP 50 ml"
+   }
   },
   {
    "id": "v22-owocowe-perfumy-damskie-sorvella-50-ml",
@@ -1458,7 +3766,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18781962094",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA V-22 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "[1-5]",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella V-22 Perfumy Damskie 50ml - Elegancja i Świeżość",
+      "sold30": "0",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V22 perfumy 50 ml",
+      "sold30": "0",
+      "price": 65,
+      "ship": 10.49,
+      "total": 75.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18781962094",
+    "title": "Perfumy damskie Sorvella V22 owocowo - kwiatowe 50 ml EDP"
+   }
   },
   {
    "id": "s70-drzewne-perfumy-meskie-sorvella-50-ml",
@@ -1469,14 +3814,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "Sorvella S70 perfumy 50 ml",
-     "price": 68.9,
-     "url": "https://allegro.pl/produkt/sorvella-perfume-s-70-50-ml-edt-6765ad45-b916-4a4e-ba8b-f578472d0031?offerId=18807546257",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella S70 Inspirowane Black Code Armani Woda Perfumowana 50 ml",
      "price": 95.6,
@@ -1484,8 +3821,55 @@
      "seller": "in 1 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella S70 perfumy 50 ml",
+     "price": 65,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800736982",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella S70 perfumy 50 ml",
+      "sold30": "[6-10]",
+      "price": 65,
+      "ship": 10.49,
+      "total": 75.49
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Sorvella S-70 perfumy 50 ml",
+      "sold30": "0",
+      "price": 65,
+      "ship": 10.49,
+      "total": 75.49
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella S70 50 ml perfumy męskie orientalne",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800736982",
+    "title": "Perfumy męskie SORVELLA S-70 drzewne 50 ml EDP"
+   }
   },
   {
    "id": "s526-korzenne-perfumy-meskie-sorvella-50-ml",
@@ -1520,7 +3904,60 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817411185",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "jakubshopping",
+      "title": "Perfumy Sorvella S-526 50 ml",
+      "sold30": "[1-5]",
+      "price": 75,
+      "ship": 10.49,
+      "total": 85.49
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA S526 Męska Woda Perfumowana 50 ml",
+      "sold30": "[6-10]",
+      "price": 75,
+      "ship": 10.49,
+      "total": 85.49
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "SORVELLA S-526 - Męska Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 94.28,
+      "ship": 55,
+      "total": 149.28
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "męska woda perfumowana Sorvella S526 Spicy, 50 ml",
+      "sold30": "0",
+      "price": 109.22,
+      "ship": 27,
+      "total": 136.22
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, S526 Spicy, Eau De Parfum, For Men, 50 ml",
+      "sold30": "0",
+      "price": 130,
+      "ship": 20,
+      "total": 150
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18817411185",
+    "title": "Perfumy męskie SORVELLA S-526 korzenne waniliowe 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "s612-perfumy-meskie-sorvella-50-ml",
@@ -1530,14 +3967,6 @@
    "url": "https://sorvellaperfume.pl/products/s612-perfumy-meskie-sorvella-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "Perfumy męskie SORVELLA S-612 drzewne wodne 50 ml EDP + próbka GRATIS",
-     "price": 79,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=4581093a-512a-4730-b97d-348e7979c4c8&emission_id=d4a89049-887e-4f3b-8a50-7296ceb6f967&type=OFFER&ts=1794925837391&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18817421896%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DODFkYzAzMGItZWZlMy00YjVmLWE3NDItODY4OGI4ZjBmZGEwAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=45c93881f09cc9084689cfed2414706c",
-     "match": 100,
-     "flag": false
-    },
     {
      "channel": "ceneo",
      "title": "Sorvella Perfume S612 For Men Woda Perfumowana 50ml",
@@ -1554,8 +3983,87 @@
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-S-612-woda-perfumowana-dla-mezczyzn-50-ml,2091721,13259",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Woda perfumowana Sorvella 612",
+     "price": 60,
+     "seller": "PERFUMIX",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/PERFUMIX",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817421896",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "PERFUMIX",
+      "title": "Woda perfumowana Sorvella 612",
+      "sold30": "[1-5]",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella S612 Perfumy męskie 50 ml",
+      "sold30": "[1-5]",
+      "price": 65,
+      "ship": 10.49,
+      "total": 75.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Woda perfumowana S612 Sorvella Perfume 50 ml",
+      "sold30": "[1-5]",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Woda perfumowana Sorvella Perfume drzewna 50 ml",
+      "sold30": "0",
+      "price": 94.28,
+      "ship": 55,
+      "total": 149.28
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "męska woda perfumowana Sorvella S612 Spicy, 50 ml",
+      "sold30": "0",
+      "price": 109.22,
+      "ship": 27,
+      "total": 136.22
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, S612 Spicy, Eau De Parfum, For Men, 50 ml",
+      "sold30": "0",
+      "price": 130,
+      "ship": 20,
+      "total": 150
+     },
+     {
+      "login": "Chosly",
+      "title": "Sorvella, S612 Spicy, Eau De Parfum, For Men, 50 ml",
+      "sold30": "0",
+      "price": 138.99,
+      "ship": 0,
+      "total": 138.99
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18817421896",
+    "title": "Perfumy męskie SORVELLA S-612 drzewne wodne 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "v238-orientalne-perfumy-damskie-sorvella-50-ml",
@@ -1581,7 +4089,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800057618",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V238 50 ml Perfumy damskie bez kartonika Premium",
+      "sold30": "[6-10]",
+      "price": 50,
+      "ship": 10.49,
+      "total": 60.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V238 50 ml Perfumy damskie Premium",
+      "sold30": "[1-5]",
+      "price": 58.47,
+      "ship": 10.49,
+      "total": 68.96
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella V238 50 ml EDP",
+      "sold30": "0",
+      "price": 58.47,
+      "ship": 10.49,
+      "total": 68.96
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella V238 50 ml EDP",
+      "sold30": "0",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA V-238 - Woda Perfumowana dla Kobiet, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA V-238 - Woda Perfumowana dla Kobiet, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume V238 For Women Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 74.02,
+      "ship": 10.49,
+      "total": 84.51
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume V238 For Women Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 78.52,
+      "ship": 10.49,
+      "total": 89.01
+     },
+     {
+      "login": "cool-tura",
+      "title": "SORVELLA V238 50 ML EDP",
+      "sold30": "0",
+      "price": 83.97,
+      "ship": 10.49,
+      "total": 94.46
+     },
+     {
+      "login": "BigBigDeal",
+      "title": "SORVELLA V238 50 ML EDP",
+      "sold30": "0",
+      "price": 83.98,
+      "ship": 10.49,
+      "total": 94.47
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800057618",
+    "title": "Perfumy damskie Sorvella V238 EDP 50 ml Orientalne"
+   }
   },
   {
    "id": "woodall-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -1617,7 +4218,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854500926",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA WOODALL 50 ML NEW MOUNTAIN COLLECTION",
+      "sold30": "[1-5]",
+      "price": 84.9,
+      "ship": 10.49,
+      "total": 95.39
+     },
+     {
+      "login": "SklepAmaltea",
+      "title": "SORVELLA MOUNTAIN COLLECTION WOODALL WODA PERFUMOWANA DAMSKA 50ml",
+      "sold30": "[1-5]",
+      "price": 85.4,
+      "ship": 10.49,
+      "total": 95.89
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MOUNTAIN WOODALL 50ML WODA PERFUMOWANA UNISEX DAMSKIE MĘSKIE",
+      "sold30": "[1-5]",
+      "price": 85.49,
+      "ship": 10.49,
+      "total": 95.98
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Mountain Woodall Woda perfumowana unisex 50 ml EDP",
+      "sold30": "[1-5]",
+      "price": 89.99,
+      "ship": 10.49,
+      "total": 100.48
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA WOODALL 50 ML NEW MOUNTAIN COLLECTION",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "Arint",
+      "title": "SORVELLA WOODALL NEW MOUNTAIN COLLECTION Woda perfumowana unisex 50 ml EDP",
+      "sold30": "0",
+      "price": 99.9,
+      "ship": 10.49,
+      "total": 110.39
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 116.88,
+      "ship": 10.49,
+      "total": 127.37
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 117.49,
+      "ship": 10.49,
+      "total": 127.98
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Woodall woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 117.93,
+      "ship": 10.49,
+      "total": 128.42
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Woodall Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 123.96,
+      "ship": 10.49,
+      "total": 134.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854500926",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION WOODALL 50 ML drzewne ambrowe"
+   }
   },
   {
    "id": "sugarloaf-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -1653,7 +4347,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18871777090",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SUGARLOAF 50 ML MOUNTAIN NEW COLLECTION",
+      "sold30": "[1-5]",
+      "price": 85.8,
+      "ship": 10.49,
+      "total": 96.29
+     },
+     {
+      "login": "SklepAmaltea",
+      "title": "SORVELLA MOUNTAIN COLLECTION SUGARLOAF WODA PERFUMOWANA DAMSKA 50ml",
+      "sold30": "0",
+      "price": 85.8,
+      "ship": 10.49,
+      "total": 96.29
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MOUNTAIN SUGARLOAF 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 89.99,
+      "ship": 10.49,
+      "total": 100.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA Mountain Sugarloaf 50ml Unisex Woda Perfumowana Unisex",
+      "sold30": "0",
+      "price": 89.99,
+      "ship": 10.49,
+      "total": 100.48
+     },
+     {
+      "login": "Arint",
+      "title": "SORVELLA SURARLOAF MOUNTAIN NEW COLLECTION Woda perfumowana unisex 50 ml",
+      "sold30": "0",
+      "price": 99.9,
+      "ship": 10.49,
+      "total": 110.39
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf EDP 50ml",
+      "sold30": "0",
+      "price": 116.88,
+      "ship": 10.49,
+      "total": 127.37
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 117.49,
+      "ship": 10.49,
+      "total": 127.98
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Sugarloaf EDP 50ml",
+      "sold30": "0",
+      "price": 117.93,
+      "ship": 10.49,
+      "total": 128.42
+     },
+     {
+      "login": "TrendyGo",
+      "title": "SORVELLA SURARLOAF 50 ML MOUNTAIN NEW COLLECTION",
+      "sold30": "0",
+      "price": 120,
+      "ship": 10.49,
+      "total": 130.49
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Sugarloaf Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 123.96,
+      "ship": 10.49,
+      "total": 134.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18871777090",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION SUGARLOAF 50 ML orientalne"
+   }
   },
   {
    "id": "granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -1663,14 +4450,6 @@
    "url": "https://sorvellaperfume.pl/products/granite-perfumy-unisex-sorvella-mountain-edp-50-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/35_4ba26dfa-7cd0-4549-828b-55c7063bc97d.png?v=1793951615&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION GRANITE 50 ML drzewne ambrowe",
-     "price": 111,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=b0de9846-9a2d-4911-b1dc-14396402d90d&emission_id=f7693a7d-5328-4b7e-a4e2-89bf06fc5fe1&type=OFFER&ts=1794925850935&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18871786171%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DZDYxMTk5YTQtYWVmOC00ZjY0LTg2NzYtOGZmMTVhOGQyODdkAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=f96d1897e67453547f04f1a19d98ae00",
-     "match": 82,
-     "flag": true
-    },
     {
      "channel": "ceneo",
      "title": "Sorvella Perfume Mountain Granite Woda Perfumowana 50ml",
@@ -1688,8 +4467,111 @@
      "seller": "Sprzedaje Hebe",
      "match": 94,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella Granite Mountain Collection perfumy 50ml",
+     "price": 109,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18871786171",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella Granite Mountain Collection perfumy 50ml",
+      "sold30": "[11-20]",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella Perfume Mountain GRANITE woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Granite woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 111,
+      "ship": 10.49,
+      "total": 121.49
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION GRANITE EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 126.47,
+      "ship": 9.99,
+      "total": 136.46
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION GRANITE EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 127.79,
+      "ship": 9.99,
+      "total": 137.78
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Mountain Collection Granite EDP spray 50ml",
+      "sold30": "0",
+      "price": 133.13,
+      "ship": 10.49,
+      "total": 143.62
+     },
+     {
+      "login": "loreen_pl",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 135.99,
+      "ship": 10.49,
+      "total": 146.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Granite woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 139.36,
+      "ship": 10.49,
+      "total": 149.85
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Granite woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 153.77,
+      "ship": 10.49,
+      "total": 164.26
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Sorvella Perfume Mountain Granite woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 155.81,
+      "ship": 55,
+      "total": 210.81
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18871786171",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION GRANITE 50 ML drzewne ambrowe"
+   }
   },
   {
    "id": "blanca-perfumy-unisex-sorvella-mountain-edp-50-ml",
@@ -1725,7 +4607,28 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854443741",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "TrendyGo",
+      "title": "SORVELLA MOUNTAIN BLANCA 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 129,
+      "ship": 10.49,
+      "total": 139.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854443741",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION BLANCA 50 ML kwiatowe szyprowe"
+   }
   },
   {
    "id": "vermont-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1763,14 +4666,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094045.512.png?v=1747040575&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUME Mountain Charles woda perfumowana 10ml",
-     "price": 27.42,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=34083df3-6667-4016-9c6b-16ede15e8696&emission_id=d80a87fa-07e4-4cda-a3a2-f96c5dfb79b9&type=OFFER&ts=1794925860298&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18979934199%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DZDgyNDYxNmEtODM0My00N2QxLWExM2YtNDYyM2Q5ZDY4MTRiAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=2a3537b9a3e17cd40e812436dcaffe49",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Perfume Mountain Charles Woda Perfumowana 10ml",
      "price": 26.37,
@@ -1778,8 +4673,111 @@
      "seller": "in 5 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA MOUNTAIN COLLECTION CHARLES 10ML WODA PERFUMOWANA UNISEX",
+     "price": 24.99,
+     "seller": "indizio-perfumy",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/indizio-perfumy",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853237512",
+    "price": 31,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MOUNTAIN COLLECTION CHARLES 10ML WODA PERFUMOWANA UNISEX",
+      "sold30": "0",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Charles woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 27.42,
+      "ship": 10.49,
+      "total": 37.91
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Charles woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 27.58,
+      "ship": 10.49,
+      "total": 38.07
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Charles woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 27.69,
+      "ship": 10.49,
+      "total": 38.18
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Charles Woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 31.93,
+      "ship": 10.49,
+      "total": 42.42
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "MINIATURA SORVELLA Mountain Collection Charles EDP spray 10ml",
+      "sold30": "0",
+      "price": 32.49,
+      "ship": 10.49,
+      "total": 42.98
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION CHARLES EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.62,
+      "ship": 9.99,
+      "total": 42.61
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION CHARLES EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.97,
+      "ship": 9.99,
+      "total": 42.96
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Mountain Charles woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 33.94,
+      "ship": 10.49,
+      "total": 44.43
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Charles Woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 34.43,
+      "ship": 10.49,
+      "total": 44.92
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 31,
+    "url": "https://allegro.pl/oferta/18853237512",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION CHARLES 10 ML perfumetka"
+   }
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1806,7 +4804,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853221575",
+    "price": 31,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "ikeastyle",
+      "title": "Unisex Woda Perfumowana Sorvella Saint Elias 10ml - Górska Kolekcja",
+      "sold30": "[1-5]",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS 10 ML WODA PERFUMOWANA UNISEX",
+      "sold30": "0",
+      "price": 27,
+      "ship": 10.49,
+      "total": 37.49
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Saint Elias EDP 10ml",
+      "sold30": "[1-5]",
+      "price": 27.44,
+      "ship": 10.49,
+      "total": 37.93
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Saint Elias woda perfumowana miniatura 10ml",
+      "sold30": "0",
+      "price": 27.6,
+      "ship": 10.49,
+      "total": 38.09
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Saint Elias EDP 10ml",
+      "sold30": "0",
+      "price": 27.71,
+      "ship": 10.49,
+      "total": 38.2
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS 10ML WODA PERFUMOWANA UNISEX",
+      "sold30": "0",
+      "price": 29.99,
+      "ship": 10.49,
+      "total": 40.48
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana 10ml",
+      "sold30": "0",
+      "price": 30.7,
+      "ship": 10.49,
+      "total": 41.19
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "MINIATURA SORVELLA Mountain Collection Saint Elias EDP spray 10ml",
+      "sold30": "0",
+      "price": 32.49,
+      "ship": 10.49,
+      "total": 42.98
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.62,
+      "ship": 9.99,
+      "total": 42.61
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 10ml SPRAY",
+      "sold30": "0",
+      "price": 32.97,
+      "ship": 9.99,
+      "total": 42.96
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 31,
+    "url": "https://allegro.pl/oferta/18853221575",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION SAINT ELIAS 10 ML perfumetka"
+   }
   },
   {
    "id": "marcy-perfumy-unisex-sorvella-mountain-edp-10-ml",
@@ -1836,14 +4927,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/asortyment_-_2025-05-12T094059.074.png?v=1747040574&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUME Mountain Whitney woda perfumowana miniatura 10ml",
-     "price": 27.42,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=75fb86d1-a6bd-4b22-9510-816d63d6838a&emission_id=178991bc-a68c-4d27-a057-56c16649a316&type=OFFER&ts=1794925869797&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18986114536%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DZDgyNDYxNmEtODM0My00N2QxLWExM2YtNDYyM2Q5ZDY4MTRiAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=0b55f612292e3aeab7be8da5a863138f",
-     "match": 94,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Perfume Mountain Whitney Woda Perfumowana 10ml",
      "price": 27,
@@ -1851,8 +4934,111 @@
      "seller": "in 8 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella Mountain Collection Whitney Woda perfumowana unisex",
+     "price": 26.27,
+     "seller": "Super-Pharm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/Super-Pharm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853246872",
+    "price": 31,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Mountain Collection Whitney Woda perfumowana unisex",
+      "sold30": "[1-5]",
+      "price": 26.27,
+      "ship": 10.49,
+      "total": 36.76
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MOUNTAIN COLLECTION WHITNEY 10ML WODA PERFUMOWANA UNISEX",
+      "sold30": "[1-5]",
+      "price": 27,
+      "ship": 10.49,
+      "total": 37.49
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Whitney woda perfumowana miniatura 10ml",
+      "sold30": "0",
+      "price": 27.42,
+      "ship": 10.49,
+      "total": 37.91
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Whitney woda perfumowana miniatura 10ml",
+      "sold30": "0",
+      "price": 27.58,
+      "ship": 10.49,
+      "total": 38.07
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Whitney woda perfumowana miniatura 10ml",
+      "sold30": "0",
+      "price": 27.69,
+      "ship": 10.49,
+      "total": 38.18
+     },
+     {
+      "login": "UniqueProductsPL",
+      "title": "SORVELLA MOUNTAIN COLLECTION WHITNEY 10ML WODA PERFUMOWANA UNISEX",
+      "sold30": "0",
+      "price": 31.23,
+      "ship": 10.49,
+      "total": 41.72
+     },
+     {
+      "login": "drogeria_medilla",
+      "title": "SORVELLA Mountain Collection Woda perfumowana uniseks Whitney 10 ml",
+      "sold30": "0",
+      "price": 31.49,
+      "ship": 10.49,
+      "total": 41.98
+     },
+     {
+      "login": "Outlet_cosmetics",
+      "title": "SORVELLA Mountain Collection Woda perfumowana uniseks Whitney 10 ml",
+      "sold30": "0",
+      "price": 31.49,
+      "ship": 10.49,
+      "total": 41.98
+     },
+     {
+      "login": "XDrogeria",
+      "title": "SORVELLA Mountain Collection Woda perfumowana uniseks Whitney 10 ml",
+      "sold30": "0",
+      "price": 31.49,
+      "ship": 10.49,
+      "total": 41.98
+     },
+     {
+      "login": "miejto",
+      "title": "SORVELLA Mountain Collection Woda perfumowana uniseks Whitney 10 ml",
+      "sold30": "0",
+      "price": 31.81,
+      "ship": 10.49,
+      "total": 42.3
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 31,
+    "url": "https://allegro.pl/oferta/18853246872",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION WHITNEY 10 ML perfumetka"
+   }
   },
   {
    "id": "signature-home-gift-set-bergamot-musk",
@@ -1874,12 +5060,107 @@
     {
      "channel": "allegro",
      "title": "SORVELLA BODY & HAIR MIST MISS BACCARAT 100ML MGIEŁKA DO CIAŁA I WŁOSÓW",
-     "price": 21.99,
-     "url": "https://allegro.pl/produkt/sorvella-body-hair-mist-miss-baccarat-100ml-mgielka-do-ciala-i-wlosow-d693f4c5-1ffd-42bd-a1ce-d16abaff966e?offerId=16889345834",
-     "match": 82,
-     "flag": true
+     "price": 20.89,
+     "seller": "indizio-perfumy",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/indizio-perfumy",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694416390",
+    "price": 29,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA BODY & HAIR MIST MISS BACCARAT 100ML MGIEŁKA DO CIAŁA I WŁOSÓW",
+      "sold30": "[6-10]",
+      "price": 20.89,
+      "ship": 10.49,
+      "total": 31.38
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA Miss Baccarat 100ml Mgiełka Odświeżająca do Ciała i Włosów",
+      "sold30": "0",
+      "price": 24.99,
+      "ship": 10.49,
+      "total": 35.48
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MISS BACCARAT 100 ML MGIEŁKA DO CIAŁA I WŁOSÓW",
+      "sold30": "[1-5]",
+      "price": 27,
+      "ship": 10.49,
+      "total": 37.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA BODY & HAIR MIST MISS BACCARAT 100ML MGIEŁKA DO CIAŁA I WŁOSÓW",
+      "sold30": "[1-5]",
+      "price": 27.49,
+      "ship": 10.49,
+      "total": 37.98
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella Body & Hair Mist Miss Baccarat 100 ml – mgiełka do ciała i włosów",
+      "sold30": "0",
+      "price": 36.99,
+      "ship": 10.49,
+      "total": 47.48
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Mgiełka Do Ciała Miss Baccarat",
+      "sold30": "0",
+      "price": 37.76,
+      "ship": 10.49,
+      "total": 48.25
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Body & Hair Mist Mgiełka do ciała Miss Baccarat 100ml",
+      "sold30": "0",
+      "price": 40.96,
+      "ship": 10.49,
+      "total": 51.45
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Body & Hair Mist Mgiełka do ciała Miss Baccarat 100ml",
+      "sold30": "0",
+      "price": 43.96,
+      "ship": 10.49,
+      "total": 54.45
+     },
+     {
+      "login": "Bonito-pl",
+      "title": "Sorvella Body Hair Mist Mgiełka do ciała i włosów Miss Baccarat 100 ml",
+      "sold30": "0",
+      "price": 45.89,
+      "ship": 10.49,
+      "total": 56.38
+     },
+     {
+      "login": "Bonito-Plus",
+      "title": "Sorvella Body Hair Mist Mgiełka do ciała i włosów Miss Baccarat 100 ml",
+      "sold30": "0",
+      "price": 45.89,
+      "ship": 10.49,
+      "total": 56.38
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 29,
+    "url": "https://allegro.pl/oferta/18694416390",
+    "title": "Mgiełka do ciała i włosów Sorvella Perfume MISS BACCARAT 100 ml"
+   }
   },
   {
    "id": "mountain-discovery-set-5szt-57911711564121",
@@ -1933,7 +5214,52 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18695011371",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA PREMIUM TOM 50ML WODA PERFUMOWANA BEZ KARTONIKA UNISEX",
+      "sold30": "0",
+      "price": 25,
+      "ship": 10.49,
+      "total": 35.49
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA PREMIUM TOM 50ML WODA PERFUMOWANA UNISEX",
+      "sold30": "0",
+      "price": 56.9,
+      "ship": 10.49,
+      "total": 67.39
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM TOM 50ML WODA PERFUMOWANA UNISEX PERFUMY DAMSKIE MĘSKIE",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Premium Tom 50ml Unisex Perfumy - Elegancka Woda Perfumowana",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18695011371",
+    "title": "Perfumy SORVELLA TOM Unisex 50 ml"
+   }
   },
   {
    "id": "spring-night-premium-zapach-domowy-w-sprayu-200ml",
@@ -1969,7 +5295,84 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18872466471",
+    "price": 179,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Natura_Drogerie",
+      "title": "Sorvella Mountain Whitney woda perfumowana 100 ml",
+      "sold30": "[11-20]",
+      "price": 142.78,
+      "ship": 10.49,
+      "total": 153.27
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Mountain Collection Whitney Woda perfumowana uniseks",
+      "sold30": "[1-5]",
+      "price": 148.07,
+      "ship": 10.49,
+      "total": 158.56
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Woda perfumowana Sorvella Perfume Mountain Whitney 100 ml cytrusowa",
+      "sold30": "0",
+      "price": 187.75,
+      "ship": 55,
+      "total": 242.75
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "Sorvella Mountain Collection Whitney woda perfumowana uniseks, 100 ml",
+      "sold30": "0",
+      "price": 209.65,
+      "ship": 27,
+      "total": 236.65
+     },
+     {
+      "login": "Beautic_Shop",
+      "title": "Woda perfumowana Sorvella Perfume Mountain Whitney 100 ml cytrusowa",
+      "sold30": "0",
+      "price": 220,
+      "ship": 3.99,
+      "total": 223.99
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, Mountain Collection Whitney, Eau De Parfum, Unisex, 100 ml",
+      "sold30": "0",
+      "price": 235,
+      "ship": 20,
+      "total": 255
+     },
+     {
+      "login": "somnia24",
+      "title": "Woda perfumowana Sorvella Perfume Mountain Whitney 100 ml cytrusowa",
+      "sold30": "0",
+      "price": 242.18,
+      "ship": 6.15,
+      "total": 248.33
+     },
+     {
+      "login": "Chosly",
+      "title": "Sorvella, Mountain Collection Whitney, Eau De Parfum, Unisex, 100 ml",
+      "sold30": "0",
+      "price": 249.99,
+      "ship": 0,
+      "total": 249.99
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 179,
+    "url": "https://allegro.pl/oferta/18872466471",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION WHITNEY 100 ML drzewne ambrowe"
+   }
   },
   {
    "id": "whitney-perfumy-unisex-sorvella-mountains-edp-100-ml-54121813410137",
@@ -2004,7 +5407,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854414796",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella Whitney perfumy Mountain Collection 50 ml",
+      "sold30": "[6-10]",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Whitney EDP 50ml",
+      "sold30": "0",
+      "price": 116.88,
+      "ship": 10.49,
+      "total": 127.37
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Whitney EDP 50ml",
+      "sold30": "0",
+      "price": 117.93,
+      "ship": 10.49,
+      "total": 128.42
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION WHITNEY EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 126.47,
+      "ship": 9.99,
+      "total": 136.46
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION WHITNEY EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 126.48,
+      "ship": 9.99,
+      "total": 136.47
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Woda perfumowana Sorvella Perfume Mountain Whitney 50 ml",
+      "sold30": "0",
+      "price": 127.69,
+      "ship": 55,
+      "total": 182.69
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Mountain Collection Whitney EDP spray 50ml",
+      "sold30": "0",
+      "price": 133.13,
+      "ship": 10.49,
+      "total": 143.62
+     },
+     {
+      "login": "stylemania-pl",
+      "title": "Sorvella Perfume Mountain Whitney woda perfumowana 50ml",
+      "sold30": "0",
+      "price": 134,
+      "ship": 10.49,
+      "total": 144.49
+     },
+     {
+      "login": "loreen_pl",
+      "title": "Elegancki zapach Mountain Whitney Sorvella Perfume 50ml - zmysłowy aromat",
+      "sold30": "0",
+      "price": 135.99,
+      "ship": 10.49,
+      "total": 146.48
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "Sorvella Mountain Collection Whitney uniszex woda perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 144.69,
+      "ship": 27,
+      "total": 171.69
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854414796",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION WHITNEY 50 ML drzewne ambrowe"
+   }
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810526553",
@@ -2015,14 +5511,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/34_1c45a515-8baf-49d6-ba44-5079b1be4633.png?v=1793951386&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "Sorvella Mountain Collection Saint Elias Woda perfumowana uniseks 100 ml",
-     "price": 139.99,
-     "url": "https://allegro.pl/produkt/woda-perfumowana-sorvella-perfume-mountain-saint-elias-100-ml-orientalna-32687e79-89e8-4ed0-b96d-2d013607e1e9?offerId=18949912212",
-     "match": 88,
-     "flag": true
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella Mountain Saint Elias Woda Perfumowana Unisex 100ml",
      "price": 139.99,
@@ -2030,8 +5518,111 @@
      "seller": "in 3 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA MOUNTAIN SAINT ELIAS 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+     "price": 109,
+     "seller": "jakubshopping",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/jakubshopping",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18871792138",
+    "price": 179,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA MOUNTAIN SAINT ELIAS 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "[1-5]",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     },
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 116.67,
+      "ship": 10.49,
+      "total": 127.16
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 123.18,
+      "ship": 9.99,
+      "total": 133.17
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Saint Elias Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 123.96,
+      "ship": 10.49,
+      "total": 134.45
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 124.46,
+      "ship": 9.99,
+      "total": 134.45
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 127.69,
+      "ship": 55,
+      "total": 182.69
+     },
+     {
+      "login": "TrendyGo",
+      "title": "SORVELLA MOUNTAIN SAINT ELIAS 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 130,
+      "ship": 10.49,
+      "total": 140.49
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Saint Elias Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 130.96,
+      "ship": 10.49,
+      "total": 141.45
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 133.95,
+      "ship": 10.49,
+      "total": 144.44
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 137.44,
+      "ship": 10.49,
+      "total": 147.93
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 179,
+    "url": "https://allegro.pl/oferta/18871792138",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION SAINT ELIAS 100 ML orientalne"
+   }
   },
   {
    "id": "saint-elias-perfumy-unisex-sorvella-mountains-edp-100-ml-54121810559321",
@@ -2066,7 +5657,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854392148",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA MOUNTAIN SAINT ELIAS 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "[1-5]",
+      "price": 109,
+      "ship": 10.49,
+      "total": 119.49
+     },
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 116.67,
+      "ship": 10.49,
+      "total": 127.16
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 123.18,
+      "ship": 9.99,
+      "total": 133.17
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Saint Elias Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 123.96,
+      "ship": 10.49,
+      "total": 134.45
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION SAINT ELIAS EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 124.46,
+      "ship": 9.99,
+      "total": 134.45
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 127.69,
+      "ship": 55,
+      "total": 182.69
+     },
+     {
+      "login": "TrendyGo",
+      "title": "SORVELLA MOUNTAIN SAINT ELIAS 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 130,
+      "ship": 10.49,
+      "total": 140.49
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Saint Elias Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 130.96,
+      "ship": 10.49,
+      "total": 141.45
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 133.95,
+      "ship": 10.49,
+      "total": 144.44
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Saint Elias woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 137.44,
+      "ship": 10.49,
+      "total": 147.93
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854392148",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION SAINT ELIAS 50 ML orientalne"
+   }
   },
   {
    "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741484377",
@@ -2093,7 +5777,60 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18872459671",
+    "price": 179,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Mountain Collection Charles Woda perfumowana uniseks",
+      "sold30": "[1-5]",
+      "price": 139.99,
+      "ship": 10.49,
+      "total": 150.48
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Woda perfumowana Sorvella Perfume kwiatowa 100 ml",
+      "sold30": "0",
+      "price": 187.75,
+      "ship": 55,
+      "total": 242.75
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "Sorvella Mountain Collection Charles woda perfumowana unisex, 100 ml",
+      "sold30": "0",
+      "price": 209.05,
+      "ship": 27,
+      "total": 236.05
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, Mountain Collection Charles, Eau De Parfum, Unisex, 100 ml",
+      "sold30": "0",
+      "price": 235,
+      "ship": 20,
+      "total": 255
+     },
+     {
+      "login": "Chosly",
+      "title": "Sorvella, Mountain Collection Charles, Eau De Parfum, Unisex, 100 ml",
+      "sold30": "0",
+      "price": 249.99,
+      "ship": 0,
+      "total": 249.99
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 179,
+    "url": "https://allegro.pl/oferta/18872459671",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION CHARLES 100 ML owocowe szyprowe"
+   }
   },
   {
    "id": "charles-perfumy-unisex-sorvella-mountains-edp-100-ml-54121741517145",
@@ -2120,7 +5857,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18854406080",
+    "price": 111,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MOUNTAIN CHARLES 50 ML WODA PERFUMOWANA UNISEX",
+      "sold30": "[6-10]",
+      "price": 109.9,
+      "ship": 10.49,
+      "total": 120.39
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA MOUNTAIN COLLECTION CHARLES EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 121.69,
+      "ship": 9.99,
+      "total": 131.68
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Mountain Charles EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 122.44,
+      "ship": 10.49,
+      "total": 132.93
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA MOUNTAIN COLLECTION CHARLES EDP 50ml SPRAY",
+      "sold30": "0",
+      "price": 122.96,
+      "ship": 9.99,
+      "total": 132.95
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Mountain Charles Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 123.96,
+      "ship": 10.49,
+      "total": 134.45
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Mountain Charles EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 124.72,
+      "ship": 10.49,
+      "total": 135.21
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Mountain Charles woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 126.77,
+      "ship": 10.49,
+      "total": 137.26
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Woda perfumowana Sorvella 50 ml unisex",
+      "sold30": "0",
+      "price": 127.69,
+      "ship": 55,
+      "total": 182.69
+     },
+     {
+      "login": "TrendyGo",
+      "title": "SORVELLA MOUNTAIN CHARLES 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 130,
+      "ship": 10.49,
+      "total": 140.49
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Mountain Charles Woda perfumowana spray 50ml",
+      "sold30": "0",
+      "price": 130.96,
+      "ship": 10.49,
+      "total": 141.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 111,
+    "url": "https://allegro.pl/oferta/18854406080",
+    "title": "Perfumy unisex SORVELLA MOUNTAIN COLLECTION CHARLES 50 ML owocowe szyprowe"
+   }
   },
   {
    "id": "bonita-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -2155,7 +5985,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18747476738",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella Bonita mgiełka do ciała i włosów 100m ml",
+      "sold30": "[6-10]",
+      "price": 24.97,
+      "ship": 10.49,
+      "total": 35.46
+     },
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella Perfume Bonita mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 27.06,
+      "ship": 10.49,
+      "total": 37.55
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella Perfume Bonita mgiełka do ciała i włosów 100ml",
+      "sold30": "[1-5]",
+      "price": 27.49,
+      "ship": 10.49,
+      "total": 37.98
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MGIEŁKA DO CIAŁA I WŁOSÓW BONITA 100ML",
+      "sold30": "[1-5]",
+      "price": 29.99,
+      "ship": 10.49,
+      "total": 40.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA Bonita Mgiełka do Ciała i Włosów o Zapachu Kwiatowo-Owocowym 100ml",
+      "sold30": "0",
+      "price": 29.99,
+      "ship": 10.49,
+      "total": 40.48
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Bonita mgiełka do ciała i włosów 100 ml – zapach kwiatowo-owocowy",
+      "sold30": "0",
+      "price": 36.99,
+      "ship": 10.49,
+      "total": 47.48
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella Bonita Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 40,
+      "ship": 10.49,
+      "total": 50.49
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Bonita Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 40.96,
+      "ship": 10.49,
+      "total": 51.45
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Bonita Mgiełka do ciała i włosów",
+      "sold30": "0",
+      "price": 41.3,
+      "ship": 10.49,
+      "total": 51.79
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Bonita Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 43.96,
+      "ship": 10.49,
+      "total": 54.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18747476738",
+    "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Bonita 100 ml Damska"
+   }
   },
   {
    "id": "cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -2165,14 +6088,6 @@
    "url": "https://sorvellaperfume.pl/products/cosme-mgielka-do-ciala-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/4_ef82db47-44f4-4c6b-b9f9-901ad6dc9d57.png?v=1789047280&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Cosme 100 ml Damska",
-     "price": 35,
-     "url": "https://allegro.pl/produkt/sorvella-perfume-cosme-mgielka-do-ciala-i-wlosow-100ml-5082139f-dfcd-4056-b4e1-41194eefdb8d?offerId=18747465439",
-     "match": 94,
-     "flag": false
-    },
     {
      "channel": "hebe",
      "title": "SORVELLA PERFUME COSME mgiełka do ciała i włosów, 100 ml",
@@ -2189,8 +6104,111 @@
      "url": "https://www.rossmann.pl/Produkt/Mgielki-zapachowe/Sorvella-Cosme-mgielka-do-ciala-i-wlosow-dla-kobiet-100-ml,2091722,13268",
      "match": 94,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella Cosme mgiełka do ciała i włosów 100 ml",
+     "price": 27.45,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18747465439",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella Cosme mgiełka do ciała i włosów 100 ml",
+      "sold30": "[1-5]",
+      "price": 27.45,
+      "ship": 10.49,
+      "total": 37.94
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella Perfume Cosme mgiełka do ciała i włosów 100ml",
+      "sold30": "[1-5]",
+      "price": 27.49,
+      "ship": 10.49,
+      "total": 37.98
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MGIEŁKA DO CIAŁA I WŁOSÓW COSME 100ML",
+      "sold30": "[1-5]",
+      "price": 28.49,
+      "ship": 10.49,
+      "total": 38.98
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Mgiełka do Ciała i Włosów Cosme 100ml - Luksusowe Odświeżenie",
+      "sold30": "0",
+      "price": 29.99,
+      "ship": 10.49,
+      "total": 40.48
+     },
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella Perfume Cosme mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 32.21,
+      "ship": 10.49,
+      "total": 42.7
+     },
+     {
+      "login": "OTLFreshandFunky",
+      "title": "Sorvella Perfume Cosme mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 34.99,
+      "ship": 10.49,
+      "total": 45.48
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Cosme mgiełka do ciała i włosów 100 ml – zapach świeży i kwiatowy",
+      "sold30": "0",
+      "price": 36.99,
+      "ship": 10.49,
+      "total": 47.48
+     },
+     {
+      "login": "Lunaris",
+      "title": "Sorvella Perfume Cosme mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 40,
+      "ship": 10.49,
+      "total": 50.49
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Cosme Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 40.96,
+      "ship": 10.49,
+      "total": 51.45
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Cosme Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 43.96,
+      "ship": 10.49,
+      "total": 54.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18747465439",
+    "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Cosme 100 ml Damska"
+   }
   },
   {
    "id": "bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
@@ -2200,14 +6218,6 @@
    "url": "https://sorvellaperfume.pl/products/bella-vista-mgielka-do-ciala-sorvella-perfume-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/5_23021081-d580-4ff6-b6b4-f1b630086e2a.png?v=1789047330&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "Sorvella Bella Vista mgiełka do ciała i włosów 100 ml",
-     "price": 30,
-     "url": "https://allegro.pl/produkt/sorvella-perfume-bella-vista-mgielka-do-ciala-i-wlosow-100ml-b9ea9590-5d71-4b6e-ad3e-1324c5138693?offerId=18578316874",
-     "match": 100,
-     "flag": false
-    },
     {
      "channel": "hebe",
      "title": "SORVELLA PERFUME BELLA VISTA mgiełka do ciała i włosów, 100 ml",
@@ -2224,8 +6234,111 @@
      "url": "https://www.rossmann.pl/Produkt/Mgielki-zapachowe/Sorvella-Bella-Vista-mgielka-do-ciala-i-wlosow-dla-kobiet-100-ml,2091725,13268",
      "match": 94,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella Bella Vista mgiełka do ciała i włosów 100 ml",
+     "price": 27.9,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18747449680",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella Bella Vista mgiełka do ciała i włosów 100 ml",
+      "sold30": "[1-5]",
+      "price": 27.9,
+      "ship": 10.49,
+      "total": 38.39
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella Perfume Bella Vista mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 27.9,
+      "ship": 10.49,
+      "total": 38.39
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA MGIEŁKA DO CIAŁA I WŁOSÓW BELLA VISTA 100ML",
+      "sold30": "0",
+      "price": 28.49,
+      "ship": 10.49,
+      "total": 38.98
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Mgiełka Bella Vista 100ml - Odświeżenie Ciała i Włosów",
+      "sold30": "0",
+      "price": 29.99,
+      "ship": 10.49,
+      "total": 40.48
+     },
+     {
+      "login": "OTLFreshandFunky",
+      "title": "Sorvella Perfume Bella Vista mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 31.18,
+      "ship": 10.49,
+      "total": 41.67
+     },
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella Perfume Bella Vista mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 32.53,
+      "ship": 10.49,
+      "total": 43.02
+     },
+     {
+      "login": "LunaBella",
+      "title": "Sorvella Perfume Bella Vista mgiełka do ciała i włosów 100ml",
+      "sold30": "[1-5]",
+      "price": 35.41,
+      "ship": 10.49,
+      "total": 45.9
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Bella Vista Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 40.96,
+      "ship": 10.49,
+      "total": 51.45
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Bella Vista Mgiełka do ciała i włosów",
+      "sold30": "[1-5]",
+      "price": 41.07,
+      "ship": 10.49,
+      "total": 51.56
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Bella Vista Mgiełka do ciała i włosów 100ml",
+      "sold30": "0",
+      "price": 43.96,
+      "ship": 10.49,
+      "total": 54.45
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18747449680",
+    "title": "Mgiełka do Ciała i Włosów Perfumowana SORVELLA Bella Vista 100 ml Damska"
+   }
   },
   {
    "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774202986841",
@@ -2269,7 +6382,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853214128",
+    "price": 199,
+    "monitoring": false,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 199,
+    "url": "https://allegro.pl/oferta/18853214128",
+    "title": "Perfumy unisex damskie męskie SORVELLA SIGNATURE GOLDEN NOTES drzewne 100ml"
+   }
   },
   {
    "id": "golden-notes-perfumy-unisex-sorvella-signature-edp-100-ml-55774203019609",
@@ -2296,7 +6421,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853117495",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SIGNATURE GOLDEN NOTES PARFUM 30 ML",
+      "sold30": "[6-10]",
+      "price": 80.73,
+      "ship": 10.49,
+      "total": 91.22
+     },
+     {
+      "login": "alleloombard831",
+      "title": "SORVELLA SIGNATURE GOLDEN NOTES 30ML",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Golden Notes perfumy spray 30ml",
+      "sold30": "[1-5]",
+      "price": 103.98,
+      "ship": 10.49,
+      "total": 114.47
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Signature Golden Notes perfumy spray 30ml",
+      "sold30": "0",
+      "price": 109.98,
+      "ship": 10.49,
+      "total": 120.47
+     },
+     {
+      "login": "drogeria_medilla",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 122.49,
+      "ship": 10.49,
+      "total": 132.98
+     },
+     {
+      "login": "Outlet_cosmetics",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 122.49,
+      "ship": 10.49,
+      "total": 132.98
+     },
+     {
+      "login": "XDrogeria",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 122.49,
+      "ship": 10.49,
+      "total": 132.98
+     },
+     {
+      "login": "e-Marknet",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 123.64,
+      "ship": 9.99,
+      "total": 133.63
+     },
+     {
+      "login": "Uroda2025",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 123.7,
+      "ship": 10.49,
+      "total": 134.19
+     },
+     {
+      "login": "miejto",
+      "title": "SORVELLA Signature Golden Notes Perfumy unisex 30 ml",
+      "sold30": "0",
+      "price": 124.63,
+      "ship": 10.49,
+      "total": 135.12
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18853117495",
+    "title": "Perfumy unisex damskie męskie SORVELLA SIGNATURE GOLDEN NOTES kwiatowe 30ml"
+   }
   },
   {
    "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209081689",
@@ -2340,7 +6558,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853180511",
+    "price": 199,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella perfumy Bergamot & Musk 100 ml Signature Collection",
+      "sold30": "[11-20]",
+      "price": 150,
+      "ship": 10.49,
+      "total": 160.49
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Signature Bergamot & Musk EDP 100ml",
+      "sold30": "[1-5]",
+      "price": 156.13,
+      "ship": 10.49,
+      "total": 166.62
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Signature Bergamot & Musk EDP 100ml",
+      "sold30": "[1-5]",
+      "price": 158,
+      "ship": 10.49,
+      "total": 168.49
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Bergamot & Musk woda perfumowana spray 100ml",
+      "sold30": "0",
+      "price": 161.1,
+      "ship": 10.49,
+      "total": 171.59
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY Bergamot & Musk 100 ML",
+      "sold30": "0",
+      "price": 169,
+      "ship": 10.49,
+      "total": 179.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella Bergamot & Musk Signature Collection Perfumy Damskie 100ml",
+      "sold30": "0",
+      "price": 169.9,
+      "ship": 10.49,
+      "total": 180.39
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Bergamot Musk Woda perfumowana spray 100ml",
+      "sold30": "0",
+      "price": 177.47,
+      "ship": 10.49,
+      "total": 187.96
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Bergamot & Musk Perfumy uniseks",
+      "sold30": "0",
+      "price": 179.09,
+      "ship": 10.49,
+      "total": 189.58
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE BERGAMOT & MUSK PERFUMY 100ml SPRAY",
+      "sold30": "0",
+      "price": 180.24,
+      "ship": 9.99,
+      "total": 190.23
+     },
+     {
+      "login": "Allegro",
+      "title": "Sorvella Perfume Bergamot & Musk perfumy unisex 100 ml Signature",
+      "sold30": "0",
+      "price": 181.39,
+      "ship": 10.49,
+      "total": 191.88
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 199,
+    "url": "https://allegro.pl/oferta/18853180511",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE BERGAMOT MUSK PARFUM ŚWIEŻE DRZEWNE 100ML"
+   }
   },
   {
    "id": "bergamot-musk-perfumy-unisex-sorvella-signature-edp-100-ml-1-55774209114457",
@@ -2367,7 +6678,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822748559",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY BERGAMOT MUSK 30 ML",
+      "sold30": "[1-5]",
+      "price": 69.99,
+      "ship": 10.49,
+      "total": 80.48
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SIGNATURE BERGAMOT MUSK 30 ML",
+      "sold30": "[1-5]",
+      "price": 71,
+      "ship": 10.49,
+      "total": 81.49
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Bergamot & Musk woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 75.53,
+      "ship": 10.49,
+      "total": 86.02
+     },
+     {
+      "login": "BellaLuna",
+      "title": "SORVELLA SIGNATURE BERGAMOT MUSK PARFUM 30ML PERFUMY UNISEX DAMSKIE MĘSKIE",
+      "sold30": "0",
+      "price": 76.7,
+      "ship": 10.49,
+      "total": 87.19
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Bergamot Musk Woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 77.32,
+      "ship": 10.49,
+      "total": 87.81
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE BERGAMOT MUSK EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 77.85,
+      "ship": 9.99,
+      "total": 87.84
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA SIGNATURE BERGAMOT MUSK EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 78.66,
+      "ship": 9.99,
+      "total": 88.65
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Signature Bergamot Musk Woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 81.82,
+      "ship": 10.49,
+      "total": 92.31
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Signature Bergamot Musk EDP spray 30ml",
+      "sold30": "0",
+      "price": 82.07,
+      "ship": 10.49,
+      "total": 92.56
+     },
+     {
+      "login": "VIVAME_pl",
+      "title": "Sorvella Perfume Signature Bergamot & Musk woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 83.01,
+      "ship": 10.49,
+      "total": 93.5
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18822748559",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE BERGAMOT MUSK PARFUM ŚWIEŻE DRZEWNE 30 ML"
+   }
   },
   {
    "id": "v608-fame-50-ml-perfumy-damskie-sorvella",
@@ -2394,7 +6798,84 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800073642",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V608 50 ml Perfumy Premium",
+      "sold30": "[6-10]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella V608 50 ml perfumy damskie kwiatowe",
+      "sold30": "0",
+      "price": 60.79,
+      "ship": 10.49,
+      "total": 71.28
+     },
+     {
+      "login": "perfumel",
+      "title": "Sorvella V608 50 ml perfumy damskie kwiatowe",
+      "sold30": "[1-5]",
+      "price": 60.8,
+      "ship": 10.49,
+      "total": 71.29
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA V-608 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella V-608 Perfumy Damskie 50ml - Zmysłowy, Egzotyczny Zapach",
+      "sold30": "0",
+      "price": 64.99,
+      "ship": 10.49,
+      "total": 75.48
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella V608 50 ml perfumy damskie kwiatowe",
+      "sold30": "0",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella V608 50 ml perfumy damskie kwiatowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "Sanibelle_pl",
+      "title": "Sorvella V608 50 ml perfumy damskie",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800073642",
+    "title": "Perfumy damskie Sorvella V608 owocowe EDP 50 ml"
+   }
   },
   {
    "id": "v614-dylan-purple-50-ml-slodkie-perfumy-damskie-sorvella",
@@ -2421,7 +6902,76 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800077679",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V 614 Perfumy bez kartonika 50 ml",
+      "sold30": "[1-5]",
+      "price": 45,
+      "ship": 10.49,
+      "total": 55.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V 614 Perfumy 50 ml",
+      "sold30": "[1-5]",
+      "price": 59.98,
+      "ship": 10.49,
+      "total": 70.47
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA V-614 WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE 50ML",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA V-614 - Damska Woda Perfumowana 50ml, Nuty Kwiatowe",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "kosmetyki_dora",
+      "title": "SORVELLA PERFUMY V614 - DYLAN PURPLE 50ml EDP",
+      "sold30": "0",
+      "price": 89.99,
+      "ship": 10.49,
+      "total": 100.48
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella V614 50 ml perfumy damskie cytrusowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "e-drogeria24_pl",
+      "title": "Sorvella V614 50 ml perfumy damskie cytrusowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800077679",
+    "title": "Perfumy damskie Sorvella V614 słodkie EDP 50 ml"
+   }
   },
   {
    "id": "v602-paradoxe-50-ml-kwiatowe-perfumy-damskie-sorvella",
@@ -2439,7 +6989,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800071134",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "kosmetyki_dora",
+      "title": "SORVELLA PERFUMY V602 PRA DA PARA DOXE EDP 50ml",
+      "sold30": "[1-5]",
+      "price": 89.99,
+      "ship": 10.49,
+      "total": 100.48
+     },
+     {
+      "login": "labutena",
+      "title": "V602 - Paradoks 50 Ml Kwiatowe Perfumy Damskie Sorvella",
+      "sold30": "0",
+      "price": 99.99,
+      "ship": 10.49,
+      "total": 110.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800071134",
+    "title": "Perfumy damskie Sorvella V602 kwiatowe EDP 50 ml"
+   }
   },
   {
    "id": "neroli-citron-perfumy-unisex-sorvella-signature-100-ml-55774222025049",
@@ -2449,14 +7028,6 @@
    "url": "https://sorvellaperfume.pl/products/neroli-citron-perfumy-unisex-sorvella-signature-100-ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/12_a4eb4871-b305-4b93-9560-5035858e4596.png?v=1788955474&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUME Signature Neroli & Citron EDP 100ml",
-     "price": 173.86,
-     "url": "https://allegro.pl/events/clicks?emission_unit_id=9b323989-d28d-4777-bd8d-1b412e9927dc&emission_id=98d90c6d-3f00-4f91-b5dc-e9290d3cb40a&type=OFFER&ts=1794925948922&redirect=https%3A%2F%2Fallegro.pl%2Foferta%2F18729762769%3Fbi_s%3Dads%26bi_m%3Dproductlisting%253Adesktop%253Aquery%26bi_c%3DZDgyNDYxNmEtODM0My00N2QxLWExM2YtNDYyM2Q5ZDY4MTRiAA%26bi_t%3Dape&placement=productlisting:desktop:query&sig=0f3583f02cbbdd2cc801ff094ca8924a",
-     "match": 100,
-     "flag": false
-    },
     {
      "channel": "ceneo",
      "title": "Sorvella Signature Neroli & Citron Woda Perfumowana 100ml",
@@ -2482,8 +7053,111 @@
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-Signature-Neroli-Citron-woda-perfumowana-unisex-100-ml,2091693,13279",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella perfumy neroli & citron 100 ml Signature Collection",
+     "price": 146.61,
+     "seller": "BellaLuna",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/BellaLuna",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853207200",
+    "price": 199,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "BellaLuna",
+      "title": "Sorvella perfumy neroli & citron 100 ml Signature Collection",
+      "sold30": "[1-5]",
+      "price": 146.61,
+      "ship": 10.49,
+      "total": 157.1
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY NEROLI & CITRON 100 ML",
+      "sold30": "0",
+      "price": 149,
+      "ship": 10.49,
+      "total": 159.49
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella perfumy neroli & citron 100 ml Signature Collection",
+      "sold30": "0",
+      "price": 162.9,
+      "ship": 10.49,
+      "total": 173.39
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA PERFUMY NEROLI & CITRON 100 ML",
+      "sold30": "[1-5]",
+      "price": 169.9,
+      "ship": 10.49,
+      "total": 180.39
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron woda perfumowana spray 100ml",
+      "sold30": "0",
+      "price": 170.34,
+      "ship": 10.49,
+      "total": 180.83
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron EDP 100ml",
+      "sold30": "[1-5]",
+      "price": 170.62,
+      "ship": 10.49,
+      "total": 181.11
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron EDP 100ml",
+      "sold30": "0",
+      "price": 173.86,
+      "ship": 10.49,
+      "total": 184.35
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Neroli & Citron Perfumy uniseks",
+      "sold30": "0",
+      "price": 177.3,
+      "ship": 10.49,
+      "total": 187.79
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Neroli Citron Woda perfumowana spray 100ml",
+      "sold30": "0",
+      "price": 177.47,
+      "ship": 10.49,
+      "total": 187.96
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE NEROLI & CITRON EDP 100ml SPRAY",
+      "sold30": "0",
+      "price": 180.24,
+      "ship": 9.99,
+      "total": 190.23
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 199,
+    "url": "https://allegro.pl/oferta/18853207200",
+    "title": "Perfumy unisex damskie męskie SORVELLA SIGNATURE NEROLI CITRON PARFUM 100ML"
+   }
   },
   {
    "id": "neroli-citron-perfumy-unisex-sorvella-signature-100-ml-55774222057817",
@@ -2510,7 +7184,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853111709",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SIGNATURE NEROLI CITRON PARFUM 30 ML",
+      "sold30": "[1-5]",
+      "price": 73,
+      "ship": 10.49,
+      "total": 83.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY NEROLI & CITRON 30 ML",
+      "sold30": "0",
+      "price": 73.48,
+      "ship": 10.49,
+      "total": 83.97
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 73.48,
+      "ship": 10.49,
+      "total": 83.97
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Neroli Citron Woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 73.53,
+      "ship": 10.49,
+      "total": 84.02
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron EDP 30ml",
+      "sold30": "0",
+      "price": 75.19,
+      "ship": 10.49,
+      "total": 85.68
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE NEROLI CITRON EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 75.85,
+      "ship": 9.99,
+      "total": 85.84
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Signature Neroli & Citron EDP 30ml",
+      "sold30": "0",
+      "price": 75.93,
+      "ship": 10.49,
+      "total": 86.42
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA SIGNATURE NEROLI CITRON EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 76.65,
+      "ship": 9.99,
+      "total": 86.64
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Signature Neroli Citron Woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 78.03,
+      "ship": 10.49,
+      "total": 88.52
+     },
+     {
+      "login": "www_tersorte_pl",
+      "title": "SORVELLA Signature Neroli Citron EDP spray 30ml",
+      "sold30": "0",
+      "price": 78.21,
+      "ship": 10.49,
+      "total": 88.7
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18853111709",
+    "title": "Perfumy unisex damskie męskie SORVELLA SIGNATURE NEROLI CITRON PARFUM 30ML"
+   }
   },
   {
    "id": "vanilia-oud-perfumy-unisex-sorvella-signature-100-ml-55774217371993",
@@ -2581,7 +7348,68 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853102576",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA SIGNATURE VANILLA OUD PARFUM 30ML PERFUMY UNISEX DAMSKIE MĘSKIE",
+      "sold30": "[1-5]",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Signature Vanilla Oud Parfum 30 ml - Perfumy Unisex",
+      "sold30": "[1-5]",
+      "price": 84.99,
+      "ship": 10.49,
+      "total": 95.48
+     },
+     {
+      "login": "OTLFreshandFunky",
+      "title": "SORVELLA SIGNATURE VANILLA OUD PARFUM 30ML PERFUMY UNISEX DAMSKIE MĘSKIE",
+      "sold30": "0",
+      "price": 88.79,
+      "ship": 10.49,
+      "total": 99.28
+     },
+     {
+      "login": "Deall",
+      "title": "Sorvella Perfume Signature Vanilla & Oud 30ml unisex perfumy EDP drzewne",
+      "sold30": "0",
+      "price": 139.9,
+      "ship": 0,
+      "total": 139.9
+     },
+     {
+      "login": "Deall",
+      "title": "Sorvella Perfume Signature Vanilla & Oud 30ml unisex perfumy EDP drzewne",
+      "sold30": "0",
+      "price": 139.9,
+      "ship": 0,
+      "total": 139.9
+     },
+     {
+      "login": "Tuju_ro",
+      "title": "Perfum unisex SORVELLA SIGNATURE VANILLA & OUD, 30 ml",
+      "sold30": "0",
+      "price": 193.82,
+      "ship": 25,
+      "total": 218.82
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18853102576",
+    "title": "Perfumy damskie męskie unisex SORVELLA SIGNATURE VANILLA OUD PARFUM 30ML"
+   }
   },
   {
    "id": "s708-phanton-50-ml-eleganckie-perfumy-meskie-sorvella",
@@ -2608,7 +7436,84 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694683901",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella S708 50 ml perfumy męskie drzewne",
+      "sold30": "[1-5]",
+      "price": 45,
+      "ship": 10.49,
+      "total": 55.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA S-708 50ML WODA PERFUMOWA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+      "sold30": "0",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA S-708 50ml Perfumy Męskie Drzewne Woda Perfumowana",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Sorvella S708 50 ml perfumy męskie drzewne",
+      "sold30": "0",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     },
+     {
+      "login": "perfumel",
+      "title": "Sorvella S708 50 ml perfumy męskie drzewne",
+      "sold30": "0",
+      "price": 69.98,
+      "ship": 10.49,
+      "total": 80.47
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella S708 50 ml perfumy męskie drzewne",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "e-drogeria24_pl",
+      "title": "Sorvella S708 50 ml perfumy męskie drzewne",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "Sanibelle_pl",
+      "title": "Sorvella S708 50 ml perfumy męskie",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694683901",
+    "title": "Perfumy męskie SORVELLA S-708 Phanton Eleganckie 50 ml"
+   }
   },
   {
    "id": "sandalwood-zapach-domowy-premium-120ml",
@@ -2646,14 +7551,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/18_8c91b203-a850-47a0-ba1b-4341e7854d15.png?v=1788960236&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA PERFUMY Amber & Saffron 100 ML",
-     "price": 169,
-     "url": "https://allegro.pl/produkt/sorvella-perfumy-amber-saffron-100-ml-signature-collection-a30a12b7-73ac-4e23-ad79-52469e9c32fb?offerId=18583276835",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Amber & Saffron Sorvella Signature Woda Perfumowana 100ml",
      "price": 166.5,
@@ -2678,8 +7575,111 @@
      "url": "https://www.rossmann.pl/Produkt/Ekstrakty-perfum/Sorvella-Signature-Amber-Saffron-perfumy-unisex-100-ml,2091689,19815",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+     "price": 166.5,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18926380085",
+    "price": 249.9,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+      "sold30": "[6-10]",
+      "price": 166.5,
+      "ship": 10.49,
+      "total": 176.99
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY Amber & Saffron 100 ML",
+      "sold30": "0",
+      "price": 169,
+      "ship": 10.49,
+      "total": 179.49
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+      "sold30": "[1-5]",
+      "price": 169.9,
+      "ship": 10.49,
+      "total": 180.39
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Amber & Saffron Perfumy uniseks",
+      "sold30": "0",
+      "price": 178.85,
+      "ship": 10.49,
+      "total": 189.34
+     },
+     {
+      "login": "Drogeria-1",
+      "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+      "sold30": "0",
+      "price": 181.99,
+      "ship": 10.49,
+      "total": 192.48
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+      "sold30": "0",
+      "price": 247.8,
+      "ship": 55,
+      "total": 302.8
+     },
+     {
+      "login": "Deall",
+      "title": "Sorvella Signature Amber & Saffron 100 ml Perfumy unisex elegancki zapach",
+      "sold30": "0",
+      "price": 249.9,
+      "ship": 0,
+      "total": 249.9
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "Sorvella Signature Amber & Saffron Parfum uniseks, 100 ml",
+      "sold30": "0",
+      "price": 273.32,
+      "ship": 27,
+      "total": 300.32
+     },
+     {
+      "login": "Beautic_Shop",
+      "title": "Sorvella perfumy Amber & Saffron 100 ml Signature Collection",
+      "sold30": "0",
+      "price": 282,
+      "ship": 3.99,
+      "total": 285.99
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, Signature Amber & Saffron, Parfum, Unisex, 100 ml",
+      "sold30": "0",
+      "price": 305,
+      "ship": 20,
+      "total": 325
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 249.9,
+    "url": "https://allegro.pl/oferta/18926380085",
+    "title": "Perfumy SORVELLA Amber & Saffron 100 ml Signature Collection Jaśmin Szafran"
+   }
   },
   {
    "id": "amber-saffron-55774217961817",
@@ -2706,7 +7706,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18852431568",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Amber & Saffron Woda perfumowana dla kobiet, 30 ml",
+      "sold30": "0",
+      "price": 111.33,
+      "ship": 10.49,
+      "total": 121.82
+     },
+     {
+      "login": "alleloombard1259",
+      "title": "SORVELLA SIGNATURE GOLDEN NOTES PERFUMY UNISEKS",
+      "sold30": "0",
+      "price": 126,
+      "ship": 10.49,
+      "total": 136.49
+     },
+     {
+      "login": "Superlashshop",
+      "title": "Sorvella Signature Amber & Saffron perfumy spray 30 ml 1 szt.",
+      "sold30": "0",
+      "price": 214.99,
+      "ship": 9.99,
+      "total": 224.98
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18852431568",
+    "title": "Perfumy unisex Sorvella Signature Amber i Saffron ambrowe drzewne 30 ml"
+   }
   },
   {
    "id": "gruszka-wanilia-zapach-do-samochodu",
@@ -2795,7 +7832,19 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853148719",
+    "price": 199,
+    "monitoring": false,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 199,
+    "url": "https://allegro.pl/oferta/18853148719",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE CARDAMOM SAFFRON PARFUM DRZEWNE 100 ML"
+   }
   },
   {
    "id": "shaffron-cardamom-perfum-unisex-100ml-sorvella-signature-55774219501913",
@@ -2822,7 +7871,84 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822741784",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SIGNATURE CARDAMON SAFFRON PARFUM 30 ML",
+      "sold30": "[1-5]",
+      "price": 89.89,
+      "ship": 10.49,
+      "total": 100.38
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Cardamon & Saffron Woda perfumowana dla kobiet, ...",
+      "sold30": "0",
+      "price": 111.33,
+      "ship": 10.49,
+      "total": 121.82
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "SORVELLA Signature Unisex Perfumy 30ml - Kardamon & Szafran",
+      "sold30": "0",
+      "price": 158.23,
+      "ship": 55,
+      "total": 213.23
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "Sorvella Signature Cardamom & Saffron – perfumy unisex, 30 ml",
+      "sold30": "0",
+      "price": 178.1,
+      "ship": 27,
+      "total": 205.1
+     },
+     {
+      "login": "Beautic_Shop",
+      "title": "SORVELLA Signature Unisex Perfumy 30ml - Kardamon & Szafran",
+      "sold30": "0",
+      "price": 190,
+      "ship": 3.99,
+      "total": 193.99
+     },
+     {
+      "login": "Tuju_ro",
+      "title": "Perfum unisex SORVELLA SIGNATURE CARDAMOM & SAFFRON, 30 ml",
+      "sold30": "0",
+      "price": 193.82,
+      "ship": 25,
+      "total": 218.82
+     },
+     {
+      "login": "LifeMeansBeauty",
+      "title": "Sorvella, Signature Cardamom & Saffron, Parfum, Unisex, 30 ml",
+      "sold30": "0",
+      "price": 210,
+      "ship": 20,
+      "total": 230
+     },
+     {
+      "login": "Chosly",
+      "title": "Sorvella, Signature Cardamom & Saffron, Parfum, Unisex, 30 ml",
+      "sold30": "0",
+      "price": 214.99,
+      "ship": 0,
+      "total": 214.99
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18822741784",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE CARDAMOM SAFFRON PARFUM DRZEWNE 30 ML"
+   }
   },
   {
    "id": "cashmere-pepper-perfum-100ml-sorvella-signature-55774220419417",
@@ -2866,7 +7992,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18853134865",
+    "price": 199,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA PERFUMY CASHMERE & PEPPER 100 ML",
+      "sold30": "[11-20]",
+      "price": 144.99,
+      "ship": 10.49,
+      "total": 155.48
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper woda perfumowana spray 100ml",
+      "sold30": "0",
+      "price": 161.1,
+      "ship": 10.49,
+      "total": 171.59
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper EDP 100ml",
+      "sold30": "0",
+      "price": 164.35,
+      "ship": 10.49,
+      "total": 174.84
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA SIGNATURE CASHMERE PEPPER PARFUM 100ML PERFUMY UNISEX",
+      "sold30": "0",
+      "price": 169.99,
+      "ship": 10.49,
+      "total": 180.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA Cashmere Pepper 100ml Parfum Orientalny Zapach Unisex",
+      "sold30": "[1-5]",
+      "price": 169.99,
+      "ship": 10.49,
+      "total": 180.48
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Perfumy Sorvella 100 ml orientalne woda perfumowana Cashmere & Pepper",
+      "sold30": "0",
+      "price": 170.99,
+      "ship": 10.49,
+      "total": 181.48
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper EDP 100ml",
+      "sold30": "0",
+      "price": 174.86,
+      "ship": 10.49,
+      "total": 185.35
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Signature Cashmere & Pepper Perfumy uniseks",
+      "sold30": "[1-5]",
+      "price": 177.17,
+      "ship": 10.49,
+      "total": 187.66
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE CASHMERE & PEPPER PERFUMY 100ml SPRAY",
+      "sold30": "0",
+      "price": 180.24,
+      "ship": 9.99,
+      "total": 190.23
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA SIGNATURE CASHMERE & PEPPER PERFUMY 100ml SPRAY",
+      "sold30": "0",
+      "price": 180.25,
+      "ship": 9.99,
+      "total": 190.24
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 199,
+    "url": "https://allegro.pl/oferta/18853134865",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE CASHMERE PEPPER PARFUM CYTRUSOWE 100 ML"
+   }
   },
   {
    "id": "cashmere-pepper-perfum-100ml-sorvella-signature-55774220452185",
@@ -2893,7 +8112,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18822736445",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA SIGNATURE CASHMERE PEPPER PARFUM 30 ML",
+      "sold30": "[1-5]",
+      "price": 69.9,
+      "ship": 10.49,
+      "total": 80.39
+     },
+     {
+      "login": "jakubshopping",
+      "title": "SORVELLA PERFUMY CASHMERE PEPPER 30 ML",
+      "sold30": "[1-5]",
+      "price": 69.9,
+      "ship": 10.49,
+      "total": 80.39
+     },
+     {
+      "login": "OTLFreshandFunky",
+      "title": "SORVELLA SIGNATURE CASHMERE PEPPER PARFUM 30MLPERFUMY UNISEX DAMSKIE MĘSKIE",
+      "sold30": "0",
+      "price": 70.99,
+      "ship": 10.49,
+      "total": 81.48
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Signature Cashmere & Pepper woda perfumowana 30ml",
+      "sold30": "0",
+      "price": 73.53,
+      "ship": 10.49,
+      "total": 84.02
+     },
+     {
+      "login": "Perfumeria-pl",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper EDP 30ml",
+      "sold30": "[1-5]",
+      "price": 75.19,
+      "ship": 10.49,
+      "total": 85.68
+     },
+     {
+      "login": "DrogeriaPrymulka",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper woda perfumowana spray 30ml",
+      "sold30": "0",
+      "price": 75.8,
+      "ship": 10.49,
+      "total": 86.29
+     },
+     {
+      "login": "pachnij_pl",
+      "title": "SORVELLA SIGNATURE CASHMERE PEPPER EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 75.85,
+      "ship": 9.99,
+      "total": 85.84
+     },
+     {
+      "login": "TagomagoDrogeria",
+      "title": "SORVELLA PERFUME Signature Cashmere & Pepper EDP 30ml",
+      "sold30": "0",
+      "price": 75.93,
+      "ship": 10.49,
+      "total": 86.42
+     },
+     {
+      "login": "Lemur_24",
+      "title": "SORVELLA SIGNATURE CASHMERE PEPPER EDP 30ml SPRAY",
+      "sold30": "0",
+      "price": 76.65,
+      "ship": 9.99,
+      "total": 86.64
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Signature Cashmere & Pepper woda perfumowana 30ml",
+      "sold30": "0",
+      "price": 78.03,
+      "ship": 10.49,
+      "total": 88.52
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18822736445",
+    "title": "PERFUMY UNISEX SORVELLA SIGNATURE CASHMERE PEPPER PARFUM CYTRUSOWE 30 ML"
+   }
   },
   {
    "id": "spring-night-zapach-domowy-200ml",
@@ -3018,7 +8330,100 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18646726443",
+    "price": 39,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Woda perfumowana Sorvella Premium CHRY 50 ml",
+      "sold30": "[1-5]",
+      "price": 55,
+      "ship": 10.49,
+      "total": 65.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM CHRY 50ML WODA PERFUMOWANA PERFUMY UNISEX",
+      "sold30": "0",
+      "price": 74.99,
+      "ship": 10.49,
+      "total": 85.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA PREMIUM CHRY 50ML WODA PERFUMOWANA UNISEX ORIENTALNO-WIŚNIOWA",
+      "sold30": "0",
+      "price": 74.99,
+      "ship": 10.49,
+      "total": 85.48
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Woda perfumowana Sorvella Premium CHRY 50 ml",
+      "sold30": "0",
+      "price": 79.48,
+      "ship": 10.49,
+      "total": 89.97
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella Premium CHRY woda perfumowana EDP 50 ml – perfumy damskie",
+      "sold30": "0",
+      "price": 88.89,
+      "ship": 10.49,
+      "total": 99.38
+     },
+     {
+      "login": "AB-Beautypl",
+      "title": "Woda perfumowana Sorvella Premium CHRY 50 ml",
+      "sold30": "0",
+      "price": 98.89,
+      "ship": 10.49,
+      "total": 109.38
+     },
+     {
+      "login": "manius1412",
+      "title": "Woda perfumowana Sorvella Premium CHRY 50 ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "AlleOutlett",
+      "title": "WODA TOALETOWA DLA KOBIET, 50 ML SORVELLA CHERRY",
+      "sold30": "0",
+      "price": 99.99,
+      "ship": 10.49,
+      "total": 110.48
+     },
+     {
+      "login": "ProfiKosmetiko",
+      "title": "Sorvella Premium EDP CHRY 50 ml",
+      "sold30": "0",
+      "price": 102.26,
+      "ship": 10.49,
+      "total": 112.75
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Premium Chry Woda perfumowana spray 50 ml",
+      "sold30": "0",
+      "price": 104.42,
+      "ship": 10.49,
+      "total": 114.91
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 39,
+    "url": "https://allegro.pl/oferta/18646726443",
+    "title": "Perfumy Damskie SORVELLA CHRY 50 ml"
+   }
   },
   {
    "id": "green-tea-zapachy-domowe-120ml",
@@ -3234,7 +8639,19 @@
      "match": 94,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800084229",
+    "price": 95,
+    "monitoring": false,
+    "sellers": [],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18800084229",
+    "title": "Perfumy damskie Sorvella FLR Premium kwiatowe świeże EDP 50 ml"
+   }
   },
   {
    "id": "sorvella-era-erba-pura",
@@ -3322,7 +8739,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800080000",
+    "price": 95,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA BCR - Woda Toaletowa dla Kobiet, 50 ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA BCR - Woda Toaletowa dla Kobiet, 50 ml",
+      "sold30": "[1-5]",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 95,
+    "url": "https://allegro.pl/oferta/18800080000",
+    "title": "Perfumy damskie Sorvella BCR Premium drzewne świeże EDP 50 ml"
+   }
   },
   {
    "id": "sorvella-s627-50ml",
@@ -3333,22 +8779,61 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2c10a505-8392-42a6-beff-fc88777c8617.png?v=1793952892&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "Sorvella S627 woda perfumowana 50 ml",
-     "price": 72.9,
-     "url": "https://allegro.pl/produkt/sorvella-s-627-woda-perfumowana-50-ml-dla-mezczyzn-orientalny-zapach-21a2e04e-d6ea-4446-bd26-d7566d273728?offerId=18689546713",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "rossmann",
      "title": "Sorvella S-627 woda perfumowana dla mężczyzn 50 ml",
      "price": 119.99,
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-S-627-woda-perfumowana-dla-mezczyzn-50-ml,2091720,13259",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella S627 woda perfumowana 50 ml",
+     "price": 55,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817424806",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella S627 woda perfumowana 50 ml",
+      "sold30": "[6-10]",
+      "price": 55,
+      "ship": 10.49,
+      "total": 65.49
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Sorvella S-627 perfumy",
+      "sold30": "[1-5]",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "Sorvella S-627 50ml Woda Perfumowana Dla Mężczyzn Perfumy Męskie",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18817424806",
+    "title": "Perfumy męskie SORVELLA S-627 ambrowe słodkie 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "sorvella-oud-50-ml",
@@ -3375,7 +8860,52 @@
      "match": 88,
      "flag": true
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694207466",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella OUD perfumy Premium 50 ml",
+      "sold30": "0",
+      "price": 75,
+      "ship": 10.49,
+      "total": 85.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA PREMIUM OUD 50ML WODA PERFUMOWANA UNISEX DAMSKA MĘSKA",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella Premium Oud Unisex Woda Perfumowana 50ml - Orientalny Zapach",
+      "sold30": "0",
+      "price": 79.99,
+      "ship": 10.49,
+      "total": 90.48
+     },
+     {
+      "login": "perfumel",
+      "title": "Sorvella perfume PREMIUM OUD 50 ml",
+      "sold30": "0",
+      "price": 89.9,
+      "ship": 10.49,
+      "total": 100.39
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694207466",
+    "title": "Perfumy SORVELLA Oud Arabian unisex premium 50 ml"
+   }
   },
   {
    "id": "sorvella-v208-50-ml",
@@ -3410,7 +8940,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18781976784",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V208 Perfumy Premium bez kartonika 50 ml",
+      "sold30": "[1-5]",
+      "price": 55,
+      "ship": 10.49,
+      "total": 65.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V208 50 ml Perfumy Premium",
+      "sold30": "[6-10]",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Woda perfumowana Sorvella V-208 50 ml",
+      "sold30": "[1-5]",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18781976784",
+    "title": "Perfumy damskie Sorvella V-208 Cytrusowe 50 ml EDP"
+   }
   },
   {
    "id": "sorvella-mlc2-50ml",
@@ -3420,14 +8987,6 @@
    "url": "https://sorvellaperfume.pl/products/sorvella-mlc2-50ml",
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/43_14e14eab-43d4-4eb2-92e1-60daee151332.png?v=1793952926&width=200",
    "offers": [
-    {
-     "channel": "allegro",
-     "title": "Perfumy damskie SORVELLA MLC2 premium 50 ml + próbka GRATIS",
-     "price": 69,
-     "url": "https://allegro.pl/produkt/perfumy-sorvella-perfume-50-ml-woda-perfumowana-swieza-morska-0537bf9e-27f0-4a8a-8135-82a9bed94487?offerId=18694273050",
-     "match": 100,
-     "flag": false
-    },
     {
      "channel": "ceneo",
      "title": "Sorvella Perfume MLC2 - Woda Perfumowana 50Ml",
@@ -3453,8 +9012,111 @@
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-MLC2-woda-perfumowana-dla-kobiet-50-ml,2091709,13266",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA MLC2 Perfum Premium bez kartonika 50 ml",
+     "price": 42.75,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694273050",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MLC2 Perfum Premium bez kartonika 50 ml",
+      "sold30": "[6-10]",
+      "price": 42.75,
+      "ship": 10.49,
+      "total": 53.24
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Perfumy Sorvella MLC2 Perfume 50 ml",
+      "sold30": "0",
+      "price": 68,
+      "ship": 10.49,
+      "total": 78.49
+     },
+     {
+      "login": "hotfm",
+      "title": "SORVELLA MLC2 Perfum Premium 50 ml",
+      "sold30": "[1-5]",
+      "price": 77,
+      "ship": 10.49,
+      "total": 87.49
+     },
+     {
+      "login": "kosmetyki_dora",
+      "title": "SORVELLA MLC2 50 ml PERFUMY Molecule 02 EDP PREMIUM",
+      "sold30": "0",
+      "price": 86.9,
+      "ship": 10.49,
+      "total": 97.39
+     },
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella MLC2 perfumy damskie 50 ml – minimalistyczny zapach orientalny",
+      "sold30": "0",
+      "price": 86.9,
+      "ship": 10.49,
+      "total": 97.39
+     },
+     {
+      "login": "TrafikaPlus",
+      "title": "PERFUMY SORVELLA PERFUME MLC02 50 ML",
+      "sold30": "0",
+      "price": 89,
+      "ship": 10.49,
+      "total": 99.49
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA MLC2 - Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA MLC2 - Woda Perfumowana, 50 ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Premium MLC2 Woda perfumowana dla kobiet",
+      "sold30": "0",
+      "price": 115.57,
+      "ship": 10.49,
+      "total": 126.06
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella MLC2 Perfumy damskie Premium 50ml",
+      "sold30": "0",
+      "price": 119.98,
+      "ship": 10.49,
+      "total": 130.47
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694273050",
+    "title": "Perfumy damskie SORVELLA MLC2 premium 50 ml"
+   }
   },
   {
    "id": "sorvella-s157-50ml",
@@ -3472,7 +9134,44 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800877200",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella S157 perfumy męskie bez kartonika 50 ml",
+      "sold30": "0",
+      "price": 45,
+      "ship": 10.49,
+      "total": 55.49
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Perfumy Sorvella S157",
+      "sold30": "0",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "Sorvella S-157 50ml Woda Perfumowana Dla Mężczyzn Perfumy Męskie",
+      "sold30": "0",
+      "price": 99.99,
+      "ship": 10.49,
+      "total": 110.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800877200",
+    "title": "Perfumy męskie SORVELLA S-157 aromatyczne świeże 50 ml EDP"
+   }
   },
   {
    "id": "sorvella-s161-50ml",
@@ -3483,14 +9182,6 @@
    "image": "https://cdn.shopify.com/s/files/1/0532/1847/6225/files/42_2a2fef8c-4317-4fab-a825-4ba8b0652f72.png?v=1793952843&width=200",
    "offers": [
     {
-     "channel": "allegro",
-     "title": "SORVELLA S-161 50ML WODA PERFUMOWA DLA MĘŻCZYZN PERFUMY MĘSKIE",
-     "price": 59.99,
-     "url": "https://allegro.pl/produkt/sorvella-perfume-s-161-50-ml-edp-fa53b02e-8a99-401e-98af-28d8fa8a3472?offerId=17657466973",
-     "match": 100,
-     "flag": false
-    },
-    {
      "channel": "ceneo",
      "title": "Sorvella S161 Inspirowane Tobacco Vanille Tom Forfd Perfumy 50ml",
      "price": 56.99,
@@ -3498,8 +9189,111 @@
      "seller": "in 5 stores",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "SORVELLA S-161 50ML WODA PERFUMOWA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+     "price": 56.99,
+     "seller": "indizio-perfumy",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/indizio-perfumy",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18694314042",
+    "price": 59,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA S-161 50ML WODA PERFUMOWA DLA MĘŻCZYZN PERFUMY MĘSKIE",
+      "sold30": "[1-5]",
+      "price": 56.99,
+      "ship": 10.49,
+      "total": 67.48
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella Perfume S-161 50 ml EDP",
+      "sold30": "0",
+      "price": 58.48,
+      "ship": 10.49,
+      "total": 68.97
+     },
+     {
+      "login": "ikeastyle",
+      "title": "SORVELLA S-161 Perfumy Męskie 50ML Orientalny Zapach Nocny",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella S161 50 ml Męskie Perfumy Premium",
+      "sold30": "[1-5]",
+      "price": 64.8,
+      "ship": 10.49,
+      "total": 75.29
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume Woda perfumowana S161 50ml",
+      "sold30": "0",
+      "price": 73.43,
+      "ship": 10.49,
+      "total": 83.92
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume Woda perfumowana S161 50ml",
+      "sold30": "0",
+      "price": 77.93,
+      "ship": 10.49,
+      "total": 88.42
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S - 161 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 83,
+      "ship": 10.49,
+      "total": 93.49
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S - 161 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 83,
+      "ship": 10.49,
+      "total": 93.49
+     },
+     {
+      "login": "cool-tura",
+      "title": "SORVELLA EDP 50ML FOR MEN S-161+",
+      "sold30": "0",
+      "price": 83.97,
+      "ship": 10.49,
+      "total": 94.46
+     },
+     {
+      "login": "BigBigDeal",
+      "title": "SORVELLA EDP 50ML FOR MEN S-161+",
+      "sold30": "0",
+      "price": 83.98,
+      "ship": 10.49,
+      "total": 94.47
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 59,
+    "url": "https://allegro.pl/oferta/18694314042",
+    "title": "Perfumy męskie SORVELLA S-161 Tobacco Vanille 50 ml Korzenne"
+   }
   },
   {
    "id": "sorvella-v242-50ml",
@@ -3526,7 +9320,36 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800063172",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V242 perfumy 50 ml",
+      "sold30": "[11-20]",
+      "price": 61.74,
+      "ship": 10.49,
+      "total": 72.23
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Woda perfumowana Sorvella Perfume 50 ml kwiatowa V242",
+      "sold30": "0",
+      "price": 63.45,
+      "ship": 10.49,
+      "total": 73.94
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800063172",
+    "title": "Perfumy damskie Sorvella V242 pudrowe EDP 50 ml"
+   }
   },
   {
    "id": "sorvella-s146-50ml",
@@ -3562,7 +9385,52 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800872110",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella S-146 50 ml EDP",
+      "sold30": "[1-5]",
+      "price": 69,
+      "ship": 10.49,
+      "total": 79.49
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S-146 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "[1-5]",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S-146 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "Sorvella S-146 50ml Woda Perfumowa Dla Mężczyzn Perfumy Męskie",
+      "sold30": "0",
+      "price": 74.99,
+      "ship": 10.49,
+      "total": 85.48
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800872110",
+    "title": "Perfumy męskie SORVELLA S-146 owocowe świeże 50 ml EDP"
+   }
   },
   {
    "id": "sorvella-s530-50ml",
@@ -3588,8 +9456,111 @@
      "url": "https://www.rossmann.pl/Produkt/Wody-perfumowane/Sorvella-S-530-woda-perfumowana-dla-mezczyzn-50-ml,2091718,13259",
      "match": 100,
      "flag": false
+    },
+    {
+     "channel": "allegro",
+     "title": "Sorvella S530 Perfumy bez kartonika 50 ml",
+     "price": 55,
+     "seller": "hotfm",
+     "source": "base",
+     "url": "https://allegro.pl/uzytkownik/hotfm",
+     "match": 100,
+     "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18817418165",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella S530 Perfumy bez kartonika 50 ml",
+      "sold30": "[1-5]",
+      "price": 55,
+      "ship": 10.49,
+      "total": 65.49
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Sorvella S530 męski",
+      "sold30": "0",
+      "price": 65,
+      "ship": 10.49,
+      "total": 75.49
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Perfumy S530 Sorvella Perfume 50 ml",
+      "sold30": "[1-5]",
+      "price": 71.69,
+      "ship": 10.49,
+      "total": 82.18
+     },
+     {
+      "login": "krzysiekrzab",
+      "title": "SORVELLA S-530 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "DrogeriaNatalia",
+      "title": "SORVELLA S-530 - Woda Perfumowana dla Mężczyzn, 50 ml",
+      "sold30": "0",
+      "price": 74,
+      "ship": 10.49,
+      "total": 84.49
+     },
+     {
+      "login": "kosmetyki_dora",
+      "title": "SORVELLA PERFUMY S530 - SAU VAGE 50ml WODA PERFUMOWANA",
+      "sold30": "0",
+      "price": 89,
+      "ship": 10.49,
+      "total": 99.49
+     },
+     {
+      "login": "Sanibelle_pl",
+      "title": "Sorvella S530 50 ml perfumy męskie",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Standard S530 Woda perfumowana dla mężczyzn",
+      "sold30": "0",
+      "price": 93.62,
+      "ship": 10.49,
+      "total": 104.11
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella S530 Perfumy damskie 50ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     },
+     {
+      "login": "e-drogeria24_pl",
+      "title": "Sorvella S530 Perfumy damskie 50ml",
+      "sold30": "0",
+      "price": 99,
+      "ship": 10.49,
+      "total": 109.49
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18817418165",
+    "title": "Perfumy męskie SORVELLA S-530 korzenne ambrowe 50 ml EDP + próbka GRATIS"
+   }
   },
   {
    "id": "sorvella-v251-50ml",
@@ -3623,7 +9594,100 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18800068444",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "TrendyGo",
+      "title": "Sorvella Perfume V-251 50 ml woda perfumowana",
+      "sold30": "[1-5]",
+      "price": 73.43,
+      "ship": 10.49,
+      "total": 83.92
+     },
+     {
+      "login": "ToKoMo_pl",
+      "title": "Sorvella Perfume V251 For Women Woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 74.02,
+      "ship": 10.49,
+      "total": 84.51
+     },
+     {
+      "login": "wizaz_24",
+      "title": "Sorvella Perfume V251 For Women Woda perfumowana spray 50ml",
+      "sold30": "[1-5]",
+      "price": 78.52,
+      "ship": 10.49,
+      "total": 89.01
+     },
+     {
+      "login": "cool-tura",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 83.97,
+      "ship": 10.49,
+      "total": 94.46
+     },
+     {
+      "login": "BigBigDeal",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 83.98,
+      "ship": 10.49,
+      "total": 94.47
+     },
+     {
+      "login": "dvdmaxpl",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 85.99,
+      "ship": 10.49,
+      "total": 96.48
+     },
+     {
+      "login": "D-MAX-plus",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 86.01,
+      "ship": 10.49,
+      "total": 96.5
+     },
+     {
+      "login": "drake2",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 86.02,
+      "ship": 10.49,
+      "total": 96.51
+     },
+     {
+      "login": "fun_4_U",
+      "title": "SORVELLA EDP 50ML FOR WOMEN V-251+",
+      "sold30": "0",
+      "price": 86.07,
+      "ship": 10.49,
+      "total": 96.56
+     },
+     {
+      "login": "drogeria_medilla",
+      "title": "SORVELLA Woda perfumowana dla kobiet V251 50 ml",
+      "sold30": "0",
+      "price": 86.49,
+      "ship": 10.49,
+      "total": 96.98
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18800068444",
+    "title": "Perfumy damskie Sorvella V251 orientalne EDP 50 ml"
+   }
   },
   {
    "id": "sorvella-v227-limperatrice-1",
@@ -3650,7 +9714,103 @@
      "match": 100,
      "flag": false
     }
-   ]
+   ],
+   "base": {
+    "allegro_offer": "18782720791",
+    "price": 79,
+    "monitoring": true,
+    "sellers": [
+     {
+      "login": "hotfm",
+      "title": "Sorvella V 227 Perfumy damskie bez kartonika 50 ml",
+      "sold30": "[1-5]",
+      "price": 35,
+      "ship": 10.49,
+      "total": 45.49
+     },
+     {
+      "login": "hotfm",
+      "title": "Sorvella V 227 Perfumy damskie 50 ml",
+      "sold30": "[1-5]",
+      "price": 56.89,
+      "ship": 10.49,
+      "total": 67.38
+     },
+     {
+      "login": "jakubshopping",
+      "title": "Sorvella V227 50 ml EDP",
+      "sold30": "[1-5]",
+      "price": 56.89,
+      "ship": 10.49,
+      "total": 67.38
+     },
+     {
+      "login": "indizio-perfumy",
+      "title": "SORVELLA V-227 50ML WODA PERFUMOWANA DLA KOBIET PERFUMY DAMSKIE",
+      "sold30": "0",
+      "price": 56.99,
+      "ship": 10.49,
+      "total": 67.48
+     },
+     {
+      "login": "ikeastyle",
+      "title": "Sorvella V-227 Woda perfumowana dla kobiet 50 ml",
+      "sold30": "[1-5]",
+      "price": 59.99,
+      "ship": 10.49,
+      "total": 70.48
+     },
+     {
+      "login": "PERFUMIX",
+      "title": "Sorvella V227 50 ml",
+      "sold30": "0",
+      "price": 60,
+      "ship": 10.49,
+      "total": 70.49
+     },
+     {
+      "login": "Super-Pharm",
+      "title": "Sorvella Standard V227 Woda perfumowana dla kobiet",
+      "sold30": "0",
+      "price": 78.72,
+      "ship": 10.49,
+      "total": 89.21
+     },
+     {
+      "login": "ivete_pl",
+      "title": "Sorvella V227 50 ml perfumy damskie kwiatowe",
+      "sold30": "0",
+      "price": 93,
+      "ship": 10.49,
+      "total": 103.49
+     },
+     {
+      "login": "Teknashop_Ltd_UK",
+      "title": "Sorvella V227 50 ml EDP",
+      "sold30": "0",
+      "price": 94.28,
+      "ship": 55,
+      "total": 149.28
+     },
+     {
+      "login": "Trade_Horizon",
+      "title": "damska woda perfumowana Sorvella V227 Fruity, 50 ml",
+      "sold30": "0",
+      "price": 108.87,
+      "ship": 27,
+      "total": 135.87
+     }
+    ],
+    "as_of": "2026-11-17T15:06:39+00:00"
+   },
+   "own_allegro": {
+    "price": 79,
+    "url": "https://allegro.pl/oferta/18782720791",
+    "title": "Perfumy Damskie Sorvella owocowe V227 50 ml EDP"
+   }
   }
- ]
+ ],
+ "base": {
+  "as_of": "2026-11-17T15:06:39+00:00"
+ }
 }
