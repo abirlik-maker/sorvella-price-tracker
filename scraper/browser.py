@@ -83,9 +83,6 @@ class BrowserChannel(Channel):
         self._page = self._ctx.pages[0] if self._ctx.pages else self._ctx.new_page()
 
     def close(self):
-        if self._seen:
-            print(f"[{self.id}] listings read: {self._seen}, with seller info: {self._with_seller}", flush=True)
-            self._seen = self._with_seller = 0
         try:
             if self._ctx:
                 self._ctx.close()
@@ -258,19 +255,32 @@ def browser_channels():
 
 
 def main():
+    """Scrape, write the data, then end the process.
+
+    Browsers are not closed one by one: closing can hang on macOS, and the data used to be
+    written only after every browser had closed. Now the data is written first and the
+    process ends, which also ends the browsers."""
+    import sys
     from . import run
-    run.all_channels = browser_channels
+    made = []
+
+    def channels():
+        made.extend(browser_channels())
+        return made
+
+    run.all_channels = channels
     run.CHANNEL_BUDGET = int(os.getenv("CHANNEL_BUDGET", "600"))  # browser pages are slower
-    orig = run.scrape_channel
-
-    def scrape_and_close(c, products, ignore_urls):
-        try:
-            return orig(c, products, ignore_urls)
-        finally:
-            c.close()
-
-    run.scrape_channel = scrape_and_close
-    run.main()
+    code = 0
+    try:
+        run.main()                                  # writes latest.json and history.json
+    except BaseException as e:
+        print(f"run failed: {type(e).__name__}: {e}", flush=True)
+        code = 1
+    for c in made:
+        if c._seen:
+            print(f"[{c.id}] listings read: {c._seen}, with seller info: {c._with_seller}", flush=True)
+    sys.stdout.flush()
+    os._exit(code)
 
 
 if __name__ == "__main__":

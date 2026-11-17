@@ -24,9 +24,10 @@ def run(*cmd, check=True):
     return subprocess.run(cmd, cwd=HERE, check=check)
 
 
+run("pkill", "-f", "sorvella-profile", check=False)   # browsers left over from an interrupted run
 run("git", "pull", "--rebase", "--autostash")
 run(sys.executable, "-m", "scraper.browser")
-run("git", "add", "docs/data", "scraper", "run_local.py")   # data and the code that produced it
+run("git", "add", "docs/data", "scraper", "run_local.py", ".github")   # data and the code that produced it
 if run("git", "diff", "--cached", "--quiet", check=False).returncode != 0:
     run("git", "commit", "-m", f"data: {dt.date.today()} (local run)")
     run("git", "push")

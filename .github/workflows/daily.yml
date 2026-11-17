@@ -1,8 +1,6 @@
 name: daily-prices
 on:
-  schedule:
-    - cron: "0 6 * * *"
-  workflow_dispatch:
+  workflow_dispatch:   # manual only; the weekly data comes from the office computer (python run_local.py)
 permissions:
   contents: write
 jobs:
