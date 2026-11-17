@@ -345,7 +345,7 @@ a{color:var(--ours)}
 
   function trend(scope) {
     const ids = new Set(scope.map(m => m.id));
-    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort().map(d => {
+    const days = goodDays().map(d => {
       const g = [];
       Object.entries(H[d]).forEach(([id, e]) => {
         if (!ids.has(id)) return;
@@ -357,7 +357,8 @@ a{color:var(--ours)}
     if (days.length < 2) { $('#cTrend').innerHTML = '<div class="empty">History builds up with each run. The trend appears once two runs with good coverage exist.</div>'; return; }
     const W = 1000, Hh = 190, L = 54, R = 40, T = 24, B = 40;
     const vals = days.map(x => x.med), lo = Math.min(...vals, 0) - 5, hi = Math.max(...vals, 0) + 5;
-    const X = i => L + i / (days.length - 1) * (W - L - R), Y = v => T + (1 - (v - lo) / (hi - lo)) * (Hh - T - B);
+    const t0 = Date.parse(days[0].d), t1 = Date.parse(days.at(-1).d);
+    const X = i => L + (Date.parse(days[i].d) - t0) / (t1 - t0) * (W - L - R), Y = v => T + (1 - (v - lo) / (hi - lo)) * (Hh - T - B);
     const fd = d => new Date(d).toLocaleDateString('en-GB', {day:'numeric', month:'short'});
     $('#cTrend').innerHTML = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Median gap per run">
       <line class="grid-line" x1="${L}" x2="${W - R}" y1="${Y(0)}" y2="${Y(0)}"/><text x="${L - 8}" y="${Y(0) + 4}" text-anchor="end">0%</text>
@@ -367,20 +368,40 @@ a{color:var(--ours)}
       <p class="note">Runs differ in how many products were read, so compare points with similar product counts.</p>`;
   }
 
+  // Runs that read at least three channels; earlier test runs read only one and would distort the history.
+  function goodDays() {
+    return Object.keys(H).filter(d => !d.startsWith('_')).sort().filter(d => {
+      const ch = new Set(); Object.values(H[d]).forEach(e => Object.keys(e).forEach(k => k !== 'own' && ch.add(k)));
+      return ch.size >= 3;
+    });
+  }
+
   function spark(m) {
-    const days = Object.keys(H).filter(d => !d.startsWith('_')).sort();
-    const pts = days.map(d => { const e = H[d][m.id]; if (!e) return null;
-      const c = Object.entries(e).filter(([k]) => k !== 'own').map(([, v]) => v); return {d, own:e.own, min:c.length ? Math.min(...c) : null}; }).filter(x => x && x.min != null);
-    if (pts.length < 2) return '<p class="note">Price history will appear after more runs.</p>';
+    const pts = goodDays().map(d => { const e = H[d][m.id]; if (!e) return null;
+      const c = Object.entries(e).filter(([k]) => k !== 'own');
+      if (!c.length) return null;
+      const [ch, min] = c.reduce((a, b) => b[1] < a[1] ? b : a);
+      return {d, t: Date.parse(d), own: e.own, min, ch}; }).filter(Boolean);
+    if (pts.length < 2) return '<p class="note">Price history appears after the next weekly update.</p>';
     const hn = '<p class="note">History shows the lowest price seen on any channel, including unboxed listings.</p>';
-    const W = 320, Hh = 130, L = 40, R = 60, T = 10, B = 22, v = pts.flatMap(x => [x.own, x.min]), lo = Math.min(...v) - 3, hi = Math.max(...v) + 3;
-    const X = i => L + i / (pts.length - 1) * (W - L - R), Y = q => T + (1 - (q - lo) / (hi - lo)) * (Hh - T - B);
-    const ln = k => pts.map((x, i) => `${X(i)},${Y(x[k])}`).join(' ');
-    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Price history"><polyline fill="none" stroke="var(--cheaper)" stroke-width="2" stroke-dasharray="5 4" points="${ln('min')}"/>
-      <polyline fill="none" stroke="var(--ours)" stroke-width="2.5" points="${ln('own')}"/>
-      <text x="${W - R + 6}" y="${Y(pts.at(-1).own) + 4}" style="fill:var(--ours)" class="strong">Us</text>
-      <text x="${W - R + 6}" y="${Y(pts.at(-1).min) + (Math.abs(Y(pts.at(-1).min) - Y(pts.at(-1).own)) < 14 ? 16 : 4)}" style="fill:var(--cheaper)" class="strong">Rival</text>
-      <text x="${L - 6}" y="${Y(hi - 3) + 4}" text-anchor="end">${Math.round(hi - 3)}</text><text x="${L - 6}" y="${Y(lo + 3) + 4}" text-anchor="end">${Math.round(lo + 3)}</text></svg>` + (m.usable.length < m.offers.length ? hn : '');
+    const W = 340, Hh = 150, L = 36, R = 58, T = 16, B = 30;
+    const v = pts.flatMap(x => [x.own, x.min]), pad = Math.max((Math.max(...v) - Math.min(...v)) * .15, 2);
+    const lo = Math.min(...v) - pad, hi = Math.max(...v) + pad, t0 = pts[0].t, t1 = pts.at(-1).t;
+    const X = t => L + (t - t0) / (t1 - t0) * (W - L - R), Y = q => T + (1 - (q - lo) / (hi - lo)) * (Hh - T - B);
+    const fd = d => new Date(d).toLocaleDateString('en-GB', {day: 'numeric', month: 'short'});
+    const ln = k => pts.map(x => `${X(x.t).toFixed(1)},${Y(x[k]).toFixed(1)}`).join(' ');
+    const dots = pts.map((x, i) => `<circle cx="${X(x.t)}" cy="${Y(x.min)}" r="3.5" fill="var(--cheaper)"><title>${fd(x.d)}: lowest ${money(x.min)} (${esc(CH[x.ch] || x.ch)}), ours ${money(x.own)}</title></circle>
+      <circle cx="${X(x.t)}" cy="${Y(x.own)}" r="3" fill="var(--ours)"/>
+      <text x="${X(x.t)}" y="${Hh - 10}" text-anchor="${i === 0 ? 'start' : i === pts.length - 1 ? 'end' : 'middle'}">${fd(x.d)}</text>`).join('');
+    const last = pts.at(-1), close = Math.abs(Y(last.min) - Y(last.own)) < 14;
+    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Price history: our price and the lowest competitor price per weekly update">
+      <line class="grid-line" x1="${L}" x2="${W - R}" y1="${Hh - B}" y2="${Hh - B}"/>
+      <polyline fill="none" stroke="var(--cheaper)" stroke-width="2" stroke-dasharray="5 4" points="${ln('min')}"/>
+      <polyline fill="none" stroke="var(--ours)" stroke-width="2.5" points="${ln('own')}"/>${dots}
+      <text x="${W - R + 8}" y="${Y(last.own) + 4}" style="fill:var(--ours)" class="strong">Us ${Math.round(last.own)}</text>
+      <text x="${W - R + 8}" y="${Y(last.min) + (close ? 16 : 4)}" style="fill:var(--cheaper)" class="strong">Rival ${Math.round(last.min)}</text>
+      <text x="${L - 6}" y="${Y(hi - pad) + 4}" text-anchor="end">${Math.round(hi - pad)}</text><text x="${L - 6}" y="${Y(lo + pad) + 4}" text-anchor="end">${Math.round(lo + pad)}</text></svg>
+      <p class="note">Weekly updates. Blue: our website price. Dashed red: lowest competitor price that day (hover a dot for the channel).</p>` + (m.usable.length < m.offers.length ? hn : '');
   }
 
   // ---- table -------------------------------------------------------------
