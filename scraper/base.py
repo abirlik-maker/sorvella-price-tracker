@@ -59,10 +59,13 @@ def fetch():
     profile = Path(os.getenv("PROFILE_DIR") or Path.home() / ".sorvella-profile") / "base"
     wait = int(os.getenv("BASE_LOGIN_WAIT", "600"))
     with sync_playwright() as pw:
-        ctx = pw.chromium.launch_persistent_context(
-            str(profile), headless=False, channel=os.getenv("BROWSER_CHANNEL") or None,
-            args=["--disable-blink-features=AutomationControlled"], ignore_default_args=["--enable-automation"],
-            locale="pl-PL", viewport={"width": 1366, "height": 900})
+        if os.getenv("BASE_CDP"):
+            ctx = pw.chromium.connect_over_cdp(os.getenv("BASE_CDP")).contexts[0]
+        else:
+            ctx = pw.chromium.launch_persistent_context(
+                str(profile), headless=False, channel=os.getenv("BROWSER_CHANNEL") or None,
+                args=["--disable-blink-features=AutomationControlled"], ignore_default_args=["--enable-automation"], chromium_sandbox=True,
+                locale="pl-PL", viewport={"width": 1366, "height": 900})
         page = ctx.pages[0] if ctx.pages else ctx.new_page()
         page.goto(f"{PANEL}/allegro_auctions.php?status_id=1", wait_until="domcontentloaded", timeout=60000)
         logged_in = lambda: page.locator('tr[id^="a_"]').count() > 0
